@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  
+  scrollbar-color: #e60909 #e0e0e0;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #e0e0e0;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #e0e0e0;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #e0e0e0;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #e60909;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #e00000;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #e60909;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: max-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    user-select: none;
+}
+
+.navbar__stripes {
+    width: 100%;
+    height: 15px;
+}
+
+.navbar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.055);
+}
+
+.navbar__header__logo {
+    height: 50px;
+    padding: 3px;
+}
+
+.navbar__header__logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar__mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.navbar__mobile-menu-toggle__bar {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    border-radius: 2px;
+}
+
+.navbar__links__wrapper {
+    display: flex;
+    list-style: none;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.navbar__link:hover {
+    background-color: #ebeaea;
+}
+
+.markets__submenu {
+    position: absolute;
+    top: calc(100% + 10px);
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    padding: 20px;
+    border: 1px solid #cecdcd;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.192);
+    border-radius: 5px;
+}
+
+.markets__submenu__links__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.markets__submenu__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.markets__submenu__link:hover {
+    text-decoration: underline 1px solid rgb(119, 119, 119);
+}
+
+li:hover .markets__submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 1000px) {
+    .navbar__links__wrapper {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    .navbar__mobile-menu-toggle {
+        display: flex;
+    }
+
+    .navbar__links__wrapper.show-mobile-menu {
+        display: flex;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .navbar__link {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid rgb(238, 238, 238);
+    }
+}
+
+
+
+
+
+/* Sub-menu container */
+.analytical-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 200px;
+    transition: all 0.3s ease;
+    list-style: none;
+}
+
+/* Sub-menu link styles */
+.analytical-submenu__link {
+    display: block;
+    padding: 12px 15px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+/* Hover effect */
+.analytical-submenu__link:hover {
+    background-color: #f0f0f0;
+    color: #000;
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
+}
+
+/* Show the sub-menu on hover */
+.markets__submenu__link:hover + .analytical-submenu,
+.analytical-submenu:hover {
+    display: block;
+}
+
+/* Add subtle shadow effect for sub-menu */
+.analytical-submenu {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for other navbar elements */
+.markets__submenu__links__wrapper {
+    position: relative;
+}
+
+
+
+
+
+
+/* About submenu container */
+.about__submenu {
+    position: absolute;
+    top: calc(100% + 10px);
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    padding: 20px;
+    border: 1px solid #cecdcd;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.192);
+    border-radius: 5px;
+}
+
+/* About submenu links */
+.about__submenu__link {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    display: block;
+}
+
+.about__submenu__link:hover {
+    text-decoration: underline 1px solid rgb(119, 119, 119);
+}
+
+/* Show the submenu on hover */
+li:hover .about__submenu {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,500 @@
+.footer-container{
+    background-color:  #d50100;
+    height: 100%;
+    padding: 20px 20px 20px 50px;
+}
+
+.footer-logo{
+    height: 100px;
+    margin-top: 10px;
+}
+
+.footer-paragraph{
+  color:white;
+  font-size:24px;
+  font-weight:400;
+}
+
+.partners{
+    color: white;
+    font-size: 14px;
+    width: 350px;
+}
+
+.proud-partners{
+    /* color: rgb(0, 128, 0); */
+    color: white;
+    font-size: 20px;
+    font-weight: 700;   
+}
+
+label{
+    /* color: rgb(0, 128, 0); */
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.partner-subscribe{
+    display: flex;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.footer-subscribe{
+  position: relative;
+  bottom: 12px;
+}
+
+.subscribe-title{
+    color: white;
+    font-size: 20px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.subscribe-paragraph{
+    font-size: 16px;
+    font-weight: 300;
+    color:white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.subscribe-input{
+    height: 35px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.flag{
+  position: relative;
+  bottom: 12px;
+
+}
+
+.americaflag{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.subscribe-btn{
+    padding: 5px 20px;
+    margin-left: 5px;
+    background-color:  rgb(0, 128, 0);
+    font-weight: 500;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 0.5px solid black;
+    color: white;
+    box-shadow: 5px 5px #000
+}
+
+.subscribe-btn:hover {
+    background-color: #2077b3; 
+  }
+
+  .mailicon{
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+  }
+
+  .subscribe-line{
+    margin-top: 20px;
+    height: 0.5px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .privacy{
+    color: white;
+    padding: 10px;
+  }
+
+  .subscribe-legal{
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer-copyright{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+  }
+
+
+
+  /*animation*/
+
+  
+  .marquee-w {
+    border: 1px solid  #d50100;
+    /* background-color: #43e486; */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    margin-top: 40px;
+  }
+
+  .marquee {
+    position: absolute;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    font-family: "poppinsbold";
+    text-align: center;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    animation: marquee 20s linear infinite;
+  }
+
+  .marquee2 span {
+    animation-delay: 10s;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
+  .icon {
+    text-align: center;
+    margin-top: 16px;
+    margin-right: 5px;
+  }
+
+  .devices {
+    display: flex;
+    text-align: center;
+  }
+  
+  .devices-gap {
+    width: 30px;
+  }
+
+  
+@media screen and (max-width: 1300px) {
+   
+    .footer{
+        margin-top: 50px;
+    }
+
+    .footer-container{
+        background-color:  #d50100;
+        height: 100%;
+        padding: 20px 20px 20px 10px;
+    }
+    
+    .footer-logo{
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .footer-paragraph{
+      color:white;
+      font-size:18px;
+      font-weight:400;
+    }
+
+    .proud-partners{
+      /* color: rgb(0, 128, 0); */
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      
+  }
+
+    .partner-subscribe{
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+
+    
+    .subscribe-title{
+      color: white;
+      font-size: 14px;
+      margin-top: 12px;
+      font-weight: 600;
+  }
+  
+
+
+.subscribe-paragraph{
+    font-size: 12px;
+    font-weight: 300;
+    color:white;
+    margin-bottom: 5px;
+}
+
+.subscribe-input{
+    height: 35px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.americaflag{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.mailicon{
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+  }
+
+  .subscribe-line{
+    margin-top: 20px;
+    height: 0.5px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .privacy{
+    color: white;
+    padding: 10px;
+  }
+
+  .subscribe-legal{
+    margin-top: 10px;
+  }
+
+  .footer-copyright{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    color: white;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+   
+    .footer{
+        margin-top: 50px;
+    }
+
+    .footer-container{
+        background-color:  #d50100;
+        height: 100%;
+        padding: 20px 20px 20px 10px;
+    }
+    
+    .footer-logo{
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .footer-paragraph{
+      color:white;
+      font-size:14px;
+      font-weight:400;
+    }
+
+    .proud-partners{
+        /* color: rgb(0, 128, 0); */
+        color: white;
+        font-size: 14px;
+    }
+
+    .partner-subscribe{
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+
+    
+.subscribe-title{
+    color: white;
+    font-size: 14px;
+ 
+}
+
+
+.subscribe-paragraph{
+    font-size: 12px;
+    font-weight: 300;
+    color:white;
+    margin-bottom: 5px;
+}
+
+.subscribe-input{
+    height: 35px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.americaflag{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.mailicon{
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+  }
+
+  .subscribe-line{
+    margin-top: 20px;
+    height: 0.5px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .privacy{
+    color: white;
+    padding: 10px;
+  }
+
+  .subscribe-legal{
+    margin-top: 10px;
+  }
+
+  .footer-copyright{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    color: white;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+    .footer{
+        margin-top: 50px;
+    }
+
+    .footer-container{
+        background-color:  #d50100;
+        height: 100%;
+        padding: 20px 20px 20px 10px;
+    }
+    
+    .footer-logo{
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .footer-paragraph{
+      color:white;
+      font-size:14px;
+      font-weight:400;
+    }
+
+    .proud-partners{
+        /* color: rgb(0, 128, 0); */
+        color: white;
+        font-size: 12px;
+      
+    }
+
+    .partner-subscribe{
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+
+    
+.subscribe-title{
+    color: white;
+    font-size: 12px;
+
+}
+
+
+.subscribe-paragraph{
+    font-size: 10px;
+    font-weight: 300;
+    color:white;
+    margin-bottom: 5px;
+}
+
+.subscribe-input{
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.americaflag{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.mailicon{
+    font-size: 22px;
+    position: relative;
+    top: 10px;
+  }
+    
+
+  .subscribe-line{
+    margin-top: 20px;
+    height: 0.5px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .privacy{
+    color: white;
+    padding: 10px;
+  }
+
+  .subscribe-legal{
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .footer-copyright{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    color: white;
+    font-size: 14px;
+  }
+
+}

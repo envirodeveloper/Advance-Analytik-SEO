@@ -1,0 +1,563 @@
+.engineeringConsultancy {
+    /* Header Section */
+    .engineeringConsultancy__header {
+      height: 90vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3%;
+      background-color: #f5f5f5;
+      position: relative;
+    }
+
+
+    /* Full-width image with centered text */
+.header-banner {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as necessary */
+}
+
+.header-banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the div without distortion */
+}
+
+.header-banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.header-banner__text h1 {
+  font-size: 2rem; /* Adjust the font size as needed */
+  margin: 0;
+}
+
+  
+    .engineeringConsultancy__header__waves {
+      position: absolute;
+      bottom: -30%;
+      left: 0;
+      z-index: -1;
+    }
+  
+    .engineeringConsultancy__header__img__wrapper {
+      height: 500px;
+      width: 500px;
+      margin-top: 100px;
+    }
+  
+    .engineeringConsultancy__header__img__wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-right-radius: 10%;
+      border-bottom-left-radius: 10%;
+      box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.151);
+    }
+    
+    .engineeringConsultancy__header__content {
+      padding: 2%;
+      width: 55%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      height: 600px;
+      transition: height 0.3s ease, margin-top 0.3s ease; /* Smooth transition for height and margin */
+      overflow: hidden; /* Ensure no overflow during the transition */
+    }
+    
+    .engineeringConsultancy__header__content h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.1;
+      color: #d50100;
+      text-transform: uppercase;
+    }
+    
+    .header__page__hero__content{
+        background: linear-gradient(to right, #ff0000fd, #ff0000fd, #ff0000fd, #ff0000ee, rgba(255, 0, 0, 0));
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60%;
+        padding: 2%;
+        color: #fff;
+    }
+
+    .header-page__title{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .header-page_description{
+        width: 80%
+    }
+    
+    
+    .hidden {
+      display: none;
+  }
+  
+  .read-more-button {
+      background-color: #d50100; /* Match your theme color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+  }
+  
+  .read-more-button:hover {
+      background-color: #a40000; /* Darker shade for hover effect */
+  }
+
+
+  .engineeringConsultancy__header__content h3{
+    margin-top: 20px;
+    color: #d50100;
+    font-size: 1.5rem;
+  }
+
+
+  
+  
+  
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  
+    /* Content Section */
+    .engineeringConsultancy__content {
+      user-select: none;
+    }
+  
+    .engineeringConsultancy__content__title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2%;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: #d50100;
+    }
+  
+    .engineeringConsultancy__content__cards__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1%;
+    }
+  
+    .engineeringConsultancy__content__card {
+      width: 30%;
+      height: 480px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid #a8a8a860;
+      border-radius: 5px;
+      padding: 1%;
+      text-decoration: none;
+      color: #000000;
+    }
+    
+    .engineeringConsultancy__content__card:hover .engineeringConsultancy__content__card__img {
+      scale: 1.07;
+      transition: 0.2s ease;
+    }
+  
+    .engineeringConsultancy__content__card__img__wrapper {
+      height: 300px;
+      width: max-content;
+      overflow: hidden;
+    }
+    
+    .engineeringConsultancy__content__card__img {
+      height: 100%;
+      transition: 0.2s ease;
+    }
+    
+    .engineeringConsultancy__content__card__content {
+      margin-top: 1%;
+      width: 100%;
+      height: 45%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    
+    .engineeringConsultancy__content__card__content h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    
+    .engineeringConsultancy__content__card__content__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: #d50100;
+      padding: 5px;
+      border-radius: 5px;
+      color: #fff;
+    }
+    
+    .engineeringConsultancy__content__card__content__link__icon {
+      opacity: 0;
+      transition: 0.2s;
+    }
+    
+    .engineeringConsultancy__content__card__content__link:hover .engineeringConsultancy__content__card__content__link__icon {
+      opacity: 1;
+      margin-left: 10px;
+      transition: 0.2s;
+    }
+    
+    .engineeringConsultancy__content__card__content p {
+      font-size: 0.9rem;
+    }
+
+
+    
+    /* Partnership Section */
+    .engineeringConsultancy__partnership__section__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+      padding: 0 5%;
+    }
+    
+    .engineeringConsultancy__partnership__section__content__wrapper {
+      width: 50%;
+      margin-bottom: auto;
+    }
+    
+    .engineeringConsultancy__partnership__section__content__wrapper h2 {
+      font-size: 2.5em;
+      margin-bottom: 1%;
+      color: #d50100;
+      font-weight: 600;
+    }
+    
+    .engineeringConsultancy__partnership__section__content__wrapper p {
+      font-size: 1rem;
+      text-align: justify;
+    }
+    
+    .engineeringConsultancy__partnership__section__img__wrapper {
+      height: 100%;
+      width: 50%;
+    }
+    
+    .engineeringConsultancy__partnership__section__img__wrapper img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-top-right-radius: 80px;
+      border-bottom-left-radius: 80px;
+    }
+    
+    
+    /* Featured Products Section */
+.applications__featured-products {
+    margin: 00px 8px;
+    background-color: #fff; /* White background for clarity */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 0 5%;
+}
+    
+.featured-products__title {
+    font-size: 1.8rem; /* Title font size */
+    color: #d50100; /* Primary color for headings */
+    margin-bottom: 10px;
+}
+    
+.featured-products__list {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+}
+    
+.featured-products__item {
+    font-size: 1rem; /* Item font size */
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0; /* Light divider between items */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.featured-products__item:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+    
+    /* Media Queries */
+    @media screen and (max-width: 1200px) {
+      .engineeringConsultancy__header {
+        height: 80vh !important;
+      }
+
+      .engineeringConsultancy__header__content h1 {
+        font-size: 2.5rem !important;
+      }
+    }
+
+
+    @media screen and (max-width: 1000px) {
+      .engineeringConsultancy__header {
+        padding: 10% 0% !important;
+        flex-direction: column-reverse;
+        height: max-content !important;
+      }
+  
+      .engineeringConsultancy__header__img__wrapper {
+        width: 100% !important;
+      }
+  
+      .engineeringConsultancy__header__content {
+        width: 100% !important;
+        margin-top: 20px;
+      }
+  
+      .engineeringConsultancy__header__waves {
+        bottom: -10% !important;
+      }
+  
+      .engineeringConsultancy__content__cards__wrapper {
+        flex-direction: column;
+        padding: 0 5%;
+      }
+
+      .engineeringConsultancy__content__card {
+        width: 100% !important;
+        margin-bottom: 20px;
+      }
+
+      .engineeringConsultancy__content__card__content {
+        padding: 10px;
+      }
+  
+      .engineeringConsultancy__partnership__section__wrapper {
+        flex-direction: column;
+      }
+  
+      .engineeringConsultancy__partnership__section__content__wrapper {
+        width: 100% !important;
+      }
+  
+      .engineeringConsultancy__partnership__section__img__wrapper {
+        width: 100% !important;
+        margin-top: 5%;
+      }
+    }
+  }
+
+
+  .whyChooseUs__section {
+    background-color: #f8f9fa;
+    padding: 5% 10%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.whyChooseUs__section__title {
+    font-size: 2.5rem;
+    color: #d50100;
+    margin-bottom: 2%;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+}
+
+.whyChooseUs__section__points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+
+.whyChooseUs__section__point {
+    width: 45%;
+    background-color: #fff;
+    padding: 3%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 2%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.whyChooseUs__section__point:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.whyChooseUs__section__point::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #d50100;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.whyChooseUs__section__point:hover::before {
+    transform: scaleX(1);
+}
+
+.whyChooseUs__section__point h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.whyChooseUs__section__point p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.whyChooseUs__section__point:hover p {
+    color: #333;
+}
+
+.whyChooseUs__cta {
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in;
+}
+
+.whyChooseUs__cta__link {
+    background-color: #d50100;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.whyChooseUs__cta__link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.whyChooseUs__cta__link:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.whyChooseUs__cta__link:hover {
+    background-color: #a40000;
+    transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1000px) {
+    .whyChooseUs__section__point {
+        width: 100%;
+    }
+}
+
+.faq-section {
+  padding: 0 5%;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px;
+}
+
+.faq-section__title {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color:#d50100;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc; /* Divider line between FAQs */
+  padding: 10px 0;
+}
+
+.faq-item__question {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between question and button */
+  align-items: center; /* Center align items vertically */
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+.faq-toggle-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  font-size: 18px; /* Size of toggle button */
+  color: #d50100; /* Button color */
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+.faq-item__answer {
+  margin-top: 10px; /* Space above answer */
+  color: #555; /* Text color for answer */
+}
+
+

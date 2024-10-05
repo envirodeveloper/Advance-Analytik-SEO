@@ -1,0 +1,150 @@
+.career {
+    height: 100%;
+    user-select: none;
+  }
+  
+  .careers__header {
+    background-color: #d50100;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5%;
+  }
+  
+  .careers__header__title {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .careers__header__title h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .careers__header__title img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 250px;
+    width: 300px;
+  }
+  
+  .careers__header p {
+    width: 30%;
+    color: #fff;
+  }
+  
+  .careers__page__sections__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .careers__section__one {
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .careers__section__one h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .careers__section__one p {
+    margin: 2% 0;
+  }
+  
+  .careers__section__one img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+
+  .careers__section__three {
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+
+  .careers__section__three h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+
+  .careers__section__three p {
+    margin-bottom: 5%;
+  }
+  
+  .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .faq__item {
+    width: 80%;
+    border-bottom: 1px solid #141414;
+    cursor: pointer;
+  }
+  
+
+  .faq__question__icons__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .faq__question {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+
+  .faq__answer {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  
+
+  .faq__item.active .faq__answer {
+    display: block;
+    text-align: justify;
+  }
+  
+  
+  .faq__question__icons__wrapper .icon {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  
+  /* Media Queries */
+  @media screen and (max-width: 1000px) {
+    .careers__header {
+      flex-direction: column;
+      justify-content: flex-end !important;
+      align-items: flex-start !important;
+      height: 70vh !important;
+    }
+  
+    .careers__header p {
+      width: 100% !important;
+      margin-top: 5%;
+    }
+  
+    .careers__section__three {
+      width: 100% !important;
+    }
+  
+  }
+  
+  
