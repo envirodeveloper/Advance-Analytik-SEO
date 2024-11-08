@@ -1,0 +1,443 @@
+.footer-container {
+  background-color: #d50100;
+  height: 520px;
+  padding: 20px 20px 20px 50px;
+}
+
+.footer-logo {
+  height: 100px;
+  margin-top: 10px;
+}
+
+.footer-paragraph {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.partners {
+  color: white;
+  font-size: 14px;
+  width: 350px;
+}
+
+.proud-partners {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.partner-subscribe {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.footer-subscribe {
+  position: relative;
+  bottom: 12px;
+}
+
+.subscribe-title {
+  color: white;
+  font-size: 20px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.subscribe-paragraph {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.subscribe-input {
+  height: 35px;
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.flag {
+  position: relative;
+  bottom: 12px;
+}
+
+.americaflag {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.subscribe-btn {
+  padding: 5px 20px;
+  margin-left: 5px;
+  background-color: rgb(0, 128, 0);
+  font-weight: 500;
+  margin-top: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 0.5px solid black;
+  color: white;
+  box-shadow: 5px 5px #000;
+}
+
+.subscribe-btn:hover {
+  background-color: #2077b3;
+}
+
+.mailicon {
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.subscribe-line {
+  margin-top: 20px;
+  height: 0.5px;
+  width: 100%;
+  background-color: white;
+}
+
+.policy-copyright {
+  position: relative;
+  bottom: 40px;
+  z-index: 1; /* Ensure this is lower than .footer-social-media */
+}
+
+.privacy {
+  color: white;
+  padding: 10px;
+}
+
+.subscribe-legal {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.footer-social-media {
+  text-align: left; /* Aligns icons to the left */
+  margin-right: auto; /* Allows the legal links to align right */
+  position: relative; /* Ensure that z-index works properly */
+  z-index: 9999; /* Set a high z-index */
+  margin-top: 10px;
+}
+
+.footer-social-media-list {
+  list-style: none;
+}
+
+.footer-social-media-list li {
+  display: inline;
+  z-index: 99999;
+}
+
+.social-link {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  color: rgb(0, 128, 0); /* Change to your preferred hover color */
+}
+
+/* Animation */
+.marquee-w {
+  border: 1px solid #d50100;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.marquee {
+  position: absolute;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  font-family: "poppinsbold";
+  text-align: center;
+  white-space: nowrap;
+  min-width: 100%;
+  height: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 10s;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-100%, 0);
+  }
+}
+
+.icon {
+  text-align: center;
+  margin-top: 16px;
+  margin-right: 5px;
+}
+
+.devices {
+  display: flex;
+  text-align: center;
+}
+
+.devices-gap {
+  width: 30px;
+}
+
+/* Media Queries for 1300px and below */
+@media screen and (max-width: 1300px) {
+  .footer {
+      margin-top: 50px;
+  }
+
+  .footer-container {
+      height: auto; /* Allow height to adjust */
+      padding: 20px 20px 20px 10px;
+  }
+
+  .footer-logo {
+      height: 50px;
+      margin-top: 10px;
+  }
+
+  .footer-paragraph {
+      font-size: 18px;
+  }
+
+  .proud-partners {
+      color: white;
+      font-size: 14px;
+  }
+
+  .partner-subscribe {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+  }
+
+  .subscribe-title {
+      font-size: 14px;
+  }
+
+  .subscribe-paragraph {
+      font-size: 12px;
+  }
+
+  .subscribe-input {
+      width: 100%; /* Full width for input */
+      max-width: 350px; /* Optional: max width */
+  }
+
+  .americaflag {
+      position: relative;
+      top: 10px;
+      left: 10px;
+  }
+
+  .mailicon {
+      font-size: 20px;
+  }
+
+  .subscribe-line {
+      margin-top: 20px;
+      height: 0.5px;
+  }
+
+  .privacy {
+      padding: 10px;
+  }
+
+  .subscribe-legal {
+      margin-top: 10px;
+  }
+
+  .footer-copyright {
+      text-align: center;
+      margin-top: 10px;
+  }
+}
+
+/* Media Queries for 720px and below */
+@media screen and (max-width: 720px) {
+
+  
+  .footer-container {
+      padding: 15px 10px; /* Adjust padding */
+  }
+
+  .footer-logo {
+      height: 40px; /* Smaller logo size */
+  }
+
+  .footer-paragraph {
+      font-size: 16px; /* Decrease font size */
+  }
+
+  .partners {
+      width: 100%; /* Full width for partners section */
+      font-size: 12px; /* Decrease font size */
+  }
+
+  .proud-partners {
+      font-size: 14px; /* Decrease font size */
+  }
+
+  .partner-subscribe {
+      flex-direction: column; /* Stack elements vertically */
+      gap: 15px; /* Adjust gap */
+  }
+
+  .subscribe-title {
+      font-size: 14px; /* Decrease font size */
+  }
+
+  .subscribe-paragraph {
+      font-size: 12px; /* Decrease font size */
+  }
+
+  .subscribe-input {
+      width: 100%; /* Full width for input */
+      height: 30px; /* Adjust input height */
+  }
+
+  .subscribe-btn {
+      width: 100%; /* Full width for button */
+      font-size: 14px; /* Decrease button font size */
+  }
+
+
+  .policy-copyright {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+  }
+  .footer-copyright {
+      font-size: 14px; /* Decrease copyright font size */
+  }
+
+  .footer-container {
+    padding: 15px 10px; /* Adjust padding */
+}
+
+.footer-social-media {
+    text-align: center; /* Center align for better visibility */
+}
+
+.footer-social-media-list {
+  justify-content: center; /* Center align items */
+}
+
+.footer-social-media-list li {
+  display: inline; /* Ensure items are inline */
+  margin: 0 5px; /* Adjust margin for smaller screens */
+  font-size: 20px; /* Slightly smaller font for better fit */
+}
+}
+
+/* Media Queries for 480px and below */
+@media screen and (max-width: 480px) {
+  .footer-container {
+      padding: 10px; /* Less padding */
+  }
+
+  .footer-logo {
+      height: 30px; /* Smaller logo size */
+  }
+
+  .footer-paragraph {
+      font-size: 14px; /* Further decrease font size */
+  }
+
+  .partners {
+      width: 100%; /* Full width for partners section */
+      font-size: 10px; /* Decrease font size */
+  }
+
+  .proud-partners {
+      font-size: 12px; /* Decrease font size */
+  }
+
+  .partner-subscribe {
+      flex-direction: column; /* Stack elements vertically */
+      gap: 10px; /* Adjust gap */
+  }
+
+  .subscribe-title {
+      font-size: 12px; /* Decrease font size */
+  }
+
+  .subscribe-paragraph {
+      font-size: 10px; /* Decrease font size */
+  }
+
+  .subscribe-input {
+      height: 28px; /* Adjust input height */
+  }
+
+  .subscribe-btn {
+      font-size: 12px; /* Decrease button font size */
+  }
+
+  .footer-copyright {
+      font-size: 12px; /* Decrease copyright font size */
+  }
+
+  .policy-copyright {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+  }
+
+  .footer-social-media {
+    margin: 10px 0; /* Reduce margin for smaller screens */
+}
+
+.footer-social-media-list li {
+  margin: 0 3px; /* Further reduce margin */
+  font-size: 18px; /* Smaller font size for better fit */
+}
+
+.social-link {
+  font-size: 18px; /* Decrease font size for better visibility */
+}
+}

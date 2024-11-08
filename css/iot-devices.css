@@ -1,0 +1,319 @@
+.iotDevices__page {
+    background-color: #f5f5f5;
+  }
+  
+  .career-page-header {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .career-page-header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .career__page__hero__content {
+    background: linear-gradient(
+      to right,
+      #ff0000fd,
+      #ff0000fd,
+      #ff0000fd,
+      #ff0000ee,
+      rgba(255, 0, 0, 0)
+    );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    padding: 2%;
+    color: #fff;
+  }
+  
+  .career__page__hero__content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 35px;
+  }
+  
+  .career__page__hero__content p {
+    margin-left: 35px;
+    width: 80%;
+  }
+  
+  .iot__devices__sections__wrapper {
+    padding: 5%;
+  }
+  
+  .iot-devices-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .iot-devices-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .iot-devices-section p {
+    font-size: 1rem;
+    color: #777;
+  }
+
+
+  
+.faq-section {
+  padding: 0 5%;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px;
+}
+
+.faq-section__title {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color:#d50100;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc; /* Divider line between FAQs */
+  padding: 10px 0;
+}
+
+.faq-item__question {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between question and button */
+  align-items: center; /* Center align items vertically */
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+.faq-toggle-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  font-size: 18px; /* Size of toggle button */
+  color: #d50100; /* Button color */
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+.faq-item__answer {
+  margin-top: 10px; /* Space above answer */
+  color: #555; /* Text color for answer */
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+/* Key Features Section */
+.key-features-section {
+  background-color: #f9f9f9;
+  padding: 3% 5%;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.key-features-section h2 {
+  font-size: 1.75rem;
+  color: #d50100;
+  margin-bottom: 1.5rem;
+}
+
+.key-features-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.key-features-list li {
+  margin-bottom: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.key-features-list li strong {
+  color: #d50100;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Industry Applications Section */
+.industry-applications-section {
+  padding: 3% 5%;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.industry-applications-section h2 {
+  font-size: 1.75rem;
+  color: #d50100;
+  margin-bottom: 1.5rem;
+}
+
+.industry-applications-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.industry-applications-list li {
+  margin-bottom: 1.5rem;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.industry-applications-list li strong {
+  color: #d50100;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.industry-applications-list li a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.industry-applications-list li a:hover {
+  text-decoration: none;
+}
+
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .iotDevices__page {
+      padding: 1rem;
+    }
+
+    .career__page__hero__content {
+      width: 80%;
+      padding: 1rem;
+    }
+
+    .career__page__hero__content h1 {
+      font-size: 1.5rem;
+    }
+
+    .iot-devices-section {
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .iot-devices-section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .iot-devices-section p {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+
+
+  /* How It Works Section */
+.how-it-works {
+  background-color: #f0f0f0;
+  padding: 40px 5%;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.how-it-works__title {
+  font-size: 2rem;
+  color: #d50100;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.how-it-works__diagram {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.diagram-step {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+
+.step-number {
+  background-color: #d50100;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+}
+
+.step-content h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.diagram-arrow {
+  font-size: 2rem;
+  color: #d50100;
+  flex-shrink: 0;
+}
+
+.iotDevices__introduction {
+  padding: 3% 5%;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.iotDevices__introduction h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.iotDevices__introduction p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .how-it-works__diagram {
+    flex-direction: column;
+  }
+
+  .diagram-arrow {
+    transform: rotate(90deg);
+    margin: 10px 0;
+  }
+}

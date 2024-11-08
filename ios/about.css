@@ -1,0 +1,49 @@
+
+  /* New iOS Device (smaller screen) media query */
+  @media (max-width: 480px) {
+    .about__header h1 {
+      font-size: 2rem;
+    }
+  
+    .about__page {
+      padding: 5rem 0;
+    }
+  
+    .about__page__intro__wrapper img {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .about__page__intro__content {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .about__page__intro__content__link {
+      padding: 8px 16px;
+      font-size: 0.875rem;
+    }
+  
+    .about__page__section__one__card {
+      width: 100%;
+      padding: 2%;
+      text-align: center;
+    }
+  
+    .about__page__section__two__img__wrapper {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .about__page__section__two__cards__wrapper {
+      width: 100%;
+    }
+  
+    .about__page__section__two__card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .about__page__section__two__card p {
+      font-size: 0.875rem;
+    }
+  }

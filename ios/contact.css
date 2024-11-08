@@ -1,0 +1,151 @@
+@media screen and (max-width: 480px) {
+    /* Contact Section */
+    .contact {
+        padding: 3rem 2rem; /* Adjusted padding for mobile */
+    }
+
+    .contact__header__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+    }
+
+    .contact__header {
+        padding: 5%; /* Kept padding for header */
+        text-align: center;
+    }
+
+    .contact__header h1 {
+        font-size: 2.5rem; /* Reduced font size for mobile */
+        font-weight: 600;
+    }
+
+    .contact__header p {
+        font-size: 1rem; /* Reduced paragraph font size */
+        font-weight: 500;
+    }
+
+    .contact__card__wrapper {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+        margin-top: 2rem; /* Added margin for separation */
+    }
+
+    .contact__card {
+        border: 1px solid rgba(122, 122, 122, 0.37);
+        border-radius: 10px;
+        background-color: #fff;
+        height: auto; /* Adjust height to auto */
+        width: 100%; /* Full width on mobile */
+        max-width: 350px; /* Limit max width */
+        padding: 2%; /* Kept padding */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem; /* Spacing between cards */
+    }
+
+    .contact__card i {
+        font-size: 1.5rem; /* Reduced icon font size */
+        color: #000;
+        margin-bottom: 20px; /* Adjusted margin */
+        border: 1px solid rgba(122, 122, 122, 0.37);
+        padding: 8px; /* Reduced padding */
+        width: 50px; /* Adjusted width */
+        border-radius: 5px;
+    }
+
+    .contact__card__content h2 {
+        font-size: 1rem; /* Smaller title font size */
+        font-weight: 600;
+    }
+
+    .contact__card__content p {
+        font-size: 0.8rem; /* Smaller paragraph font size */
+    }
+
+    .contact__card__content span {
+        font-size: 0.9rem; /* Smaller span font size */
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .contact__map__wrapper {
+        margin-top: 3%; /* Reduced margin */
+        text-align: center;
+    }
+
+    .contact__map__wrapper h1 {
+        font-weight: 600;
+    }
+
+    .contact__map__wrapper p {
+        font-size: 0.8rem; /* Smaller map description font size */
+        margin-bottom: 2%;
+    }
+
+    #map {
+        height: 40vh; /* Reduced map height */
+        width: 100%;
+        border-radius: 10px; /* Adjusted border radius */
+    }
+
+    .contact__enquiry__form__container {
+        display: flex;
+        flex-direction: column; /* Stack form elements vertically */
+        align-items: center; /* Center form items */
+        margin-top: 3%; /* Adjusted margin */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .contact__enquiry__form__container img {
+        height: 200px; /* Set height for image */
+        width: 100%; /* Full width for image */
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem; /* Space below the image */
+    }
+
+    .contact__enquiry__form__wrapper {
+        width: 90%; /* Full width on mobile */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .contact__enquiry__form__wrapper h2 {
+        font-size: 1.5rem; /* Smaller form title font size */
+        font-weight: 600;
+    }
+
+    .contact__enquiry__form__wrapper p {
+        margin-bottom: 5%; /* Kept margin for paragraph */
+    }
+
+    .contact__enquiry__form input,
+    .contact__enquiry__form textarea {
+        width: 100%; /* Full width for inputs */
+        padding: 10px; /* Kept padding */
+        margin-bottom: 10px; /* Space between inputs */
+        border-radius: 5px;
+        background-color: #e4e4e4;
+        border: none;
+    }
+
+    .contact__enquiry__form button {
+        width: 100%; /* Full width for button */
+        padding: 10px; /* Kept padding */
+        border: 1px solid #cacaca;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        font-size: 1rem; /* Adjusted button text size */
+    }
+
+    .contact__enquiry__form button:hover {
+        color: white;
+        background-color: red; /* Keep hover effect */
+    }
+}

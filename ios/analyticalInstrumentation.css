@@ -1,0 +1,97 @@
+@media screen and (max-width: 480px) {
+  /* Header Section */
+  .analyticalInstrumentation__header {
+      padding: 5% 0; /* Adjusted padding for small screens */
+      flex-direction: column; /* Stack elements vertically */
+      height: 50vh; /* Reduced height for mobile */
+  }
+
+  .analyticalInstrumentation__header__img__wrapper {
+      height: 300px; /* Fixed height for image wrapper */
+      width: 100%; /* Full width on mobile */
+  }
+
+  .analyticalInstrumentation__header__content {
+      width: 90%; /* More width for content */
+      height: auto; /* Allow content to expand */
+  }
+
+  .analyticalInstrumentation__header__content h1 {
+      font-size: 1.8rem; /* Smaller font size for headings */
+  }
+
+  .analyticalInstrumentation__header__content h2 {
+      font-size: 1.2rem; /* Smaller subheading */
+  }
+
+  .analyticalInstrumentation__header__content p {
+      font-size: 0.9rem; /* Adjusted paragraph font size */
+  }
+
+  .analyticalInstrumentation__header__content span {
+      font-size: 0.8rem; /* Smaller span text */
+  }
+
+  .read-more-button {
+      font-size: 0.9rem; /* Smaller button text */
+      padding: 8px 15px; /* Adjusted padding */
+  }
+
+  /* Content Section */
+  .analyticalInstrumentation__content__card {
+      width: 90%; /* Full width for cards on mobile */
+  }
+
+  .analyticalInstrumentation__content__card__content h2 {
+      font-size: 1rem; /* Smaller title font size */
+  }
+
+  .analyticalInstrumentation__content__card__content p {
+      font-size: 0.8rem; /* Smaller paragraph font size */
+  }
+
+  /* Partnership Section */
+  .analyticalInstrumentation__partnership__section__wrapper {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+      padding: 0 5%; /* Add some padding */
+  }
+
+  .analyticalInstrumentation__partnership__section__content__wrapper {
+      width: 100%; /* Full width for content */
+      margin-bottom: 20px; /* Margin for separation */
+  }
+
+  .analyticalInstrumentation__partnership__section__content__wrapper h2 {
+      font-size: 1.5rem; /* Smaller font for heading */
+  }
+
+  .analyticalInstrumentation__partnership__section__content__wrapper p {
+      font-size: 0.9rem; /* Smaller font size for paragraph */
+  }
+
+  .analyticalInstrumentation__partnership__section__img__wrapper {
+      width: 100%; /* Full width for image wrapper */
+  }
+
+  .analyticalInstrumentation__partnership__section__img__wrapper img {
+      height: auto; /* Auto height for image */
+      width: 100%; /* Full width for image */
+      object-fit: cover; /* Cover the image area */
+      border-radius: 10%; /* Rounded corners */
+  }
+
+  /* Featured Products Section */
+  .featured-products__title {
+      font-size: 1.5rem; /* Smaller title font size */
+  }
+
+  .featured-products__item {
+      font-size: 0.9rem; /* Smaller item font size */
+      padding: 8px 0; /* Adjusted padding */
+  }
+
+  .featured-products__item:hover {
+      background-color: #f1f1f1; /* Maintain hover effect */
+  }
+}

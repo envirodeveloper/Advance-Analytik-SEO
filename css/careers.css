@@ -1,0 +1,247 @@
+.career {
+    height: 100%;
+    user-select: none;
+  }
+  
+  .careers__header {
+    background-color: #d50100;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5%;
+  }
+  
+  .careers__header__title {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .careers__header__title h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .careers__header__title img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 250px;
+    width: 300px;
+  }
+  
+  .careers__header p {
+    width: 30%;
+    color: #fff;
+  }
+  
+  .careers__page__sections__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .careers__section__one {
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .careers__section__one h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .careers__section__one p {
+    margin: 2% 0;
+  }
+  
+  .careers__section__one img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+
+  .careers__section__three {
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+
+  .careers__section__three h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+
+  .careers__section__three p {
+    margin-bottom: 5%;
+  }
+/*   
+  .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .faq__item {
+    width: 80%;
+    border-bottom: 1px solid #141414;
+    cursor: pointer;
+  }
+  
+  .faq__question__icons__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .faq__question {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .faq__answer {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  
+
+  .faq__item.active .faq__answer {
+    display: block;
+    text-align: justify;
+  }
+  
+  
+  .faq__question__icons__wrapper .icon {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+   */
+
+   
+.faq-section {
+  padding: 0 5%;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px;
+}
+
+.faq-section__title {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color:#d50100;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc; /* Divider line between FAQs */
+  padding: 10px 0;
+}
+
+.faq-item__question {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between question and button */
+  align-items: center; /* Center align items vertically */
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+.faq-toggle-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  font-size: 18px; /* Size of toggle button */
+  color: #d50100; /* Button color */
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+.faq-item__answer {
+  margin-top: 10px; /* Space above answer */
+  color: #555; /* Text color for answer */
+}
+
+.hidden{
+  display: none;
+}
+  
+
+/* Media Queries for max-width 720px */
+@media screen and (max-width: 720px) {
+  .careers__header {
+    flex-direction: column;
+    justify-content: center; /* Center the items */
+    align-items: center; /* Center items horizontally */
+    height: auto; /* Allow height to adjust to content */
+    padding: 10%; /* Increase padding for smaller screens */
+  }
+
+  .careers__header__title h1 {
+    font-size: 3.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .careers__header__title img {
+    height: 150px; /* Adjust image height */
+    width: 100%; /* Make the image responsive */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-top: 10px; /* Add margin for better spacing */
+  }
+
+  .careers__header p {
+    width: 100%; /* Full width for text */
+    text-align: center; /* Center-align text */
+    margin-top: 5%; /* Add margin for spacing */
+  }
+
+  .careers__section__one {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .careers__section__one h2 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .careers__section__one img {
+    height: 250px; /* Adjust image height */
+    width: 100%; /* Full width for images */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+
+  .careers__section__three {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .careers__section__three h1 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .faq {
+    display: flex;
+  }
+  
+  .faq__item {
+    width: 100%; /* Full width for FAQ items */
+  }
+
+  .faq__question {
+    font-size: 0.9rem;
+    text-align: left; /* Reduce font size for questions */
+  }
+
+  .faq__answer {
+    font-size: 0.8rem; /* Reduce font size for questions */
+    text-align: left;
+  }
+
+  .faq__question__icons__wrapper {
+    align-items: flex-start; /* Align items to start */
+  }
+
+  .faq__question__icons__wrapper .icon {
+    font-size: 1.5rem; /* Reduce icon size */
+    margin-top: 5px; /* Add margin for spacing */
+  }
+}

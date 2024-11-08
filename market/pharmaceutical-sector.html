@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../images/logo/AdvanceAnalytiklogo.png" />
+  <link rel="stylesheet" href="/css/marketdata.css">
+  <script src="../javascript/marketData.js"></script>
+  <script src="../javascript/common.js" defer></script>
+  <title>Analytical Solutions for Pharmaceutical Sector | Advance Analytik</title>
+  <meta name="description" content="Achieve peak product purity with Advance Analytik’s cutting-edge instrumentation, streamline quality control, and meet stringent regulations effortlessly. Turn your research into breakthroughs with our tailored solutions, ensuring your pharmaceuticals are both effective and compliant in today's dynamic market!">
+
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+  <div class="market">
+    <div class="market__header" id="market-header"></div>
+    <div class="markets__sections__wrapper">
+      <div class="markets__section__one" id="market-section-one"></div>
+      <div class="markets__section__two">
+        <img id="market-image" src="" alt="">
+        <div class="markets__section__two__content__wrapper" id="market-section-two"></div>
+      </div>
+      <div class="market__des" id="market-des"></div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const route = "pharmaceuticalsector";
+      const market = marketData.find(m => m.route === route);
+
+      if (market) {
+        document.getElementById('market-header').innerHTML = `<h1>${market.name}</h1>`;
+        document.getElementById('market-section-one').innerHTML = `<p>${market.des1}</p><p>${market.des2}</p>`;
+        document.getElementById('market-image').src = market.img;
+        document.getElementById('market-section-two').innerHTML = `<p>${market.des3}</p><a href="../products/analytical-instrumentation.html">View Products Range →</a>`;
+        document.getElementById('market-des').innerHTML = `<p>${market.des4}</p>`;
+
+            // Dynamically set the header background image for different pages
+            document.querySelector('.market__header').style.backgroundImage = `url('${market.bgImg}')`;
+      }
+    });
+  </script>
+
+</body>
+</html>

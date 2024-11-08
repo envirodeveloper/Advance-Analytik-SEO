@@ -1,0 +1,30 @@
+@media (max-width: 480px) {
+  .careers__header__title h1 {
+      font-size: 4rem; /* Further adjusted for very small screens */
+  }
+
+  .careers__header p {
+      font-size: 0.8rem; /* Smaller font size */
+  }
+
+  .careers__section__one h2 {
+      font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .careers__section__one p,
+  .careers__section__three p {
+      font-size: 0.8rem; /* Smaller paragraph */
+  }
+
+  .careers__section__three h1 {
+      font-size: 2rem; /* Smaller heading */
+  }
+
+  .faq-section__title {
+      font-size: 1.5rem; /* Smaller title size */
+  }
+
+  .faq-toggle-button {
+      font-size: 16px; /* Button size */
+  }
+}

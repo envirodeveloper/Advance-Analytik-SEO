@@ -1,0 +1,183 @@
+@media screen and (max-width: 480px) {
+  /* General Styles */
+  .products__wrapper {
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem; /* Add some padding */
+  }
+
+  .products__header__wrapper {
+      margin-bottom: 1rem;
+      position: relative;
+      height: 30vh; /* Reduced height for mobile */
+      width: 100%;
+      display: flex;
+      justify-content: center; /* Center content for better layout */
+      align-items: flex-end;
+      padding: 2% 5%;
+  }
+
+  .products__header__wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 0;
+      filter: brightness(0.6);
+  }
+
+  .products__header__content__wrapper {
+      z-index: 1;
+      color: #fff;
+      text-align: center; /* Center align text */
+  }
+
+  .products__header__content__wrapper h1 {
+      font-size: 2.5rem; /* Smaller font size for mobile */
+      font-weight: 600;
+  }
+
+  .products__header__content__wrapper p {
+      font-size: 1rem; /* Smaller paragraph font size */
+  }
+
+  .product__overview {
+      padding: 1rem; /* Adjusted padding for mobile */
+      background: lightgray;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .product__overview:hover {
+      transform: translateY(-5px); /* Subtle hover effect */
+  }
+
+  .product__overview h2 {
+      font-size: 1.5rem; /* Smaller heading size */
+      color: #1f2937; /* Darker color for headings */
+      font-weight: 700;
+      margin-bottom: 0.5rem; /* Adjusted margin */
+      border-bottom: 2px solid #ff3e3e; /* Accent under the heading */
+      display: inline-block;
+      padding-bottom: 5px; /* Reduced padding */
+  }
+
+  .product__overview p {
+      font-size: 0.9rem; /* Smaller paragraph font size */
+      color: #4b5563;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      max-width: 100%; /* Allow paragraph to use full width */
+  }
+
+  .products__container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2%; /* Adjusted gap */
+      width: 90%; /* Increased width for mobile */
+      flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .products__sidebar {
+      display: none; /* Hide sidebar on mobile */
+  }
+
+  .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusted for smaller screens */
+      grid-gap: 16px;
+      padding: 1%;
+      width: 100%; /* Full width */
+      height: auto; /* Allow for automatic height */
+      overflow-y: visible; /* Allow scrolling to be visible */
+  }
+
+  .product-item {
+      background-color: #fff;
+      padding: 8px; /* Reduced padding */
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      text-align: center; /* Center text */
+      height: auto; /* Auto height */
+      width: 90%; /* Full width */
+      max-width: 200px; /* Limit width */
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.158);
+  }
+
+  .product__btn__name__wrapper {
+      display: flex;
+      justify-content: center; /* Center buttons */
+      flex-direction: column;
+      width: 100%;
+      font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .product__btn__name__wrapper a {
+      padding: 8px; /* Adjusted padding */
+      width: 100%;
+      font-weight: 600;
+      background-color: red;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      margin-top: 5px; /* Reduced margin */
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-decoration: none;
+  }
+
+  .product__btn__name__wrapper a::after {
+      content: '➜'; /* Bold arrow */
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      margin-left: 5px;
+      font-weight: bold; /* Make the arrow bold */
+  }
+
+  .product__btn__name__wrapper a:hover::after {
+      opacity: 1;
+  }
+
+  .product__card__btn__icon {
+      font-size: 1.4rem; /* Adjusted icon size */
+      transition: 0.2s;
+      opacity: 0;
+      font-weight: 600;
+  }
+
+  .product__btn__name__wrapper button:hover .product__card__btn__icon {
+      margin-left: 5px;
+      opacity: 1;
+      transition: 0.2s;
+  }
+
+  .product__item__img {
+      height: 150px; /* Reduced image height */
+      width: auto; /* Auto width */
+  }
+
+  .product-item p {
+      height: auto; /* Adjust height */
+      font-weight: 600;
+      margin: 0; /* Remove margin */
+  }
+
+  .product-item span {
+      font-weight: bold;
+  }
+}
