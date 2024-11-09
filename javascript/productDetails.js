@@ -3,7 +3,7 @@ const products = [
     productId: "001",
     name: "Viz Pro Solo",
     img: "../productImages/img001.png",
-    dataSheetLink: "../productsDataSheets/new_product001-Solo-Transmitter.pdf",
+    dataSheetLink: "../productsDataSheets/pro-Solo-Transmitter.pdf",
     introduction:"Advance Analytics VizSens Series Single channel transmitter, measured parameters include PH, DO, ORP, conductivity, turbidity, SS, chlorophyll, blue-green algae and other parameters. And realize the plug and play of the sensor, the configuration is flexible and convenient.",
     features: [
         "Achieve plug and play of sensors, quick and convenient electrode installation and replacement",
@@ -37,7 +37,7 @@ const products = [
     productId: "002",
     name: "Viz Pro Duo",
     img: "../productImages/img001A.png",
-    dataSheetLink: "../productsDataSheets/new_product002-Duo-Transmitter.pdf",
+    dataSheetLink: "../productsDataSheets/pro-duo-transmitter.pdf",
     introduction:
       "Advance Analytics VizSens Series Dual- channel transmitter, measured parameters include PH, DO, ORP, conductivity, turbidity, SS, chlorophyll, blue-green algae and other parameters. And realize the plug and play of the sensor, the configuration is flexible and convenient.",
     features: [
@@ -72,7 +72,7 @@ const products = [
     productId: "003",
     name: "Viz Pro Multi",
     img: "../productImages/img002.png",
-    dataSheetLink: "../productsDataSheets/new_product003-Multi-Transmitter.pdf",
+    dataSheetLink: "../productsDataSheets/pro-multi-transmitter.pdf",
     introduction:
       "Viz Multi-parameter transmitter cansimultaneously monitor multiple different parameters according to customers’ different needs, including Temperature / PH / ORP  / Conductivity/ Dissolved oxygen/Turbidity /Sludge   concentration/Chlorophyll/ Blue-green algae / COD / NO3 /  Ionic ammonia nitrogen / Transparency / Residual chlorine and other parameters. It is widely used in water quality monitoring in wastewater treatment plants, waterworks, water stations, surface water, and industrial fields  The transmitter software interface parameter display i adaptive, the operation interface menu is simple to set up, the   user operation is convenient; the sensor is plug and play; the  electrode installation and replacement is fast and convenient;  various data transmission modes are optional, and the data  storage and export are available.",
       features: [
@@ -108,7 +108,7 @@ const products = [
     productId: "004",
     name: "VizSens-PH(Analog)",
     img: "../productImages/img003.png",
-    dataSheetLink: "../productsDataSheets/new_product004-pH-Sensor-Analog.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-pH-Analog.pdf",
     introduction:
       "The pH Sensor is widely used in pH monitoring in water treatment, hydrological monitoring, wastewater treatment, swimming pools, fish ponds and fertilizers, chemicals, and biology.It uses a composite electrode in which a glass indicating electrode and a reference electrode are combined to measure the pH of the water.",
     features: [
@@ -139,7 +139,7 @@ const products = [
     productId: "005",
     name: "VizSens-ORP(Analog)",
     img: "../productImages/img003.png",
-    dataSheetLink: "../productsDataSheets/new_product005-orp-Analog.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-orp-Analog.pdf",
     introduction:
       "The VizSens-ORP(A) ORP sensor is a combination electrode that includes a precious metals indicator electrode with a reference electrode. It measures the potential difference between the working battery composed of the measuring electrode and the reference electrode in a solution. By utilizing the linear relationship between the ORP value of the measuring solution and the potential of the working battery, it achieves online ORP monitoring.",
     features: [
@@ -171,7 +171,7 @@ const products = [
     productId: "006",
     name: "VizSens-EC(Analog) ",
     img: "../productImages/img003.png",
-    dataSheetLink: "../productsDataSheets/new_product006-Ec-Analog.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-Ec-Analog.pdf",
     introduction:
       "The VizSens-EC(A) Conductivity Sensor, featuring a glass platinum electrode, is a reliable instrument for accurate conductivity monitoring. This sensor utilizes voltage and current values to determine conductivity, making it an essential tool for applications in water treatment, hydrological monitoring, wastewater treatment,swimming pools, fish ponds, as well as in fertilizers, chemicals, and biology industries.",
       features: [
@@ -203,7 +203,7 @@ const products = [
     productId: "007",
     name: "VizSens-PH(Digital)",
     img: "../productImages/imgpH.png",
-    dataSheetLink: "../productsDataSheets/new_product007-pH-Digital.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-pH-Digital.pdf",
     introduction:
       "The PPH-500B pH is a digital pH sensor with an RS485 communication interface and the standard Modbus protocol. Stainless steel corrosion resistant shell, IP68 protection grade, built-in PT1000 thermistor and compensation algorithm, with high precision, long life, small drift and other advantages, suitable for all kinds of harsh working environment.",
     application:
@@ -239,7 +239,7 @@ const products = [
     productId: "008",
     name: "VizSens-EC(Digital)",
     img: "../productImages/imgpH.png",
-    dataSheetLink: "../productsDataSheets/new_product008-EC-Digital.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-EC-Digital.pdf",
     introduction:
       "Introducing the VizSens-EC(D) Conductivity Sensor with a durable PPS(polyphenylene) Shell. This sensor offers precision, reliability, and versatility, making it an ideal solution for diverse applications. It features a wide measurement range with automatic range switching, ensuring accurate results even in challenging conditions. With an accuracy of ±2%F.S. and temperature compensation up to 60 °C, this sensor delivers dependable conductivity measurements. Compact, IP68 rated, and supporting MODBUS RS485 communication, it offers easy installation with its R3/4 mounting thread and standard 10-meter cable.",
      principleManagnment:
@@ -279,7 +279,7 @@ const products = [
     productId: "009",
     name: "VizSens-ODO",
     img: "../productImages/img009.png",
-    dataSheetLink: "../productsDataSheets/new_product009-ODO-Sensor.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-ODO-Sensor.pdf",
     introduction:
       "The VizSens-ODO Optical Dissolved Oxygen Sensor utilizes fluorescence technology to accurately measure dissolved oxygen concentration. A luminescent material on the sensor's cap is excited by blue LED light, emitting red light. The intensity and time of the red light are indicative of oxygen molecule concentration, enabling precise calculations. ",
     application:
@@ -319,7 +319,7 @@ const products = [
     productId: "010",
     name: "VizSens-RCL",
     img: "../productImages/img010.png",
-    dataSheetLink: "../productsDataSheets/new_product010-RCL.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-RCL.pdf",
     introduction:
       "The VizSens-RCL is an advanced residual chlorine/chlorine dioxide sensor that employs a constant voltage principle to measure these components in water. The instrument utilizes stable electric potential and current signals to calculate concentrations, offering a simple structure, easy maintenance, and exceptional accuracy. It operates without oxygen consumption, eliminating flow rate and stirring requirements. Factory calibration ensures long- term stability and reliability.",
     application:
@@ -351,7 +351,7 @@ const products = [
     productId: "011",
     name: "VizSens-UVCOD",
     img: "../productImages/img011.png",
-    dataSheetLink: "../productsDataSheets/new_product011-UVCOD.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-UVCOD.pdf",
     introduction:
       "The VizSens-UVCOD series COD/BOD/TSS/TOC sensor represents a new era in environmental protection sensors, offering reagent-free, pollution-free, economical, and eco-friendly water quality monitoring. This sensor is compact, easily installable, and enables online continuous monitoring. With automatic turbidity interference compensation and an integrated cleaning device, it maintains excellent stability even during prolonged monitoring. Utilizing the UV-Visible spectrum, this sensor measures the absorption of organic substances within the wavelength of 200 nm to 800 nm, enabling compensation for optical path attenuation and turbidity effects, ensuring consistent and reliable measurement values. ",
 
@@ -385,7 +385,7 @@ const products = [
     productId: "012",
     name: "VizSens-SS",
     img: "../productImages/img014.png",
-    dataSheetLink: "../productsDataSheets/new_product012-SS.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-SS.pdf",
     introduction:
       "The VizSens-SS  Sensor is a highly capable solution designed for precise and reliable measurements in a variety of environments. This sensor employs advanced technology and robust construction to offer a wide measurement range and high accuracy. With features like plug-and-play installation and versatile communication protocol, it seamlessly integrates with other equipment, while its self-diagnosis function ensures data accuracy and reliability. Its compact design, optional automatic cleaning, and adherence to ISO7027 Standard Method make it a versatile choice for accurate measurements in fresh water and marine applications.",
       features: [
@@ -420,7 +420,7 @@ const products = [
     productId: "013",
     name: "VizSens-Turb",
     img: "../productImages/img014.png",
-    dataSheetLink: "../productsDataSheets/new_product013-turb.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-turb.pdf",
     introduction:
       "The VizSens-Turb is a highly capable turbidity sensor known for its accurate and stable measurements. Equipped with advanced infrared scattered light technology, it offers excellent repeatability and reliability. With a built-in self- diagnosis function and optional automatic cleaning, it ensures data accuracy while reducing maintenance efforts. The sensor's digital technology provides high anti-jamming capacity and enables seamless integration with other equipment. The VizSens-Turb is a user- friendly solution with plug-and-play installation, making it suitable for a wide range of applications in different industries.",
     features: [
@@ -455,7 +455,7 @@ const products = [
     productId: "014",
     name: "VizSens-TurbLo",
     img: "../productImages/img015.png",
-    dataSheetLink: "../productsDataSheets/new_product014-turb-Lo.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-turb-Lo.pdf",
     introduction:
       "The VizSens-TurbLo is a highly reliable and robust turbidity sensor designed to provide accurate and consistent measurements within a range of 0.01 to 100 NTU. With its durable construction, easy installation, and user-friendly operation, this sensor is an excellent choice for environmental monitoring and water treatment applications. Its exceptional accuracy and stability make it an indispensable tool for industries requiring precise turbidity measurements.",
       features: [
@@ -488,7 +488,7 @@ const products = [
     productId: "015",
     name: "VizSens-CPHL",
     img: "../productImages/img016.png",
-    dataSheetLink: "../productsDataSheets/new_product015-CPHL.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-CPHL.pdf",
     introduction:
       "The chlorophyll sensor uses the characteristic that chlorophyll A has an absorption peak and an emission peak in the spectrum, and emits monochromatic light of a specific wavelength to the water. The light intensity of chlorophyll A is proportional to the content of chlorophyll A in the water. ",
     features: [
@@ -521,7 +521,7 @@ const products = [
     productId: "016",
     name: "Vizsens-BGA",
     img: "../productImages/img016.png",
-    dataSheetLink: "../productsDataSheets/new_product016-BGA.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-BGA.pdf",
     introduction:
       " The Vizsens-BGA is an advanced sensor engineered for precise monitoring of Blue- Green Algae in water. With a wide measurement range of 0 to 300,000 cells/mL and an accuracy of ±10%, it ensures reliable detection of algae levels. This compact sensor features a durable design, MODBUS RS485 communication, and various features to facilitate seamless integration with compatible controllers. It's ideal for multipoint monitoring of uneven algae distribution, contributing to environmental monitoring and water quality assessment.",
     features: [
@@ -541,7 +541,6 @@ const products = [
       { name: "Main Material", value: "Body: SUS316L + Polyvinyl Chloride, \n Cover: Polyoxymethylene, \n Cable: Polyurethane" },
       { name: "Protective Rate",value: "IP65/NEMA4X"},
       { name: "Pressure Range", value: "≤0.4Mpa" },
-     
       { name: "Dimension and Weight",value: "Dia 30mm * L 223mm, 0.55kg"},
       { name: "Cable length",value: "Standard: 10m, the maximum may be extended to 100m"},
       { name: "Requirnments",value:"Suggest a multipoint monitoring for the distribution of Blue-Green Algae in water as it is very uneven. Water turbidity is below 50NTU."},
@@ -554,7 +553,7 @@ const products = [
     productId: "017",
     name: "VizSens-OIW",
     img: "../productImages/img018.png",
-    dataSheetLink: "../productsDataSheets/new_product018-OIW.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-OIW.pdf",
     introduction:
       "The VizSens-OIW is an advanced oil in water sensor utilizing ultraviolet fluorescence technology. It excels in precision and versatility, with a wide detection range from 0 to 50ppm. Designed for efficient monitoring of oil levels in water, even in the presence of suspended solids, this sensor integrates seamlessly with compatible controllers. Its rugged construction, IP68 protection, and optional self- cleaning brush ensure dependable performance across various industrial applications.",
     features: [
@@ -585,7 +584,7 @@ const products = [
     productId: "018",
     name: "VizSens-NH4N",
     img: "../productImages/img019.png",
-    dataSheetLink: "../productsDataSheets/new_product018-NH4N.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-NH4N.pdf",
     introduction:
       "The VizSens-NH4N is a highly accurate and reliable sensor designed for measuring Ammonia Nitrogen (NH4- N) levels in water. With a pH range of 4- 10 and a precision of ±0.1, it ensures precise and consistent readings. Operating up to 10 meters underwater with IP68 protection, it's suitable for various environmental applications. Compatible controllers, the VizSens-NH4N supports RS-485 and MODBUS protocol for seamless integration and data transmission.",
     features: [
@@ -610,12 +609,11 @@ const products = [
     ],
   },
 
-
   {
     productId: "019",
     name: "VizSens-NO3N",
     img: "../productImages/img020.png",
-    dataSheetLink: "../productsDataSheets/new_product019-NO3N.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-NO3N.pdf",
     introduction:
       "The VizSens NO3N is a highly accurate and reliable sensor designed for measuring Nitrate nitrogen (NO3N) levels in water. With a pH range of 4-10 and a precision of ±0.1, it ensures precise and consistent readings. The sensor features a digital RS-485 output with MODBUS protocol for seamless data transmission and integration with compatible controllers. Operating in harsh environments with IP68 protection, and offering optional measurement of Potassium and Sodium, the VizSens NO3N is an efficient and versatile solution for water quality monitoring and environmental applications.",
     features: [
@@ -647,7 +645,7 @@ const products = [
     productId: "020",
     name: "OPTICS-1000",
     img: "../productImages/img026.png",
-    dataSheetLink: "../productsDataSheets/new_product020-optics1000.pdf",
+    dataSheetLink: "../productsDataSheets/Analyzer-Optics1000.pdf",
     introduction:
       "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters such as Ammonium, Nitrates, Nitrites, Total Nitrogen, Phosphates,Total Phosphates, Organic Matter, Total Organic Carbon, Sulfides, Sulfites, Total Sulfur, Total Suspended Solids, Turbidity,Color, Chlorine, Chlorine Dioxide, Hydrocarbon, Aromatic Compounds, Phenol, Dissolved Oxygen, Conductivity, Ozone and pH. Designed with state-of-the-art optical technology, it ensures exceptional stability, low operating costs, and high precision for various industries, including wastewater treatment plants and river monitoring stations. This device offers versatility for a wide range of applications also, the user-friendly interface enables user to pick any 4 modules and any 8 parameters of choice to be added in this modular analyser.",
     features: [
@@ -689,7 +687,7 @@ const products = [
     productId: "021",
     name: "Viz Eco Solo",
     img: "../productImages/viz-eco-solo.png",
-    dataSheetLink: "../productsDataSheets/new_product021-VizEcoSolo.pdf",
+    dataSheetLink: "../productsDataSheets/VizEcoSolo.pdf",
     introduction:"The Advance Analytik Viz-Eco-Solo, a Single - channel transmitter, is an advanced instrument designed for comprehensive water quality monitoring. Compatible with multiple different sensors such as pH, DO, ORP,conductivity, turbidity, SS, COD, BOD, TOC, TSS, TDS, Nitrate, Nitrite, Color, Sludge Level, ISE, Residual Chlorine and others, this device offers versatility for a wide range of applications. Its plug-andplay sensor integration simplifies setup, while the flexible configuration allows users to adapt the system to their specific monitoring needs. The transmitter's user-friendly interface enables real-time data visualization and seamless integration with data logging systems, ensuring efficient data management.",
     features: [
         "Enables plug-and-play sensor functionality with fast and convenient electrode installation and replacement.",
@@ -725,7 +723,7 @@ const products = [
     productId: "022",
     name: "Viz Eco Duo",
     img: "../productImages/viz-eco-duo.png",
-    dataSheetLink: "../productsDataSheets/new_product022-VizEcoDuo.pdf",
+    dataSheetLink: "../productsDataSheets/VizEcoDuo.pdf",
     introduction:
       "The Viz-Eco-Duo Parameter Transmitter is an advanced solution for simultaneous monitoring of diverse parameters, catering to a wide range of customer requirements. Compatible with multiple different sensors such as pH, DO, ORP, conductivity, turbidity, SS, COD, BOD, TOC, TSS, Nitrate, Nitrite, Color, Sludge Level, ISE and others, this device offers versatility for a wide range of applications. Designed for applications in water quality monitoring across wastewater treatment plants, waterworks, water stations, surface water, and industrial settings, this versatile transmitter brings unparalleled flexibility and ease of use to the field. With support for up to 2 sensors, various data transmission options, and a userfriendly interface, the Viz-Eco-Duo ensures efficient integration, reduced operational costs, and reliable parameter monitoring",
     features: [
@@ -761,7 +759,7 @@ const products = [
     productId: "023",
     name: "Viz Eco Multi",
     img: "../productImages/viz-eco-multi.png",
-    dataSheetLink: "../productsDataSheets/new_product023-VizEcoMulti.pdf",
+    dataSheetLink: "../productsDataSheets/VizEcoMulti.pdf",
     introduction:
       "The Viz Eco Multi is a multi-channel transmitter that offers an advanced solution for monitoring multiple parameters simultaneously, meeting a variety of customer needs. Designed for applications in water quality monitoring across wastewater treatment plants, waterworks, water stations, surface water, and industrial settings, this versatile transmitter brings unparalleled flexibility and ease of use to the field. With support for up to 7 sensors, various data transmission options, and a user-friendly interface, the Viz Eco Multi ensures efficient integration, reduced operational costs, and reliable parameter monitoring.",
       features: [
@@ -799,7 +797,7 @@ const products = [
     productId: "024",
     name: "Viz Classic Conductivity TDS",
     img: "../productImages/viz-classic-conductivity.png",
-    dataSheetLink: "../productsDataSheets/new_product024-VizClassic-Conductivity_TDS.pdf",
+    dataSheetLink: "../productsDataSheets/VizClassic-Conductivity_TDS.pdf",
     introduction:
       "The Viz Classic Series features a high-performance two-wire transmitter for accurate conductivity and Total Dissolved Solids (TDS) measurements. This single-channel device ensures reliable data for water quality monitoring across various applications, making it ideal for both industrial and environmental use. With HART protocol support, it allows seamless integration with control systems, facilitating real-time data transmission and diagnostics. The compact and durable design simplifies installation while providing long-lasting performance in challenging conditions.The Viz Classic Series is ideal for use in water and wastewater treatment, industrial processes, aquaculture, desalination plants, and other industries where precise TDS and Conductivity control is vital.",
       features: [
@@ -808,7 +806,6 @@ const products = [
         "Wide Measurement Range: Ideal for diverse applications, ensuring accurate monitoring in various environmental and industrial settings.",
         "User-Friendly Design: Features a straightforward interface for quick setup and adjustments, enhancing operational efficiency.",
         "Rugged Construction: Built to withstand challenging conditions,ensuring durability and long-lasting performance.",
-        
       ], 
       attributes: [
         { name: "Inputs", value: "Conductivity – Analog type \n TDS – Analog type \n Temperature - PT100 / PT1000 software Selectable" },
@@ -831,7 +828,7 @@ const products = [
     productId: "025",
     name: "Viz Classic pH-ORP",
     img: "../productImages/viz-classic-ph.png",
-    dataSheetLink: "../productsDataSheets/new_product025-VizClassic-pH_ORP.pdf",
+    dataSheetLink: "../productsDataSheets/VizClassic-pH_ORP.pdf",
     introduction:
       "The Viz Classic Series pH & ORP single-channel transmitter is engineered for precision measurement of pH (acidity/alkalinity) and ORP (oxidation-reduction potential) in various industrial processes. Operating on a two-wire 4-20mA current loop, this transmitter is powered and transmits data through the same two wires, simplifying installation and reducing wiring costs. The integrated HART (Highway Addressable Remote Transducer) protocol allows for digital communication alongside the analog signal, enabling remote calibration, configuration, and diagnostics without disrupting measurement. The Viz Classic Series is ideal for use in water and wastewater treatment, chemical manufacturing, pulp and paper, food and beverage, and other industries where precise pH and ORP control is vital.",
       features: [
@@ -839,7 +836,6 @@ const products = [
         "HART Protocol Integration: The HART protocol provides remote access to data, enabling calibration and diagnostic checks without manual intervention. It supports integration with HART-compatible systems for advanced control and monitoring.",
         "Two-Wire Operation: Powered by the 4-20 mA loop, the transmitter simplifies installation and reduces the need for separate power supplies.",
         "Rugged and Durable: Designed for tough industrial environments, ensuring long-term reliability and stable performance.",
-        
       ], 
       attributes: [
         { name: "Inputs", value: "pH – Analog type \n ORP – Analog type \n Temperature - PT100 / PT1000 software Selectable" },
