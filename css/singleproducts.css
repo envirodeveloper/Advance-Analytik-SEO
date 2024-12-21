@@ -1,11 +1,9 @@
 
-
-
   /* Popup Styles */
   .selectedproductpopup {
     width: 100%;
-    padding: 0rem 5rem;
     margin-top: 5%;
+    line-height: 1.5;
   }
   
   .selectedproductpopup__container {
@@ -156,7 +154,7 @@
 .request-quote-btn {
     background-color: #141414;
     color: white;
-    padding: 10px 20px;
+    padding: 14px 20px;
     border: none;
     cursor: pointer;
 }

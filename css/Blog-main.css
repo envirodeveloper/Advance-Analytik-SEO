@@ -1,0 +1,109 @@
+/* Header Styling */
+.blogs-category-container{
+    position: relative;
+    top: 70px;
+}
+
+.blog-main-select-header {
+    background-color: #1c2835;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Header Title */
+  .blog-main-select-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  /* Dropdown Select Styling */
+  .blog-select-options {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .blog-select-options:focus {
+    outline: none;
+    border-color: #1c2835;
+  }
+  
+  /* Main Content Styling */
+  .blogs-main-section-container {
+    padding: 40px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Blog Section Styling */
+  .blogs-section {
+    display: none;
+    margin-bottom: 40px;
+  }
+  
+  .blogs-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1c2835;
+    text-align: center;
+  }
+  
+  /* Blog Posts Grid */
+  .blogs-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual Blog Post Card Styling */
+  .blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  
+  .blog-post:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .blog-post h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #1c2835;
+  }
+  
+  .blog-post p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  
+  /* Media Query for Smaller Screens */
+  @media screen and (max-width: 768px) {
+  
+    .blogs-posts {
+        grid-template-columns: 1fr 1fr;
+    }
+  
+    .blog-select-options {
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .blogs-posts {
+        grid-template-columns: 1fr;
+    }
+  }

@@ -1,22 +1,58 @@
-
-document.addEventListener("DOMContentLoaded", function() {
-    loadComponent('navbar-placeholder', '../../navbar.html');
+document.addEventListener("DOMContentLoaded", function () {
+    // Load navbar dynamically
+    loadComponent('navbar-placeholder', '../../navbar.html', initializeScrollBehavior);
     loadComponent('footer-placeholder', '../../footer.html');
 });
 
+// Function to dynamically load components
 function loadComponent(id, url, callback) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            document.getElementById(id).innerHTML = data;
-            if (typeof callback === 'function') {
-                callback();  // Call the callback to initialize the navbar
+            const element = document.getElementById(id);
+            if (element) {
+                element.innerHTML = data;
+                if (typeof callback === 'function') {
+                    callback(); // Execute callback after the component is loaded
+                }
+            } else {
+                console.error(`Element with id '${id}' not found.`);
             }
         })
         .catch(error => console.error('Error loading component:', error));
 }
 
- 
+// Scroll behavior for preheader and navbar
+function initializeScrollBehavior() {
+    const preheader = document.querySelector('#preheader');
+    const navbar = document.querySelector('#navbar');
+    let lastScrollY = window.scrollY;
+
+    if (preheader && navbar) {
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY) {
+                // Scrolling down
+                preheader.classList.add('hidden'); // Hide preheader
+                navbar.classList.add('top'); // Move navbar up
+            } else {
+                // Scrolling up
+                preheader.classList.remove('hidden'); // Show preheader
+                navbar.classList.remove('top'); // Move navbar back to original position
+            }
+
+            lastScrollY = currentScrollY;
+        });
+    } else {
+        console.error('Preheader or Navbar element not found in the dynamically loaded content.');
+    }
+}
+
+
+
+
+
 function toggleSidebar() {
     var sidebar = document.getElementById("sidebar");
     var toggleBtn = document.getElementById("toggle-btn");
@@ -43,75 +79,3 @@ function toggleSidebar() {
     var arrow = document.querySelector('.has-dropdown a.' + section + '.arrow');
     arrow.classList.toggle("up", dropdown.classList.contains("show")); // Add this line
   }
-
-
-
-// function toggleSidebar() {
-//     const sidebar = document.getElementById("sidebar");
-//     const toggleBtn = document.querySelector(".navbar__toggle-btn");
-
-//     // Toggle sidebar visibility
-//     if (sidebar.style.display === "block") {
-//         sidebar.style.display = "none";  // Hide sidebar
-//         toggleBtn.innerHTML = "&#9776;"; // Show hamburger icon when sidebar is closed
-//     } else {
-//         sidebar.style.display = "block"; // Show sidebar
-//         toggleBtn.innerHTML = "&times;"; // Show close icon when sidebar is open
-//     }
-// }
-
-// // Function to toggle submenu
-// // Function to toggle submenu
-// function toggleSubmenu(event, submenuId) {
-//     event.preventDefault();
-//     const submenu = document.getElementById(submenuId);
-//     const isVisible = submenu.style.display === 'block';
-
-//     // Close all other submenus before opening the current one
-//     const allSubmenus = document.querySelectorAll('.sidebar__submenu');
-//     allSubmenus.forEach((menu) => {
-//         menu.style.display = 'none';  // Close all submenus
-//     });
-
-//     // Toggle the clicked submenu visibility
-//     submenu.style.display = isVisible ? 'none' : 'block'; 
-// }
-
-
-// Hide sidebar on window resize
-// window.onresize = function () {
-//     if (window.innerWidth > 720) {
-//         document.getElementById("sidebar").style.display = "none";
-//         document.querySelector(".navbar__toggle-btn").innerHTML = "&#9776;";
-//     }
-// };
-
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const sidebar = document.getElementById("sidebar");
-//     const toggleBtn = document.getElementById("toggleSidebarBtn");
-//     const sidebarLinks = document.querySelectorAll(".sidebar-link");
-  
-//     // Function to toggle the sidebar
-//     function toggleSidebar() {
-//       sidebar.classList.toggle("open");
-//     }
-  
-//     // Close sidebar function
-//     function closeSidebar() {
-//       sidebar.classList.remove("open");
-//     }
-  
-//     // Toggle the sidebar on button click
-//     toggleBtn.addEventListener("click", toggleSidebar);
-  
-//     // Close the sidebar when a link is clicked
-//     sidebarLinks.forEach(link => {
-//       link.addEventListener("click", function () {
-//         closeSidebar();
-//       });
-//     });
-//   });
-  

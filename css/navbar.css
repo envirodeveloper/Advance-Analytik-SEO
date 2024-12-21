@@ -1,295 +1,370 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
 }
-/* Firefox */
-* {
-  scrollbar-width: thin;
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100; /* Make sure it's above navbar */
+}
+
+  /* Preheader */
+.preheader {
+  background-color: #1c2835;
+  color: #333;
+  font-size: 14px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0); /* Default position */
+  transition: transform 0.4s ease-in-out, top 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out, top 0.4s ease-in-out; 
+}
+
+.preheader__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; /* Center content with some spacing */
+  max-width: 1200px; /* Optional: Restrict max width */
+}
+
+/* Left: Contact Info */
+/* Left: Contact Info */
+.preheader__contact {
+  font-size: 14px;
+  position: relative;
+  right: 10px;
+  color: white;
+  display: flex; /* Use flexbox for better alignment */
+  gap: 15px; /* Space between items */
+  align-items: center; /* Align icons and text vertically */
+}
+
+/* .preheader__contact i {
+ 
+
+} */
+
+
+/* Right: Social Media Icons */
+.preheader__social a {
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease; /* Safari */
+}
+
+.preheader__social a:hover {
+  color: #ff4d4d; /* Highlight color on hover */
+}
   
-  scrollbar-color: #e60909 #e0e0e0;
-}
+  .preheader.hidden {
+    transform: translateY(-100%); /* Slide out of view */
+  }
 
-/* Chrome, Edge and Safari */
-*::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
-}
-*::-webkit-scrollbar-track {
-  border-radius: 0px;
-  background-color: #e0e0e0;
-}
-
-*::-webkit-scrollbar-track:hover {
-  background-color: #e0e0e0;
-}
-
-*::-webkit-scrollbar-track:active {
-  background-color: #e0e0e0;
-}
-
-*::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background-color: #e60909;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #e00000;
-}
-
-*::-webkit-scrollbar-thumb:active {
-  background-color: #e60909;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.navbar {
-    height: max-content;
+  /* Navbar */
+  .navbar {
+    color: black;
+    display: flex;
+    justify-content: center; /* Centers navbar items horizontally */
+    align-items: center; /* Centers navbar items vertically */
+    padding: 10px 20px;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 9999;
-    user-select: none;
-}
-
-.navbar__stripes {
-    width: 100%;
-    height: 15px;
-}
-
-.navbar__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 0 20px;
-    border-bottom: 1px solid rgb(238, 238, 238);
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.055);
-}
-
-.navbar__header__logo {
-    height: 50px;
-    padding: 3px;
-}
-
-.navbar__header__logo img {
-    height: 100%;
-    width: 100%;
-}
-
-.navbar__mobile-menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.navbar__mobile-menu-toggle__bar {
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    border-radius: 2px;
-}
-
-.navbar__links__wrapper {
-    display: flex;
-    list-style: none;
-    width: 70%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-}
-
-.navbar__link {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #000;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-.navbar__link:hover {
-    background-color: #ebeaea;
-}
-
-.markets__submenu {
-    position: absolute;
-    top: calc(100% + 10px);
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
+    height: 55px;
+    top: 38px; /* Below preheader */
     z-index: 999;
-    padding: 20px;
-    border: 1px solid #cecdcd;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.192);
-    border-radius: 5px;
-}
-
-.markets__submenu__links__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.markets__submenu__link {
-    text-decoration: none;
-    color: #000;
-}
-
-.markets__submenu__link:hover {
-    text-decoration: underline 1px solid rgb(119, 119, 119);
-}
-
-li:hover .markets__submenu {
-    opacity: 1;
-    visibility: visible;
-}
-
-@media (max-width: 1000px) {
-    .navbar__links__wrapper {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        z-index: 999;
-    }
-
-    .navbar__mobile-menu-toggle {
-        display: flex;
-    }
-
-    .navbar__links__wrapper.show-mobile-menu {
-        display: flex;
-    }
-
-    li {
-        width: 100%;
-    }
-
-    .navbar__link {
-        display: block;
-        padding: 15px;
-        border-bottom: 1px solid rgb(238, 238, 238);
-    }
-}
-
-/* Sub-menu container */
-.analytical-submenu {
-    display: none;
-    position: absolute;
+    transition: transform 0.4s ease-in-out, top 0.4s ease-in-out;
+    background-color: white ;/* No background color */
+    -webkit-transition: transform 0.4s ease-in-out, top 0.4s ease-in-out; /* Safari */
+  }
+  
+  .navbar.top {
     top: 0;
-    left: 100%;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    min-width: 200px;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional box-shadow */
+  }
+  
+  /* Logo */
+/* Logo */
+.navbar__logo {
+    position: absolute;
+    left: 60px;
+    height: 40px; /* Adjust the height of the logo */
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__logo img {
+    height:30px; /* Make sure the logo fits within the navbar */
+    width:150px;  /* Maintain aspect ratio of the logo */
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+
+  
+  /* Navbar Links */
+  .navbar__links__wrapper {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers navbar links horizontally */
+    align-items: center;
     list-style: none;
-}
+    -webkit-flex-wrap: wrap; /* Safari fix for flex-wrap */
 
-/* Sub-menu link styles */
-.analytical-submenu__link {
-    display: block;
-    padding: 12px 15px;
-    margin: 5px 0;
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9rem;
-    font-weight: 500;
-    background-color: #fff;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-
-}
-
-/* Hover effect */
-.analytical-submenu__link:hover {
-    background-color: #f0f0f0;
-    color: #000;
-    transform: translateX(5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-decoration: underline;
-}
-
-/* Show the sub-menu on hover */
-.markets__submenu__link:hover + .analytical-submenu,
-.analytical-submenu:hover {
-    display: block;
-}
-
-/* Add subtle shadow effect for sub-menu */
-.analytical-submenu {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling for other navbar elements */
-.markets__submenu__links__wrapper {
+  }
+  
+  .navbar__link {
     position: relative;
-}
-
-/* About submenu container */
-.about__submenu {
+    padding: 8px 12px;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 550;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    -webkit-transition: color 0.3s ease, transform 0.3s ease; /* Safari */
+  }
+  
+  .navbar__link::after {
+    content: '';
     position: absolute;
-    top: calc(100% + 10px);
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
-    padding: 20px;
-    border: 1px solid #cecdcd;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.192);
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color:#bd0202; /* Underline color */
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease; /* Safari */
+  }
+  
+  .navbar__link:hover {
+    color: #bd0202; /* Change text color on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    -webkit-transform: translateY(-3px); /* Safari */
+  }
+  
+  .navbar__link:hover::after {
+    width: 100%; /* Expand underline to full width */
+  }
+  
+  
+  .navbar__links__wrapper li {
+    margin: 0 5px;
+    position: relative;
+  }
+
+
+  /* Dropdowns */
+  .markets__submenu {
+    position: absolute;
+    padding: 8px 0;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    display: block; /* Always block to enable transitions */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Prevent interaction when hidden */
+    transform: translateY(-20px); /* Slide up effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-}
-
-/* About submenu links */
-.about__submenu__link {
+    width: 230px;
+    transition: opacity 0.3s ease, transform 0.6s ease, visibility 0.3s;
+    -webkit-transition: opacity 0.3s ease, transform 0.6s ease, visibility 0.3s; /* Safari */
+  
+  }
+  
+  .navbar__links__wrapper li:hover .markets__submenu {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Allow interaction */
+    transform: translateY(0); /* Slide down to position */
+  }
+  
+  .markets__submenu__link {
+    color: black;
     text-decoration: none;
-    color: #000;
-    padding: 10px 0;
+    padding: 6px 10px;
     display: block;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    position: relative;
+    -webkit-transition: background-color 0.3s ease; /* Safari */
+  }
+  
+  .markets__submenu__link:hover {
+    position: relative; /* Required for proper positioning of sub-submenu */
+    background-color: #1c2835;
+    color: white;
+  }
+
+/* Initially hide the arrow icon */
+.markets__submenu__link i {
+  display: none; /* Arrow is hidden by default */
+  position: absolute; /* Position relative to the parent link */
+  right: 10px; /* Position it to the right */
+  top: 50%; /* Vertically center the icon */
+  transform: translateY(-50%); /* Fine-tune the centering */
+  opacity: 1;
+  font-size: 16px; /* Size of the arrow */
+  -webkit-opacity: 1; /* Safari */
 }
 
-.about__submenu__link:hover {
-    text-decoration: underline 1px solid rgb(119, 119, 119);
+/* Show the arrow on hover */
+.markets__submenu__link:hover i {
+  display: inline-block; /* Show the arrow when hovering over the link */
 }
 
-/* Show the submenu on hover */
-li:hover .about__submenu {
-    opacity: 1;
-    visibility: visible;
+/* Optional: Add smooth transition for the arrow */
+.markets__submenu__link i {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.markets__submenu__link:hover i {
+  opacity: 1;
 }
 
 
+/* Sub-submenu container */
+.sub-submenu {
+  position: absolute;
+  padding: 8px 8px;
+  /* left: 100%; Place to the right of the submenu */
+  top: 0; /* Default top, this will be adjusted */
+  background-color: white;
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 250px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10; 
+  left: calc(100% + 10px);
+  -webkit-transition: opacity 0.3s ease, transform 0.3s ease; /* Safari */
+}
 
 
+/* Make sure the sub-submenu appears when hovered */
+.markets__submenu__link:hover + .sub-submenu,
+.sub-submenu:hover {
+  display: block;
+  opacity: 1;
+  transform: translateY(0); /* Smooth transition */
+}
+
+/* Make sure the sub-submenu shows at the same height of the hovered link */
+.markets__submenu__link:hover + .sub-submenu {
+  top: 0; /* Align the sub-submenu with the top of the hovered link */
+}
 
 
+/* Style for sub-submenu links */
+.sub-submenu__link {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.sub-submenu__link:hover {
+  background-color:#1c2835;
+  color: white;
+  visibility: visible;
+}
+
+/* Add separate class for each submenu */
+#analyzers-submenu {
+  left: 100%;
+}
+
+#controllers-submenu {
+  left: 100%;
+}
+
+#sensors-submenu {
+  left: 100%;
+}
+
+/* Additional styles for submenu to position correctly */
+.markets__submenu__link:hover .sub-submenu {
+  top: 0; /* Ensure it aligns at the same height */
+}
+  
+  
 
 
-
-
-/* Additional iOS touch-friendly tap behavior */
-@media (hover: none) {
-    .navbar__link:active,
-    .analytical-submenu__link:active {
-      background-color: #f0f0f0;
-      color: #000;
+  @media (max-width: 720px) {
+    .navbar {
+      display: none; /* Hide the top navbar on mobile */
+    }
+    
+    .preheader {
+      display: none; /* Hide preheader on mobile */
+    }
+    
+    .sidebar-toggle {
+      display: block; /* Show toggle button on mobile */
+    }
+    
+    .navbar__links__wrapper {
+      display: none; /* Hide the menu by default */
+      position: absolute;
+      top: 55px; /* Adjust to appear below the preheader */
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding-top: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar__links__wrapper.open {
+      display: block; /* Show the menu when 'open' class is added */
+    }
+    
+    .markets__submenu {
+      display: none; /* Hide submenus initially */
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+    .navbar__links__wrapper.open .markets__submenu {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0); /* Reset slide-up effect */
+    }
+    
+    .sub-submenu {
+      display: none; /* Hide sub-submenus initially */
+    }
+    
+    .markets__submenu__link:hover + .sub-submenu {
+      display: block;
     }
   }
+  

@@ -1,0 +1,65 @@
+.market-map-graph-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    
+  }
+
+  .distillery-map {
+    position: relative;
+    display: inline-block;
+  }
+
+  .distillery-map-hover-area {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    z-index: 3;
+  }
+
+  .distillery-map-highlight {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    border: 2px dashed transparent;
+  }
+
+  .distillery-map-arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    animation: distillery-map-moveArrow 1s infinite;
+  }
+
+  .distillery-map-arrow.down {
+    transform: rotate(45deg);
+  }
+
+  @keyframes distillery-map-moveArrow {
+    0% { transform: translateY(0) rotate(45deg); }
+    50% { transform: translateY(10px) rotate(45deg); }
+    100% { transform: translateY(0) rotate(45deg); }
+  }
+
+  /* Correct positioning of highlighted sections and hover text */
+  .distillery-map-highlight:hover + .distillery-map-hover-area {
+    display: block;
+  }
+
+  .distillery-map-highlight:hover .distillery-map-arrow {
+    display: none;
+  }

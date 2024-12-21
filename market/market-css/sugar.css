@@ -1,0 +1,65 @@
+.market-map-graph-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    
+  }
+
+  .sugar-map {
+    position: relative;
+    display: inline-block;
+  }
+
+  .sugar-map-hover-area {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    z-index: 3;
+  }
+
+  .sugar-map-highlight {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    border: 2px dashed transparent;
+  }
+
+  .sugar-map-arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: solid #1c2835;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    animation: sugar-map-moveArrow 1s infinite;
+  }
+
+  .sugar-map-arrow.down {
+    transform: rotate(45deg);
+  }
+
+  @keyframes sugar-map-moveArrow {
+    0% { transform: translateY(0) rotate(45deg); }
+    50% { transform: translateY(10px) rotate(45deg); }
+    100% { transform: translateY(0) rotate(45deg); }
+  }
+
+  /* Correct positioning of highlighted sections and hover text */
+  .sugar-map-highlight:hover + .sugar-map-hover-area {
+    display: block;
+  }
+
+  .sugar-map-highlight:hover .sugar-map-arrow {
+    display: none;
+  }

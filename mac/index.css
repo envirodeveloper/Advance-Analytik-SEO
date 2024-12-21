@@ -1,0 +1,17 @@
+@media screen and (max-width: 1440px) { /* Typical MacBook resolution */
+    .industries-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+      gap: 15px;
+    }
+  
+    .industry-card {
+      width: 300px;
+      height: 200px;
+    }
+  
+    .text-overlay {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  }
+  

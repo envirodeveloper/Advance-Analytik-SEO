@@ -1,787 +1,248 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased; /* Improve text rendering on iOS */
-    text-rendering: optimizeLegibility;
-  }
-  
-  .hero-slider {
-    height: 75vh;
-    background: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .home-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-  }
-  
-  .home-about-img-wrapper img {
-    max-width: 500px;
-    border-radius: 10px;
-  }
 
-  .home-description {
-    max-width: 600px;
-    margin-left: 30px;
-  }
+@media (max-width: 480px) {
 
 
-  .home-description h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  .bubble-container {
+    height: 300px;
   }
 
-  .home-description p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+  .bubble {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
   }
 
-  .home-description-link {
-    font-size: 1rem;
-    text-decoration: none;
-    color: red;
-  }
+ /*header title section */
 
-  .home-services-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-
-  .home-services-section h2 {
-    text-align: center;
-    font-weight: 600;
-}
-
-  .home-services-card-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 2%;
-    width: 100%;
-  }
-
-  .home-services-card {
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 0 11px #0000001a;
-    border: 1px solid rgba(0, 0, 0, .0901960784);
-    width: 500px;
-    height: 480px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .home-services-card img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 0;
-  }
-
-  .home-services-card-content{
-    width: 100%;
-    padding: 10px;
-  }
-
-  .home-services-card-content h2{
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin: 10px 0;
-    text-align: start !important;
-  }
-
-  .home-services-card-content p{
-    font-size: .9rem;
-    margin-bottom: 10px;
-    text-align: start;
-  }
-
-  .home-services-btn {
-    background-color: #bd0202;
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-    padding: 5px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .home-sustainability-section {
-    padding: 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .home-sustainability-content-wrapper {
-    display: flex;
-    max-width: 1200px;
-    justify-content: space-between;
-  }
-
-  .home-sustainability-content {
-    width: 60%;
-    padding: 0 5%;
-  }
-
-  .home-sustainability-content p{
-    text-align: justify;
-    margin-top: 2%;
-    width: 80%;
-    font-size: .9rem;
-
-  }
-
-
-
-  .home-sustainability-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-
-
-  .home-sustainability-img-wrapper img {
-    max-width: 500px;
-    border-radius: 10px;
-  }
-
-  .home-cp-download-btn-section {
-    margin-top: 5%;
-    width: 100%;
-    padding: 0 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    height: 200px;
-  }
-  
-  .home-cp-card {
-    padding: 1%;
-    border-radius: 20px;
-    border: 1px solid rgba(20, 20, 20, 0.1);
-    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.137);
-    color: #000000;
-    text-decoration: none;
-    transition: 0.2s;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 100px;
-  }
-  
-  .home-cp-card:hover {
-    box-shadow: none;
-  }
-  
-  .home-cp-card:hover .home-cp-card-icon {
-    animation: rotate 2s infinite linear;
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .home-cp-card-icon {
-    font-size: 3rem;
-    color: red;
-    transition: 0.2s;
-    position: absolute;
-   
-  }
-  
-  .home-cp-card p {
-    margin-top: 5%;
-    margin-bottom: 6%;
-    font-size: .9rem;
-    text-align: left;
-    position: relative;
-    top: 50px;
-  }
-  
-  
-  .home-cp-card-link {
-    border-radius: 10px;
-    font-size: 2rem;
-    color: #000000;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    text-transform: uppercase;
-  }
-  
-  .home-cp-card-link-icon {
-    font-size: 3rem;
-  }
-  
-
-
-.slider {
-  width: 100%;
-  height: 75vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  width: 500%;
-  height: 100%;
-  transition: 0.5s;
-}
-
-.slide {
-  width: 20%;
-  position: relative;
-}
-
-.slide img,
-.slide video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
+ .header-title {
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  z-index: 2;
-}
-
-h2 {
-  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.left-line, .right-line {
+  width: 40px; /* Even shorter lines for smaller screens */
+  margin: 5px 0; /* Space above and below the lines */
 }
 
-.slider-content__button,
-.slider-content__link {
-  padding: 10px 20px;
-  background-color: red;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.nav {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav button {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.nav button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-
-.why-choose-us {
-  padding: 60px 20px;
-  background-color: #f4f4f4;
+.header-title h2 {
+  font-size: 1.2rem; /* Adjust font size for smaller screens */
   text-align: center;
 }
 
-.why-choose-us-content-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
+  /*about section */
 
-.why-choose-us-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #bd0202;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}
+  .about-section {
+    padding: 10px;
+    display: inline;
+  }
 
-.why-choose-us-points {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-bottom: 50px;
-}
+  .about-text h3 {
+    font-size: 0.9rem;
+  }
 
-.why-choose-us-point {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  transition: transform 0.3s ease;
-}
+  .about-text p {
+    font-size: 0.8rem;
+  }
 
-.why-choose-us-point:hover {
-  transform: translateY(-10px);
-}
-
-.why-choose-us-point .icon {
-  font-size: 3rem;
-  color: #bd0202;
-  margin-bottom: 20px;
-}
-
-.why-choose-us-point .icon-global-reach {
-  color: #bd0202 !important; /* Force the red color */
-}
-
-
-.why-choose-us-point h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.why-choose-us-point p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-}
+  .about-link a {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
 
 
 
-.home-product-category {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 3rem 2rem;
-  background-color: #f0f4f8;
-}
+  /*industry we serve*/
 
-.home-product-category__section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-}
+  .industries-section {
+    padding: 20px 10px; /* Further reduce padding */
+  }
 
-.home-product-category__image-container {
-  position: relative;
-  flex: 1;
-}
-
-.home-product-category__image {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.home-product-category__image-container:hover .home-product-category__image {
-  transform: scale(1.05);
-}
-
-.home-product-category__content {
-  flex: 2;
-  padding-left: 2rem;
-}
-
-.home-product-category__heading {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.home-product-category__text {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.home-product-category__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 1rem 0;
-}
-
-.home-product-category__list li {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.home-product-category__cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #bd0202;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.home-product-category__cta:hover {
-  background-color: #900000;
-}
-
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-/* Testimonials section */
-.testimonials-section {
-    padding: 60px 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.section-heading {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #333;
-    font-weight: bold;
-}
-
-.testimonials-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.testimonial-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 300px;
-    position: relative;
-    overflow: hidden;
-    text-align: left;
-}
-
-.testimonial-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: #bd0202;
-}
-
-.testimonial-content {
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-quote {
-    font-size: 1.2em;
-    font-style: italic;
+  .industries-section h2 {
+    font-size: 1.5rem; /* Further reduce title font size */
     margin-bottom: 15px;
-}
-
-.client-name {
-    font-size: 1em;
-    font-weight: bold;
-    color: #555;
-    text-align: right;
-}
-
-/* CTA button */
-.cta-button {
-    display: inline-block;
-    background-color: #bd0202;
-    color: #fff;
-    padding: 12px 24px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 30px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #900000;
-    transform: scale(1.05);
-}
-
-/******************** FAQ /////////************************************************/
-
-.faq-section {
-  padding: 50px;
-  background-color: #f9f9f9;
-}
-
-.faq-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.faq-section {
-  padding: 50px;
-  background-color: #f9f9f9;
-}
-
-.faq-section {
-  padding: 0 5%;
-  background-color: #f9f9f9; /* Light background for contrast */
-  border-radius: 8px; /* Rounded corners */
-  margin-top: 20px;
-}
-
-.faq-section__title {
-  margin-bottom: 5px;
-  font-size: 1.8rem;
-  color:#d50100;
-}
-
-.faq-item {
-  border-bottom: 1px solid #ccc; /* Divider line between FAQs */
-  padding: 10px 0;
-}
-
-.faq-item__question {
-  display: flex; /* Flexbox for alignment */
-  justify-content: space-between; /* Space between question and button */
-  align-items: center; /* Center align items vertically */
-  cursor: pointer; /* Pointer cursor for interaction */
-}
-
-.faq-toggle-button {
-  background: none; /* No background */
-  border: none; /* No border */
-  font-size: 18px; /* Size of toggle button */
-  color: #d50100; /* Button color */
-  cursor: pointer; /* Pointer cursor for interaction */
-}
-
-.faq-item__answer {
-  margin-top: 10px; /* Space above answer */
-  color: #555; /* Text color for answer */
-}
-
-.hidden{
-  display: none;
-}
-  
-
-.faq-svg {
-  flex: 0.5;
-  text-align: right;
-}
-
-.faq-svg img {
-  width: 500px;
-  max-width: 500px;
-  animation: float 3s ease-in-out infinite;
-  margin-top: 20px;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 720px) {
-  .home-about {
-    flex-direction: column; /* Stack the image and text */
-    align-items: flex-start; /* Align text to the start */
   }
 
-  .home-about-img-wrapper img {
-    max-width: 300px;
-    border-radius: 10px;
+  .industries-container {
+    grid-template-columns: 1fr; /* Display 1 card per row */
+    gap: 10px; /* Adjust spacing between cards */
+    padding: 5px; /* Reduce padding */
   }
 
-
-  .home-sustainability-img-wrapper img {
-    max-width: 300px;
-    border-radius: 10px;
-  }
-
-
-  .home-description {
-    margin-left: 0; /* Remove left margin on small screens */
-  }
-
-  .home-description h2 {
-    font-size: 1.5rem; /* Adjust heading size */
-  }
-
-  .home-description p {
-    font-size: 0.9rem; /* Adjust paragraph size */
-  }
-
-  .why-choose-us-heading {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #bd0202;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-  .home-services-card-wrapper {
-    flex-direction: column; /* Stack service cards */
-    align-items: center; /* Center align the cards */
-  }
-
-  .home-services-card {
-    width: 90%; /* Use more width on smaller screens */
-  }
-
-  .home-sustainability-content-wrapper {
-    flex-direction: column; /* Stack sustainability content */
-    align-items: center; /* Center align */
-  }
-
-  .home-sustainability-content {
+  .industry-card {
     width: 100%; /* Full width */
+    height: 180px; /* Adjust height */
   }
 
-  .home-cp-card {
-    width: 100%; /* Use more width */
+  .industry-img {
+    height: 100%; /* Maintain proportional scaling */
+    object-fit: cover;
+    -webkit-object-fit: cover; /* Safari/WebKit */
+
   }
 
-  .home-cp-card-link {
-    margin-top: 20px;
-    font-size: 0.6rem; /* Adjust font size for smaller screens */
-    padding: 0.4rem 0.8rem; /* Adjust padding */
-    /* Other adjustments can be made here */
+  .text-overlay {
+    font-size: 0.9rem; /* Further adjust overlay text size */
+    padding: 8px 10px; /* Reduce padding */
+    width: 90%; /* Adjust overlay width */
   }
 
-  h2 {
-    font-size: 2rem; /* Adjust main headings */
+   /* product section Analyzer */
+
+  .header-image-section {
+    padding: 15px; /* Further reduce padding */
   }
 
-  p {
-    font-size: 1rem; /* Adjust paragraph font size */
+  .header-image-label {
+    font-size: 12px; /* Reduce label font size */
+    padding: 8px 20px; /* Adjust padding */
+  }
+
+  .header-image-content {
+    padding: 15px; /* Further reduce padding */
+  }
+
+  .header-image-content h1 {
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .header-image-content p {
+    font-size: 0.9rem; /* Smaller paragraph text */
+  }
+
+  .header-image-wrapper {
+    margin-top: 15px; /* Adjust spacing */
+  }
+
+  .header-image {
+    max-width: 90%; /* Make the image larger within the available space */
   }
 
 
-  .home-product-category {
-    padding: 2rem 1rem; /* Adjust padding */
+  /*product section viz pr controller */
+
+  .controller-pro-section {
+    padding: 20px 10px; /* Reduce padding further */
+    text-align: left;
   }
 
-  .home-product-category__section {
-    flex-direction: column; /* Stack image and content */
-    padding: 1.5rem; /* Adjust padding */
+  .controller-pro-right {
+    max-width: 70%;
   }
 
-  .home-product-category__image-container {
-    margin-bottom: 1rem; /* Add margin below the image */
+  .controller-pro-left {
+    gap: 15px; /* Reduce the gap between images */
   }
 
-  .home-product-category__content {
-    padding-left: 0; /* Remove left padding */
+  .controller-pro-image-wrapper img {
+    width: 130px; /* Further reduce image size */
   }
 
-  .home-product-category__heading {
-    font-size: 1.5rem; /* Adjust heading size */
+  .controller-pro-title {
+    font-size: 1.6rem; /* Further reduce title font size */
   }
 
-  .home-product-category__text,
-  .home-product-category__list li {
-    font-size: 0.9rem; /* Adjust text size */
+  .controller-pro-description {
+    font-size: 0.95rem; /* Further reduce font size */
+    line-height: 1.4; /* Tighten line height */
   }
 
-  .testimonials-wrapper {
-    flex-direction: column; /* Stack testimonial cards */
-    align-items: center; /* Center align */
+  .controller-pro-button {
+    font-size: 12px; /* Smaller button font size */
+    padding: 10px; /* Adjust padding */
+    width: 100%; /* Ensure button spans full width */
   }
 
-  .testimonial-card {
-    width: 90%; /* Full width on smaller screens */
+  /* product section viz classic */
+
+  .controller-classic-section {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
   }
 
-  .faq-content-wrapper {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
+  .controller-classic-title {
+    font-size: 1.6rem; /* Further reduce title font size */
   }
 
-  .faq-svg {
-    text-align: center; /* Center SVG image */
-    flex: 1; /* Allow it to take full width */
+  .controller-classic-description {
+    font-size: 0.95rem; /* Further reduce font size */
+    line-height: 1.4; /* Adjust line height */
   }
 
-  .faq-svg img {
-    width: 80%; /* Responsive width for images */
-    max-width: none; /* Remove max-width restriction */
-    margin: 20px 0; /* Add space above and below */
+  .controller-classic-button {
+    font-size: 12px; /* Reduce button font size */
+    padding: 10px; /* Adjust padding */
+    width: 100%; /* Ensure button spans full width */
   }
 
-  .faq-section__title {
-    font-size: 1.5rem; /* Reduce title font size */
+  .controller-classic-right {
+    gap: 15px; /* Reduce gap between images */
   }
 
-  .faq-toggle-button {
-    font-size: 16px; /* Adjust button font size */
+  .controller-classic-image-wrapper img {
+    width: 130px; /* Further reduce image size */
   }
-  .cta-button {
-    font-size: 1em; /* Adjust CTA button size */
+
+  .controller-classic-image-wrapper h4 {
+    font-size: 12px; /* Further reduce font size */
   }
+
+  .company-profile-section {
+    padding: 15px;
+  }
+
+  .company-profile-text-content h2 {
+    font-size: 20px;
+  }
+
+  .company-profile-text-content p {
+    font-size: 12px;
+  }
+
+  .company-profile-download-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .company-profile-image-container img {
+    max-width: 100%;
+    object-fit: cover;
+    -webkit-object-fit: cover; /* Safari/WebKit */
+  }
+
+
+    /* Adjust Pro Slider Label */
+    .pro-slider-label {
+      width: 130px;
+      font-size: 14px;
+      padding: 6px 15px;
+    }
+  
+    /* Adjust Image Sizes in Pro Slider */
+    .pro-image {
+      height: 160px;
+      margin-right: 20px;
+    }
+  
+    /* Adjust Pro Image Figures Spacing */
+    .pro-image-figure {
+      margin-right: 3px; /* Even less margin for very small screens */
+    }
+  
+    /* Adjust Pro Images Container */
+    .pro-images {
+      margin-top: 20px;
+    }
+  
+    /* Adjust the Pro Slider Container Height */
+    .pro-slider {
+      height: 200px;
+    }
+  
+    /* Ensure smooth transition for Safari */
+    .pro-slider, .pro-image, .pro-image-figure {
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
 }
+

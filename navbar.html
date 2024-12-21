@@ -1,227 +1,206 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="./images/logo/AdvanceAnalytiklogo.png" />
-    <link rel="stylesheet" href="../../css/navbar.css">
-    <script src="../../javascript/navbar.js" defer></script>
-    <title>Navbar</title>
-</head>
-<body>
-
-<nav class="navbar">
-    <div class="navbar__stripes">
-        <div style="background-color: #cd2a3e; height: 33.33%;"></div>
-        <div style="background-color: #fff; height: 33.33%;"></div>
-        <div style="background-color: #008000; height: 33.33%;"></div>
-    </div>
-
-    <div class="navbar__header">
-        <a href="/" class="navbar__header__logo">
-            <img src="/images/logo/advanceanalytik.png" alt="Advance Analytik logo">
-        </a>
-
-        <div class="navbar__mobile-menu-toggle" onclick="handleMobileMenuToggle()" aria-label="Toggle mobile menu" aria-expanded="false">
-            <div class="navbar__mobile-menu-toggle__bar"></div>
-            <div class="navbar__mobile-menu-toggle__bar"></div>
-            <div class="navbar__mobile-menu-toggle__bar"></div>
-        </div>
-
-        <ul class="navbar__links__wrapper" role="navigation" aria-label="Main menu">
-            <li><a href="../" class="navbar__link">Home</a></li>
-
-            <li>
-                <a href="../../about.html" class="navbar__link">About</a>
-                <div class="about__submenu">
-                    <div class="about__submenu__links__wrapper">
-                        <a href="../../careers.html" class="about__submenu__link">Careers</a>
-                    </div>
-                </div>
-            </li>
-            
-            <li>
-                <a class="navbar__link" aria-haspopup="true" aria-expanded="false">Products</a>
-                <div class="markets__submenu">
-                    <div class="markets__submenu__links__wrapper">
-                        <a href="../../products/analytical-instrumentation.html" class="markets__submenu__link">Analytical Instrumentation</a>
-                        <ul class="analytical-submenu">
-                            <li><a href="/products/analyzers.html" class="analytical-submenu__link">Analyzers</a></li>
-                            <li><a href="/products/controllers.html" class="analytical-submenu__link">Controllers</a></li>
-                            <li><a href="/products/sensors.html" class="analytical-submenu__link">Sensors</a></li>
-                        </ul>
-                        <a href="../../products/engineering-and-consultancy-services.html" class="markets__submenu__link">Engineering and Consultancy Services</a>
-                        <a href="../../products/software-development-services.html" class="markets__submenu__link">Software Development</a>
-                        <a href="../../products/iot-devices.html" class="markets__submenu__link">IoT Devices</a>
-                    </div>
-                </div>
-            </li>
-            
-            <li>
-                <a class="navbar__link">Market</a>
-                <div class="markets__submenu">
-                    <div class="markets__submenu__links__wrapper">
-                        <a href="/market/pulp-and-paper.html" class="markets__submenu__link">Pulp & Paper</a>
-                        <a href="/market/distillery.html" class="markets__submenu__link">Distillery</a>
-                        <a href="/market/sugar.html" class="markets__submenu__link">Sugar</a>
-                        <a href="/market/tanneries.html" class="markets__submenu__link">Tanneries</a>
-                        <a href="/market/power-plants.html" class="markets__submenu__link">Power Plants</a>
-                        <a href="/market/cement.html" class="markets__submenu__link">Cement</a>
-                        <a href="/market/chloral-alkali-plants.html" class="markets__submenu__link">Chloral Alkali Plants</a>
-                        <a href="/market/oil-refineries.html" class="markets__submenu__link">Oil Refineries</a>
-                        <a href="/market/dye-and-dye-intermediate-units.html" class="markets__submenu__link">Dye & Dye Intermediate Units</a>
-                        <a href="/market/cetp-and-stps.html" class="markets__submenu__link">CETP&STPS</a>
-                        <a href="/market/pesticides.html" class="markets__submenu__link">Pesticides</a>
-                        <a href="/market/pharmaceutical-sector.html" class="markets__submenu__link">Pharmaceutical Sector</a>
-                        <a href="/market/common-biomedical-waste.html" class="markets__submenu__link">Common Biomedical Waste</a>
-                        <a href="/market/common-hazardous-waste-incinerator.html" class="markets__submenu__link">Common Hazardous Waste Incinerator</a>
-                    </div>
-                </div>
-            </li>
-
-            <li><a href="#" class="navbar__link">Blogs</a></li>
-            <li><a href="../../contact.html" class="navbar__link">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-
-
-
-</body>
-</html> -->
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="./images/logo/AdvanceAnalytiklogo.png" />
-    <link rel="stylesheet" href="../../css/navbar.css">
-    <link rel="stylesheet" href="../../css/sidebar.css">
-    <script src="./javascript/common.js"></script>
-
-    <title>Navbar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../javascript/common.js" defer></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/sidebar.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <title>Responsive Navbar with Preheader</title>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <div class="navbar__stripes">
-        <div style="background-color: #cd2a3e; height: 33.33%;"></div>
-        <div style="background-color: #fff; height: 33.33%;"></div>
-        <div style="background-color: #008000; height: 33.33%;"></div>
-    </div>
+  <!-- Preheader -->
 
-    <div class="navbar__header">
-        <a href="/" class="navbar__header__logo">
-            <img src="/images/logo/advanceanalytik.png" alt="Advance Analytik logo">
+  <div id="preheader" class="preheader">
+
+    <div class="preheader__content">
+      <!-- Left: Contact Info -->
+      <div class="preheader__contact">
+        <i class="fas fa-phone"></i>+36 703286862 <div>|</div> <i class="fas fa-envelope"></i> sales@advanceanalytik.com
+      </div>
+
+      <!-- Right: Social Media Icons -->
+      <div class="preheader__social">
+        <a href="https://www.facebook.com/share/dUTVgdFtNVwiZygu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@Advance-Analytik-KFT" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/advance-analytik-kft" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/advance_analytik/profilecard/?igsh=MWc3Ymk0NGx3MWF1YQ==" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
         </a>
-
-        <!-- Toggle button (close button when sidebar is open, hamburger button otherwise) -->
-
-        <ul class="navbar__links__wrapper" role="navigation" aria-label="Main menu">
-            <li><a href="../../" class="navbar__link">Home</a></li>
-            <li><a href="../../about.html" class="navbar__link">About</a></li>
-            <li><a href="#" class="navbar__link">Products</a>
-                <div class="markets__submenu">
-                    <div class="markets__submenu__links__wrapper">
-                        <a href="../../products/analytical-instrumentation.html" class="markets__submenu__link">Analytical Instrumentation</a>
-                        <ul class="analytical-submenu">
-                            <li><a href="/products/analyzers.html" class="analytical-submenu__link">Analyzers</a></li>
-                            <li><a href="/products/controllers.html" class="analytical-submenu__link">Controllers</a></li>
-                            <li><a href="/products/sensors.html" class="analytical-submenu__link">Sensors</a></li>
-                        </ul>
-                        <a href="../../products/engineering-and-consultancy-services.html" class="markets__submenu__link">Engineering and Consultancy Services</a>
-                        <a href="../../products/software-development-services.html" class="markets__submenu__link">Software Development</a>
-                        <a href="../../products/iot-devices.html" class="markets__submenu__link">IoT Devices</a>
-                    </div>
-                </div>
-            </li>
-            <li><a href="#" class="navbar__link">Market</a>
-                <div class="markets__submenu">
-                    <div class="markets__submenu__links__wrapper">
-                        <a href="/market/pulp-and-paper.html" class="markets__submenu__link">Pulp & Paper</a>
-                        <a href="/market/distillery.html" class="markets__submenu__link">Distillery</a>
-                        <a href="/market/sugar.html" class="markets__submenu__link">Sugar</a>
-                        <a href="/market/tanneries.html" class="markets__submenu__link">Tanneries</a>
-                        <a href="/market/power-plants.html" class="markets__submenu__link">Power Plants</a>
-                        <a href="/market/cement.html" class="markets__submenu__link">Cement</a>
-                        <a href="/market/chloral-alkali-plants.html" class="markets__submenu__link">Chloral Alkali Plants</a>
-                        <a href="/market/oil-refineries.html" class="markets__submenu__link">Oil Refineries</a>
-                        <a href="/market/dye-and-dye-intermediate-units.html" class="markets__submenu__link">Dye & Dye Intermediate Units</a>
-                        <a href="/market/cetp-and-stps.html" class="markets__submenu__link">CETP&STPS</a>
-                        <a href="/market/pesticides.html" class="markets__submenu__link">Pesticides</a>
-                        <a href="/market/pharmaceutical-sector.html" class="markets__submenu__link">Pharmaceutical Sector</a>
-                        <a href="/market/common-biomedical-waste.html" class="markets__submenu__link">Common Biomedical Waste</a>
-                        <a href="/market/common-hazardous-waste-incinerator.html" class="markets__submenu__link">Common Hazardous Waste Incinerator</a>
-                    </div>
-                </div>
-            </li>
-          <li><a href="../../careers.html" class="navbar__link">Careers</a></li>
-          <li><a href="../../contact.html" class="navbar__link">Contact</a></li>
-        </ul>
+      </div>
     </div>
+  </div>
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar">
+  <div class="navbar__logo">
+    <!-- Logo Image -->
+    <a href="/index.html">
+      <img src="../../images/logo/advanceanalytik.png" alt="Company Logo">
+    </a>
+  </div>
+
+  <ul class="navbar__links__wrapper" role="navigation" aria-label="Main menu">
+    <li><a href="../../" class="navbar__link">Home</a></li>
+    <li><a href="../../about.html" class="navbar__link">About</a></li>
+   <!-- Products Dropdown Menu -->
+  <li><a href="../../products/analytical-instrumentation.html" class="navbar__link">Products</a>
+  <div class="markets__submenu">
+    <div class="markets__submenu__links__wrapper">
+
+      <!-- Analyzers -->
+      <a href="../../products/analyzers.html" class="markets__submenu__link">Analyzers  <i class="fa-solid fa-angle-right"></i> </a>
+      <div class="sub-submenu" id="analyzers-submenu">
+        <a href="../../products/analyzers/optics-1000.html" class="sub-submenu__link">Optics-1000</a>
+        <a href="../../products/analyzers/optics-1000-alkalinity.html" class="sub-submenu__link">Optics-1000 Alkalinity</a>
+        <a href="../../products/analyzers/optics-1000-boron-lr.html" class="sub-submenu__link">Optics-1000 Boron (Lr)</a>
+        <a href="../../products/analyzers/optics-1000-boron-hr.html" class="sub-submenu__link">Optics-1000 Boron (Hr)</a>
+        <a href="../../products/analyzers/optics-1000-chloride.html" class="sub-submenu__link">Optics-1000 Chloride (Cl-)</a>
+        <a href="../../products/analyzers/optics-1000-chromium.html" class="sub-submenu__link">Optics-1000 Chromium VI (Cr)</a>
+        <a href="../../products/analyzers/optics-1000-cyanide.html" class="sub-submenu__link">Optics-1000 Cyanide (CN-)</a>
+        <!-- <a href="../../products/analyzers/optics-1000-general.html" class="sub-submenu__link">Optics-1000 General</a> -->
+        <a href="../../products/analyzers/optics-1000-hydrazine.html" class="sub-submenu__link">Optics-1000 Hydrazine (N2H4)</a>
+        <a href="../../products/analyzers/optics-1000-iron-lr.html" class="sub-submenu__link">Optics-1000 Iron (Lr)</a>
+        <a href="../../products/analyzers/optics-1000-nickel.html" class="sub-submenu__link">Optics-1000 Nickel (Ni)</a>
+        <a href="../../products/analyzers/optics-1000-phenol.html" class="sub-submenu__link">Optics-1000 Phenol</a>
+        <a href="../../products/analyzers/optics-1000-phosphate-hr.html" class="sub-submenu__link">Optics-1000 Phosphate (Hr)</a>
+        <a href="../../products/analyzers/optics-1000-phosphate-lr.html" class="sub-submenu__link">Optics-1000 Phosphate (Lr)</a>
+        <a href="../../products/analyzers/optics-1000-silica-hr.html" class="sub-submenu__link">Optics-1000 Silica (Hr)</a>
+        <a href="../../products/analyzers/optics-1000-silica-lr.html" class="sub-submenu__link">Optics-1000 Silica (Lr)</a>
+        <a href="../../products/analyzers.html" class="sub-submenu__link">Check More</a>
+        <!-- <a href="../../products/analyzers/optics-1000-total-hardness.html" class="sub-submenu__link">Optics-1000 Total Hardness (Hd)</a> -->
+      </div>
+
+      <!-- Controllers -->
+      <a href="../../products/controllers.html" class="markets__submenu__link">Controllers <i class="fa-solid fa-angle-right"></i> </a>
+      <div class="sub-submenu" id="controllers-submenu">
+        <a href="../../products/controllers/viz-solo.html" class="sub-submenu__link">Viz Pro Solo</a>
+        <a href="../../products/controllers/viz-duo.html" class="sub-submenu__link">Viz Pro Duo</a>
+        <a href="../../products/controllers/viz-multi.html" class="sub-submenu__link">Viz Pro Multi</a>
+        <a href="../../products/controllers/viz-eco-solo.html" class="sub-submenu__link">Viz Eco Solo</a>
+        <a href="../../products/controllers/viz-duo-solo.html" class="sub-submenu__link">Viz Eco Duo</a>
+        <a href="../../products/controllers/viz-Eco-multi.html" class="sub-submenu__link">Viz Eco Multi</a>
+        <a href="../../products/controllers/viz-classic-conductivity-tds.html" class="sub-submenu__link">Viz Classic Conductivity/TDS</a>
+        <a href="../../products/controllers/viz-classic-ph-orp.html" class="sub-submenu__link">Viz Classic pH/ORP</a>
+      </div>
+
+      <!-- Sensors -->
+      <a href="../../products/sensors.html" class="markets__submenu__link">Sensors <i class="fa-solid fa-angle-right"></i> </a>
+      <div class="sub-submenu" id="sensors-submenu">
+        <a href="../../products/sensors/vizsens-ph-analog.html" class="sub-submenu__link">VizSens-PH(Analog)</a>
+        <a href="../../products/sensors/vizsens-orp-analog.html" class="sub-submenu__link">VizSens-ORP(Analog)</a>
+        <a href="../../products/sensors/vizsens-ec-analog.html" class="sub-submenu__link">VizSens-EC(Analog)</a>
+        <a href="../../products/sensors/vizsens-ph-digital.html" class="sub-submenu__link">VizSens-PH(Digital)</a>
+        <a href="../../products/sensors/vizsens-ec-digital.html" class="sub-submenu__link">VizSens-EC(Digital)</a>
+        <a href="../../products/sensors/vizsens-odo.html" class="sub-submenu__link">VizSens-ODO</a>
+        <a href="../../products/sensors/vizsens-rcl.html" class="sub-submenu__link">VizSens-RCL</a>
+        <a href="../../products/sensors/vizsens-uvcod.html" class="sub-submenu__link">VizSens-UVCOD</a>
+        <a href="../../products/sensors/vizsens-ss.html" class="sub-submenu__link">VizSens-SS</a>
+        <a href="../../products/sensors/vizsens-turb.html" class="sub-submenu__link">VizSens-Turb</a>
+        <a href="../../products/sensors/vizsens-turb-lo.html" class="sub-submenu__link">VizSens-TurbLo</a>
+        <a href="../../products/sensors/vizsens-cphl.html" class="sub-submenu__link">VizSens-CPHL</a>
+        <a href="../../products/sensors/vizsens-bga.html" class="sub-submenu__link">Vizsens-BGA</a>
+        <a href="../../products/sensors/vizsens-oiw.html" class="sub-submenu__link">VizSens-OIW</a>
+        <a href="../../products/sensors/vizsens-nh4n.html" class="sub-submenu__link">VizSens-NH4N</a>
+        <a href="../../products/sensors/vizsens-no3n.html" class="sub-submenu__link">VizSens-NO3N</a>
+      </div>
+    </div>
+  </div>
+</li>
+
+    <li><a href="#" class="navbar__link">Market</a>
+      <div class="markets__submenu">
+        <div class="markets__submenu__links__wrapper">
+          <a href="/market/pulp-and-paper.html" class="markets__submenu__link">Pulp & Paper</a>
+          <a href="/market/distillery.html" class="markets__submenu__link">Distillery</a>
+          <a href="/market/sugar.html" class="markets__submenu__link">Sugar</a>
+          <a href="/market/tanneries.html" class="markets__submenu__link">Tanneries</a>
+          <a href="/market/power-plants.html" class="markets__submenu__link">Power Plants</a>
+          <a href="/market/cement.html" class="markets__submenu__link">Cement</a>
+          <a href="/market/chloral-alkali-plants.html" class="markets__submenu__link">Chloral Alkali Plants</a>
+          <a href="/market/oil-refineries.html" class="markets__submenu__link">Oil Refineries</a>
+          <a href="/market/dye-and-dye-intermediate-units.html" class="markets__submenu__link">Dye & Dye Intermediate Units</a>
+          <a href="/market/cetp-and-stps.html" class="markets__submenu__link">CETP & STPS</a>
+          <a href="/market/pesticides.html" class="markets__submenu__link">Pesticides</a>
+          <a href="/market/pharmaceutical-sector.html" class="markets__submenu__link">Pharmaceutical Sector</a>
+          <a href="/market/common-biomedical-waste.html" class="markets__submenu__link">Common Biomedical Waste</a>
+          <a href="/market/common-hazardous-waste-incinerator.html" class="markets__submenu__link">Common Hazardous Waste Incinerator</a>
+        </div>
+      </div>
+    </li>
+    <li><a href="../../blog.html" class="navbar__link">Blog</a></li>
+    <li><a href="../../careers.html" class="navbar__link">Careers</a></li>
+    <li><a href="../../contact.html" class="navbar__link">Contact</a></li>
+  </ul>
 </nav>
 
 
-
-<div class="toggle-btn" id="toggle-btn" onclick="toggleSidebar()">
+<div class="sidebar-navbar">
+  <div class="sidebar-logo">
+    <a href="/index.html">
+      <img src="../../images/logo/advance_analytik.png" alt="Company Logo">
+    </a>
+  </div>
+  <div class="toggle-btn" onclick="toggleSidebar()">
     <span></span>
     <span></span>
     <span></span>
   </div>
+</div>
+
 
 <div class="sidebar" id="sidebar">
-    <ul class="sidebar-nav">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../about.html">About</a></li>
 
-      <li class="has-dropdown">
-        <a href="javascript:void(0);" onclick="toggleDropdown('application')">Products
-          <span class="arrow"></span>
-        </a>
-        <ul class="sidebar-dropdown-menu" id="application-dropdown">
-          <li><a href="../../products/analytical-instrumentation.html">Analytical Instrumentation</a></li>
-          <li><a href="../../products/engineering-and-consultancy-services.html">Engineering and Consultancy Services</a></li>
-          <li><a href="../../products/software-development-services.html">Software Development</a></li>
-          <li>  <a href="../../products/iot-devices.html">IoT Devices</a></li>
-
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <a href="javascript:void(0);" onclick="toggleDropdown('products')">Market
-          <span class="arrow"></span>
-        </a>
-        <ul class="sidebar-dropdown-menu" id="products-dropdown">
-           <li><a href="/market/pulp-and-paper.html">Pulp & Paper</a></li>
-           <li><a href="/market/distillery.html">Distillery</a></li>
-           <li><a href="/market/sugar.html">Sugar</a></li>
-           <li><a href="/market/tanneries.html">Tanneries</a></li>
-           <li><a href="/market/power-plants.html">Power Plants</a></li>
-           <li><a href="/market/cement.html">Cement</a></li>
-           <li><a href="/market/chloral-alkali-plants.html">Chloral Alkali Plants</a></li>
-           <li><a href="/market/oil-refineries.html">Oil Refineries</a></li>
-           <li><a href="/market/dye-and-dye-intermediate-units.html">Dye & Dye Intermediate Units</a></li>
-           <li><a href="/market/cetp-and-stps.html">CETP&STPS</a></li>
-           <li><a href="/market/pesticides.html">Pesticides</a></li>
-           <li><a href="/market/pharmaceutical-sector.html">Pharmaceutical Sector</a></li>
-           <li><a href="/market/common-biomedical-waste.html">Common Biomedical Waste</a></li>
-           <li><a href="/market/common-hazardous-waste-incinerator.html">Common Hazardous Waste Incinerator</a></li>
-        </ul>
-      </li>
-      <li><a href="../../careers.html" >Careers</a></li>
-      <li><a href="../../contact.html" >Contact</a></li>
-    </ul>
-  </div>
-<!-- JavaScript -->
+  <ul class="sidebar-nav">
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../about.html">About</a></li>
 
 
+    <li class="has-dropdown">
+      <a href="javascript:void(0);" onclick="toggleDropdown('application')">Products
+        <span class="arrow"></span>
+      </a>
+      <ul class="sidebar-dropdown-menu" id="application-dropdown">
+        <li><a href="../../products/analyzers.html">Analyzers</a></li>
+        <li><a href="../../products/controllers.html">Controllers</a></li>
+        <li><a href="../../products/sensors.html">Sensors</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="javascript:void(0);" onclick="toggleDropdown('products')">Market
+        <span class="arrow"></span>
+      </a>
+      <ul class="sidebar-dropdown-menu" id="products-dropdown">
+         <li><a href="/market/pulp-and-paper.html">Pulp & Paper</a></li>
+         <li><a href="/market/distillery.html">Distillery</a></li>
+         <li><a href="/market/sugar.html">Sugar</a></li>
+         <li><a href="/market/tanneries.html">Tanneries</a></li>
+         <li><a href="/market/power-plants.html">Power Plants</a></li>
+         <li><a href="/market/cement.html">Cement</a></li>
+         <li><a href="/market/chloral-alkali-plants.html">Chloral Alkali Plants</a></li>
+         <li><a href="/market/oil-refineries.html">Oil Refineries</a></li>
+         <li><a href="/market/dye-and-dye-intermediate-units.html">Dye & Dye Intermediate Units</a></li>
+         <li><a href="/market/cetp-and-stps.html">CETP & STPS</a></li>
+         <li><a href="/market/pesticides.html">Pesticides</a></li>
+         <li><a href="/market/pharmaceutical-sector.html">Pharmaceutical Sector</a></li>
+         <li><a href="/market/common-biomedical-waste.html">Common Biomedical Waste</a></li>
+         <li><a href="/market/common-hazardous-waste-incinerator.html">Common Hazardous Waste Incinerator</a></li>
+      </ul>
+    </li>
+    <li><a href="../../blog.html" >Careers</a></li>
+    <li><a href="../../careers.html" >Careers</a></li>
+    <li><a href="../../contact.html" >Contact</a></li>
+  </ul>
+</div>
+
+
+<script>
+
+  
+</script>
+
+  
 </body>
 </html>

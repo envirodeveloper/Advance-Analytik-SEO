@@ -167,7 +167,6 @@
 .hidden{
   display: none;
 }
-  
 
 /* Media Queries for max-width 720px */
 @media screen and (max-width: 720px) {

@@ -118,7 +118,7 @@ const products = [
       "RS485 Digital Signal Output (Optional): Achieves standard digital signal output via RS485, enabling integration and networking with other equipment without a controller.",
       "Quick and Easy Installation: Facilitates field installation through terminal connection."
     ],
-   
+
     attributes: [
       { name: "Main material", value: "Black Polypropylene, Ag/Agcl Reference Gel"},
       { name: "Weight", value: "0.2kg" },
@@ -135,6 +135,7 @@ const products = [
       { name: "Response Time", value: "≤ 10 Seconds (After stirring)" },
     ],
   },
+
   {
     productId: "005",
     name: "VizSens-ORP(Analog)",
@@ -166,7 +167,7 @@ const products = [
       { name: "Cable length", value: "Standard: 10m, the maximum can be extended to 20m"},
     ],
   },
-  
+
   {
     productId: "006",
     name: "VizSens-EC(Analog) ",
@@ -851,11 +852,409 @@ const products = [
         { name: "Diagnostics", value: "Sensor Open / Short, Temp Sensor Open/ Short, Out of range Calibration error, Test output current"  },
         { name: "Cable Connections", value: "PG9 Polyurethene Glands: 2Nos" },
         { name: "Dimensions", value: "12.7 x 5.7 x 7.9 cm L*W*H \n Dimensions subject to change depending on configuration" },
-        
       ],
   },
-  
 
+
+  {
+    productId: "026",
+    name: "OPTICS-1000 Boron (Hr)",
+    img: "../productImages/img026.png",
+    dataSheetLink: "../productsDataSheets/Optics-1000-Boron-(Hr).pdf",
+    introduction:
+      "Boric acid is a very weak acid and direct titration with NaOH is not possible. However, addition of Mannitol-D makes a significant and visual end point determination, based on the change of pH on the sample.",
+    features: [
+      "The method is specific for the measurement of boron. The 6000 steps motor that controls the syringe movement allows to dose really small drops, getting accuracy and repeatable results. Moreover, the reagents are simple to be prepared and cheap. Changing the concentrations of reagents, the range of measurement is easily modifiable..",
+    ],
+    attributes: [
+     { name: "Range", value: "From 0 to 50 ppm / 100 ppm / 250 ppm / 500 ppm.(Adjustable higher concentrations adjusting reagents.)" },
+     { name: "Accuracy", value: "±2% Full Scale" },
+     { name: "Repeatability", value: "±2%" },
+     { name: "Resolution", value: "0,01 ppm or 0,1 ppm" },
+     { name: "Analysis time", value: "around 15 minutes" },
+     { name: "Calibration", value: "one point" },
+     { name: "ISE", value: "pH electrode" },
+     { name: "Reagent 1 Consumption", value: "4 ml / analysis - 3.0L / month" },
+     { name: "Reagent 2 Consumption", value: "4.5 ml / analysis – 3.5 L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+  ], 
+  },
+
+  {
+    productId: "027",
+    name: "OPTICS-1000 Boron (Lr)",
+    img: "../productImages/img026.png",
+    dataSheetLink: "../productsDataSheets/Optics-1000-Boron-(Lr).pdf",
+    introduction:
+      "Thanks the buffer reagent, the sample is adjusted to pH between 5 and 6. Then, the addition of Azomethine-H & Ascorbic acid, they react with Boron giving a green-yellow color that is measured at 420nm.",
+    features: [
+      "The method is accurate and sensitive. The range is linear up to 2 ppm and higher ranges can be obtained diluting the sample.",
+    ],
+    attributes: [
+     { name: "Range", value: "From 0 to 100 ppb / 500 ppb / 1000 ppb / 2000 ppb.(Adjustable higher concentrations adjusting reagents.)" },
+     { name: "Accuracy", value: "±2%" },
+     { name: "Repeatability", value: "±2%" },
+     { name: "Resolution", value: "0,1 ppb" },
+     { name: "Analysis time", value: "around 30 minutes" },
+     { name: "Calibration", value: "two point" },
+     { name: "LED Wavelength", value: "420 nm" },
+     { name: "Reagent 1 Consumption", value: "2.2 ml / analysis - 2.0L / month" },
+     { name: "Reagent 2 Consumption", value: "4.2 ml / analysis – 3.5 L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+  ],
+  },
+ {
+   productId: "028",
+   name: "OPTICS-1000 Chloride",
+   img: "../productImages/img026.png",
+   dataSheetLink: "../productsDataSheets/Optics-1000-Chloride-(Cl-).pdf",
+   introduction:
+     "Reagent 1 is added to activate the electrode before the analysis. After that, a first measurement is done. Subsequently, a small volume of a high concentrated nitrate solution is added. Finally, a second lecture of mV takes place to calculate the result.",
+   features: [
+     "The method is very simple and is fairly specific as the chloride measurement and just a few parameters cause interferences, which can be removed.",
+   ],
+   attributes: [
+    { name: "Range", value: "From 0 to 5ppm / 20ppm / 50ppm / 100ppm / 500ppm / 1000ppm / 5000ppm (Adjustable higher concentrations)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Repeatability", value: "±2%" },
+    { name: "Resolution", value: "0,01 ppm / 0,1 ppm / 1 ppm" },
+    { name: "Analysis time", value: "around 10 minutes" },
+    { name: "Calibration", value: "one point" },
+    { name: "ISE", value: "Chloride Cl⁻ electrode" },
+    { name: "Reagent 1 Consumption", value: "0.5 ml / analysis - 0.5L / month" },
+    { name: "Reagent 2 Consumption", value: "0.5 ml / analysis - 0.5L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+], 
+},
+{
+  productId: "029",
+  name: "OPTICS-1000 Chromium VI",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Chromium-VI-(Cr).pdf",
+  introduction:
+    "The chromium (VI) reacts with the diphenylcarbazide reagent to form a pik complex. The reaction is specific for chromium (VI) and there are no interference compounds.",
+  features: [
+    "The method is very simple, very specific and is very sensitive because of the high absorbance of the diphenylcarbazide-chromium (VI) complex formed.",
+  ],
+  attributes: [
+   { name: "Range", value: "From 0 to 200 ppb (Adjustable higher concentrations with internal dilution.)" },
+   { name: "Accuracy", value: "±2%" },
+   { name: "Repeatability", value: "±2%" },
+   { name: "Resolution", value: "0,1 ppb" },
+   { name: "Analysis time", value: "around 10 minutes" },
+   { name: "Calibration", value: "two point" },
+   { name: "LED Wavelength", value: "545 nm" },
+   { name: "Reagent 1 Consumption", value: "0,8 ml / analysis – 0.75 L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+], 
+},
+{
+  productId: "030",
+  name: "OPTICS-1000 Cyanide",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Cyanide.pdf",
+  introduction:
+    "After adding a buffer to establish the desired pH conditions to reactions takes place, Chloramine-T reagent reacts with cyanide ion to form cyanogen chloride.Afterwards, this compound reacts with the reagent color to form a blue colored complex. The intensity of the blue color developed is proportional to the concentration of cyanide in sample.",
+  features: [
+    "The method is very simple requiring but a single reagent, which is specific for hydrazine. Keeping the reagent in an amber container, which will not transmit UV light, the reagent is stable for at least a month.",
+  ],
+  attributes: [
+   { name: "Range", value: "From 0 to 200 ppb (Adjustable higher concentrations with internal dilution.)" },
+   { name: "Accuracy", value: "±2%" },
+   { name: "Repeatability", value: "±2%" },
+   { name: "Resolution", value: "0,1 ppb" },
+   { name: "Analysis time", value: "around 10 minutes" },
+   { name: "Calibration", value: "two point" },
+   { name: "LED Wavelength", value: "545 nm" },
+   { name: "Reagent 1 Consumption", value: "0,8 ml / analysis – 0.75 L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+], 
+ },
+// {
+//   productId: "031",
+//   name: "OPTICS-1000 general",
+//   img: "../productImages/img026.png",
+//   dataSheetLink: "../productsDataSheets/Optics-1000-Chromium-VI-(Cr).pdf",
+//   introduction:
+//     "After adding a buffer to establish the desired pH conditions to reactions takes place, Chloramine-T reagent reacts with cyanide ion to form cyanogen chloride.Afterwards, this compound reacts with the reagent color to form a blue colored complex. The intensity of the blue color developed is proportional to the concentration of cyanide in sample.",
+//   features: [
+//     "The method is very simple requiring but a single reagent, which is specific for hydrazine. Keeping the reagent in an amber container, which will not transmit UV light, the reagent is stable for at least a month.",
+//   ],
+//   attributes: [
+//    { name: "Range", value: "From 0 to 200 ppb (Adjustable higher concentrations with internal dilution.)" },
+//    { name: "Accuracy", value: "±2%" },
+//    { name: "Repeatability", value: "±2%" },
+//    { name: "Resolution", value: "0,1 ppb" },
+//    { name: "Analysis time", value: "around 10 minutes" },
+//    { name: "Calibration", value: "two point" },
+//    { name: "LED Wavelength", value: "545 nm" },
+//    { name: "Reagent 1 Consumption", value: "0,8 ml / analysis – 0.75 L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+// ], 
+// },
+
+{
+  productId: "032",
+  name: "OPTICS-1000 Hydrazine",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Hydrazine.pdf",
+  introduction:
+    "There is a direct coupling of the carbonyl group of the 4-aminobenzaaldehyde with the NH2 group of the hydrazine to form a yellow colored complex.",
+  features: [
+    "The method is very simple requiring but a single reagent, which is specific for hydrazine. Keeping the reagent in an amber container, which will not transmit UV light, the reagent is stable for at least a month.",
+  ],
+  attributes: [
+   { name: "Range", value: "From 0 to 100 ppb (Adjustable higher concentrations with internal dilution.)" },
+   { name: "Accuracy", value: "±2%" },
+   { name: "Repeatability", value: "±2%" },
+   { name: "Resolution", value: "0,1 ppb" },
+   { name: "Analysis time", value: "around 18 minutes" },
+   { name: "Calibration", value: "two point" },
+   { name: "LED Wavelength", value: "450 nm" },
+   { name: "Reagent 1 Consumption", value: "2.5 ml / analysis – 2.0 L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+], 
+},
+{
+  productId: "033",
+  name: "OPTICS-1000 IRON",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Iron-(Lr).pdf",
+  introduction:
+    "Any ferric iron is reduced to the ferrous state by means of the hydroxylamine hydrochloride. The ferrous ions react with the Ferrozine to form a pink complex when the buffer brings the solution within the range 5 to 7 pH.",
+  features: [
+    "The method is very simple requiring but a single reagent, which is specific for hydrazine. Keeping the reagent in an amber container, which will not transmit UV light, the reagent is stable for at least a month.",
+  ],
+  attributes: [
+   { name: "Range", value: "From 0 to 100 ppb (Adjustable higher concentrations with internal dilution.)" },
+   { name: "Accuracy", value: "±2%" },
+   { name: "Repeatability", value: "±2%" },
+   { name: "Resolution", value: "0,1 ppb" },
+   { name: "Analysis time", value: "around 18 minutes" },
+   { name: "Calibration", value: "two point" },
+   { name: "LED Wavelength", value: "450 nm" },
+   { name: "Reagent 1 Consumption", value: "2.5 ml / analysis – 2.0 L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+], 
+},
+{
+  productId: "034",
+  name: "OPTICS-1000 Nickel",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Nickel.pdf",
+  introduction:
+    "An acetate buffer is used to achieve the optimal pH conditions in order Br-PADAP could react with Nickel, forming an intense pink color proportional to Nickel concentration.",
+  features: [
+    "The pink color that is formed could stain the measurement cell, interfering on the following analysis, but thanks to the cleaning solution used by the Instran, this possible interference is removed.",
+  ],
+  attributes: [
+   { name: "Range", value: "From 0 to 250 ppb / 500 ppb / 1000 ppb. (Adjustable higher concentrations with internal dilution.)" },
+   { name: "Accuracy", value: "±2%" },
+   { name: "Repeatability", value: "±2%" },
+   { name: "Resolution", value: "0.1 ppb" },
+   { name: "Analysis time", value: "around 15 minutes" },
+   { name: "Calibration", value: "two point" },
+   { name: "LED Wavelength", value: "545 nm" },
+   { name: "Reagent 1 Consumption", value: "0.5 ml / analysis - 0.5L / month" },
+   { name: "Reagent 2 Consumption", value: "0.5 ml / analysis - 0.5L / month" },
+   { name: "Reagent 3 Consumption", value: "1.35 ml / analysis – 1.0 L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+], 
+},
+
+{
+  productId: "035",
+  name: "OPTICS-1000 Phenol",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Phenol.pdf",
+  introduction:
+    "The method relies upon the reaction of the phenol with 4-aminoantipyrene followed by oxidation of the adduct with persulfate to form a pink complex.",
+  features: [
+    "The method is specific for phenol and all non-4-substituted monohydric phenols.",
+    "The method is also very sensitive and levels as low as 0 to 100 ppb may be measured using the correct circumstances.",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 100 ppb / 500 ppb / 1000 ppb. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Repeatability", value: "±2%" },
+    { name: "Resolution", value: "0,1 ppb Analysis time: around 15 minutes" },
+    { name: "Analysis time", value: "around 15 minutes" },
+    { name: "Calibration", value: "two point" },
+    { name: "LED Wavelength", value: "510 nm" },
+    { name: "Reagent 1 Consumption", value: "4 ml / analysis - 3.0L / month" },
+    { name: "Reagent 2 Consumption", value: "4 ml / analysis - 3.0L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+
+{
+  productId: "036",
+  name: "OPTICS-1000 Phosphate-Hr",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Phosphate-(Hr).pdf",
+  introduction:
+    "The method relies upon the reaction of the phenol with 4-aminoantipyrene followed by oxidation of the adduct with persulfate to form a pink complex.",
+  features: [
+    "The method relies upon the direct reaction of phosphate ion to react with the Vanadomolybdate reagent to form a yellow colored complex.",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 2ppm / 5ppm / 10ppm / 20ppm / 60ppm. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Repeatability", value: "±2%" },
+    { name: "Resolution", value: "0,01 ppm" },
+    { name: "Analysis time", value: "around 10 minutes" },
+    { name: "Calibration", value: "two point" },
+    { name: "LED Wavelength", value: "435 nm" },
+    { name: "Reagent 1 Consumption", value: "0.9 ml / analysis - 0.75L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+{
+  productId: "037",
+  name: "OPTICS-1000 Phosphate-Lr",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Phosphate-(Lr).pdf",
+  introduction:
+    "Ammonium molybdate and potassium antimonyl tartrate react in acid medium with orthophosphate to form a heteropoly acid-phosphomolybdic acid-that is reduced to intensely colored molybdenum blue by ascorbic acid.",
+  features: [
+    "The blue color developed is so intense and it provides a high accuracy and repeatability. The method allows to measure really low values of concentrations (lower than 50 ppb).",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 200 ppb / 500 ppb / 1000 ppb. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Repeatability", value: "±2%" },
+    { name: "Resolution", value: "0,1 ppb" },
+    { name: "Low Limit Detection", value: "1ppb" },
+    { name: "Analysis time", value: "around 12 minutes" },
+    { name: "Calibration", value: "two point" },
+    { name: "LED Wavelength", value: "810 nm" },
+    { name: "Reagent 1 Consumption", value: "0.5 ml / analysis - 0.5L / month" },
+    { name: "Reagent 2 Consumption", value: "0.5 ml / analysis - 0.5L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+
+{
+  productId: "038",
+  name: "OPTICS-1000 silica-Hr",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Silica-(Hr).pdf",
+  introduction:
+    "Silica reacts with molybdate reagent in acid media to form a yellow silicomolybdate complex. This complex is reduced by ascorbic acid to form the molybdate blue color. The color intensity is proportional to the silica concentration.",
+  features: [
+    "The blue color developed is so intense and it provides a high accuracy and repeatability. The method allows to measure really low values of concentrations (lower than 50 ppb).",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 1 ppm / 5 ppm / 10 ppm. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Repeatability", value: "±2%" },
+    { name: "Resolution", value: "0,01 ppb" },
+    { name: "Analysis time", value: "around 15 minutes" },
+    { name: "Calibration", value: "two point" },
+    { name: "LED Wavelength", value: "650 nm" },
+    { name: "Reagent 1 Consumption", value: "4 ml / analysis - 3.0L / month" },
+    { name: "Reagent 2 Consumption", value: "3 ml / analysis - 2.25L / month" },
+    { name: "Reagent 3 Consumption", value: "4 ml / analysis - 3.0L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+
+{
+  productId: "039",
+  name: "OPTICS-1000 Silica-Lr",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Silica-(Lr).pdf",
+  introduction:
+    "The initial reaction of the silica with the diammonium molybdate in such acidic conditions ensures that only the B-molybdosilicic acid is formed. Then the solution is treated with tartaric acid to destroy the phosphomolybdic acid, which is formed under the same conditions. Finally, the molybdomolybdic acid is reduced to the molybdenum blue complex, which absorbs at 810 nm. If some of the B-silicomolybdic acid is formed the molybdenum blue reduction product of this form absorbs at a lower wavelength, near to 730 nm. Hence, it is important to ensure that only the B-isomer be formed in the initial stage.",
+  features: [
+    "Because only the B-form of the silico-molybdic acid is formed the method has a fairly good sensitivity at the lower end as required by power plants and the electronics industry to ensure that the water is pure. The new formulation of Reagent #1 also speeds up the time required for the complete reaction. In addition, although the first reagent is relatively expensive very small volumes of reagent are required.",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 100 ppb / 500 ppb. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Full Scale Repeatability", value: "±2%" },
+    { name: "Analysis time", value: "around 15 minutes" },
+    { name: "Calibration", value: "two point" },
+    { name: "LED Wavelength", value: "810 nm" },
+    { name: "Reagent 1 Consumption", value: "0.37 ml / analysis - 0.3L / month" },
+    { name: "Reagent 2 Consumption", value: "0.37 ml / analysis - 0.3L / month" },
+    { name: "Reagent 3 Consumption", value: "0.37 ml / analysis - 0.3L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+
+{
+  productId: "040",
+  name: "OPTICS-1000 Total Chromium",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Total-Chromium.pdf",
+  introduction:
+    "Cerium sulfate is added, which oxidizes the sample and converts all forms of chromium to chromium VI. Then diphenylcarbohydrazide is added which reacts with the chromium VI to produce a reddish-purple color.",
+  features: [
+    "The method is very simple, very specific and is very sensitive because of the high absorbance of the diphenylcarbazide-chromium(VI) complex formed. Chromium (III) can be measuring calculating the difference between Cr Total and Cr (VI).",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 200 ppb. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Repeatability", value: "±2%" },
+    { name: "Analysis time", value: "around 10 minutes" },
+    { name: "Calibration", value: "two point" },
+    { name: "LED Wavelength", value: "545 nm" },
+    { name: "Reagent 1 Consumption", value: "2.5 ml / analysis - 0.2L / month" },
+    { name: "Reagent 2 Consumption", value: "0.8 ml / analysis - 0.75L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+{
+  productId: "041",
+  name: "OPTICS-1000 Total Hardness",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Total-Hardness.pdf",
+  introduction:
+    "The calcium and magnesium complexes with the Erichrome Black-T to give a blue-violet colored complex. This, when titrated by the addition of EDTA, is broken up as the calcium EDTA/ Magnesium ESTA complexes are more stable and when excess EDTA is present the Erichrome Black -T-EDTA complex is formed which is a rose colored complex.",
+  features: [
+    "The complexometric titration of both the calcium and magnesium, which are the main contributors to the hardness of water, gives a very sharp end point because at the end-point neither the Ca-EBT nor the EDTA-EBT complexes exist.",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 100 ppm /250 ppm/ 500ppm / 1000 ppm. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Repeatability", value: "±2%" },
+    { name: "Analysis time", value: "around 20 minutes" },
+    { name: "Calibration", value: "One point" },
+    { name: "LED Wavelength", value: "650 nm" },
+    { name: "Reagent 1 Consumption", value: "0.37 ml / analysis - 0.3L / month" },
+    { name: "Reagent 2 Consumption", value: "0.37 ml / analysis - 0.3L / month" },
+    { name: "Reagent 3 Consumption", value: "0.37 ml / analysis - 0.3L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+{
+  productId: "042",
+  name: "OPTICS-1000 Zinc",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Zinc.pdf",
+  introduction:
+    "The method relies upon the direct reaction of zinc ion to react with the Vanadomolybdate reagent to form a yellow colored complex.",
+  features: [
+    "The method appears to be specific for zinc and is especially useful when measuring the higher concentrations of phosphate. Although the complex is yellow in color the autoblanking before the addition of the single reagent compensates for any background yellow color present in the sample. The other obvious advantage is that only a single reagent is used and the quantity of reagent added is very small (1 ml).",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 2ppm / 5ppm / 10ppm / 20ppm / 60ppm. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2%" },
+    { name: "Repeatability", value: "±2%" },
+    { name: "Analysis time", value: "around 10 minutes" },
+    { name: "Calibration", value: "Two point" },
+    { name: "LED Wavelength", value: "435 nm" },
+    { name: "Reagent 1 Consumption", value: "0.9 ml / analysis - 0.75L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+{
+  productId: "043",
+  name: "OPTICS-1000 Alkalinity",
+  img: "../productImages/img026.png",
+  dataSheetLink: "../productsDataSheets/Optics-1000-Alkalinity.pdf",
+  introduction:
+    "The sample is titrated with hydrochloric acid to a colorimetric end point corresponding to a specific pH. Phenolphthalein alkalinity is determined by titration to a pH of 8.3, as evidenced by the color change of phenolphthale in indicator, and indicates the total hydroxide and one half the carbonate present.",
+  features: [
+    "The method is specific for alkalinity, and thanks to the accuracy of the system of Advance Analytik the repeatability achieved is really high.",
+  ],
+  attributes:[
+    { name: "Range", value: "From 0 to 100 ppm / 250 ppm / 500 ppm / 1000ppm. (Adjustable higher concentrations with internal dilution.)" },
+    { name: "Accuracy", value: "±2% FC" },
+    { name: "Repeatability", value: "±2% FC" },
+    { name: "Reproducability", value: "±2% FC" },
+    { name: "Detection Time", value: "Due to titration chemistry technique, the limit detection depends on the FS. It is 0.0075 * FS" },
+    { name: "Analysis Time", value: "around 20 minutes" },
+    { name: "Calibration", value: "One point" },
+    { name: "LED Wavelength", value: "625 nm" },
+    { name: "Reagent 1 Consumption", value: "1 ml / analysis - 0.75L / month" },
+    { name: "Reagent 2 Consumption", value: "4 ml / analysis - 3.0L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
   // Add more products as necessary
 ];
 
@@ -921,8 +1320,6 @@ function toggleContent(contentType) {
 
 // Ensure the content is loaded after the DOM is ready
 document.addEventListener('DOMContentLoaded', loadProductData);
-
-
 
 // Function to open the quote popup
 

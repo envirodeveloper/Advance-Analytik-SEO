@@ -1,0 +1,383 @@
+@media (max-width: 720px) {
+
+
+  .video-header-section {
+    position: relative;
+    width: 100%;
+  }
+  
+  .video-header-section video {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    -webkit-object-fit: cover; /* Safari/WebKit */
+    object-position: center center; /* Ensures proper centering in Safari */
+  }
+  
+  .video-header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); /* Safari/WebKit */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .video-header-subtext {
+    position: absolute;
+    top: calc(50% + 20px); /* Positioned slightly below the main text */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); /* Safari/WebKit */
+    color: white;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 300px;
+  }
+  
+  
+  .bubble-container {
+      height: 400px;
+  }
+
+
+   /* header titles */
+
+   .header-title {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .left-line, .right-line {
+    width: 50px; /* Shorter lines for smaller screens */
+    margin: 5px 0; /* Space above and below the lines */
+  }
+
+  .header-title h2 {
+    font-size: 1.5rem; /* Adjust font size for medium screens */
+    text-align: center;
+  }
+
+    /*about section*/
+  
+    .about-section {
+      padding: 15px;
+      display: inline;
+    }
+  
+    .about-text h3 {
+      font-size: 1rem;
+    }
+  
+    .about-text p {
+      font-size: 0.85rem;
+    }
+  
+    .about-link a {
+      padding: 8px 12px;
+      font-size: 0.85rem;
+    }
+
+    /*industry we serve */
+
+    .industries-section {
+      padding: 30px 15px; /* Reduce padding */
+    }
+  
+    .industries-section h2 {
+      font-size: 1.8rem; /* Reduce title font size */
+      margin-bottom: 20px;
+    }
+  
+    .industries-container {
+      grid-template-columns: repeat(2, 1fr); /* Display 2 cards per row */
+      gap: 15px; /* Adjust spacing between cards */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .industry-card {
+      width: 100%; /* Allow cards to take full width of their container */
+      height: 200px; /* Adjust height */
+    }
+  
+    .industry-img {
+      height: 100%; /* Ensure images scale correctly */
+      object-fit: cover;
+      -webkit-object-fit: cover; /* Safari/WebKit */
+    }
+  
+    .text-overlay {
+      font-size: 1rem; /* Adjust overlay text size */
+      padding: 10px 15px; /* Reduce padding */
+      width: 80%; /* Adjust overlay width */
+      top: 180px;
+    }
+
+    
+    .industry-card:hover .text-overlay {
+     opacity: 1;
+     transform: translateX(-50%) translateY(-10px);
+     -webkit-transform: translateX(-50%) translateY(-10px); /* Safari/WebKit */
+     z-index: 99999;
+     }
+
+
+
+   /*product section Analyzer*/
+
+    .header-image-section {
+      flex-direction: column; /* Stack elements vertically */
+      height: auto; /* Allow height to adjust dynamically */
+      padding: 20px; /* Add padding for smaller screens */
+    }
+  
+    .header-image-label {
+      position: static; /* Remove absolute positioning */
+      text-align: center; /* Center the label */
+      -webkit-clip-path: none; /* Safari/WebKit */
+      margin-bottom: 20px; /* Add spacing below the label */
+      clip-path: none; /* Remove arrow effect */
+      border-radius: 4px; /* Maintain a clean look */
+      width: auto; /* Adjust width to fit content */
+    }
+  
+    .header-image-content {
+      width: 100%; /* Take full width */
+      padding: 20px; /* Reduce padding */
+      text-align: center; /* Center align text */
+    }
+  
+    .header-image-content h1 {
+      font-size: 1.8rem; /* Reduce heading size */
+    }
+  
+    .header-image-content p {
+      font-size: 0.95rem; /* Slightly smaller paragraph size */
+    }
+  
+    .header-image-wrapper {
+      width: 100%; /* Full width for images */
+      margin-top: 20px; /* Add spacing above image */
+    }
+  
+    .header-image {
+      max-width: 80%; /* Adjust image size for smaller screens */
+    }
+  
+    .header-image-section::after {
+      display: none; /* Hide the red gradient for simplicity */
+    }
+
+
+    /* product section viz pro controllers */
+
+    .controller-pro-section {
+      padding: 40px 20px; /* Adjust padding for smaller screens */
+      flex-direction: column; /* Stack elements vertically */
+      text-align: left; /* Center-align text */
+
+    }
+  
+    .controller-pro-left {
+      flex-direction: column; /* Stack the image sections vertically */
+      align-items: center; /* Center the images */
+      gap: 20px; /* Adjust spacing between images */
+      margin-bottom: 20px; /* Add spacing between left and right sections */
+    }
+
+    .controller-pro-right{
+     max-width: 70%;
+    }
+  
+    .controller-pro-image-wrapper img {
+      width: 150px; /* Reduce image size */
+    }
+  
+    .controller-pro-title {
+      font-size: 1.8rem; /* Reduce title font size */
+    }
+  
+    .controller-pro-description {
+      font-size: 1rem; /* Slightly reduce font size */
+      line-height: 1.5; /* Adjust line height for readability */
+    }
+    
+    .controller-pro-button {
+      font-size: 14px; /* Reduce button font size */
+      width: 100%; /* Make button span the full width */
+      padding: 12px; /* Adjust padding for smaller button */
+    }
+    
+    /*product section viz classic */
+    
+    .controller-classic-section {
+      padding: 40px 20px; /* Adjust padding for smaller screens */
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center; /* Center-align text */
+    }
+    
+    /* Left section adjustments */
+    .controller-classic-left {
+      max-width: 100%; /* Take full width on smaller screens */
+      gap: 15px; /* Adjust gap for smaller screens */
+    }
+    
+    .controller-classic-title {
+      font-size: 1.8rem; /* Reduce title font size */
+    }
+    
+    .controller-classic-description {
+      font-size: 1rem; /* Reduce font size */
+      line-height: 1.5; /* Adjust line height for readability */
+    }
+    
+    .controller-classic-button {
+      font-size: 14px; /* Reduce button font size */
+      width: 100%; /* Make button span full width */
+      padding: 12px; /* Adjust padding */
+    }
+    
+    /* Right section adjustments */
+    .controller-classic-right {
+      display: flex;
+      flex-direction: column; /* Stack images vertically */
+      gap: 20px; /* Adjust gap between images */
+      align-items: center; /* Center-align images */
+    }
+    
+    .controller-classic-image-wrapper img {
+      width: 150px; /* Reduce image size */
+    }
+    
+    .controller-classic-image-wrapper h4 {
+      font-size: 14px; /* Adjust font size */
+    }
+    
+    /* product sensors slider */
+    
+  /* Adjust Pro Slider Label */
+  .pro-slider-label {
+    width: 160px;
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+    
+  /* Adjust Image Sizes in Pro Slider */
+  .pro-image {
+    height: 180px;
+    margin-right: 30px;
+  }
+    
+  /* Adjust Pro Image Figures Spacing */
+  .pro-image-figure {
+    margin-right: 5px; /* Less margin for smaller screens */
+  }
+    
+  /* Adjust Pro Images Container */
+  .pro-images {
+    margin-top: 40px;
+  }
+    
+  /* Adjust the Pro Slider Container Height */
+  .pro-slider {
+    height: 250px;
+  }
+
+  /* Ensure smooth transition for Safari */
+  .pro-slider, .pro-image, .pro-image-figure {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+
+
+    /* the application video section */
+    .application-video-main-container {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 65vh;
+      background-color: #dfdfdf;
+    }
+
+    .application-video-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      position: relative;
+   
+    }
+  
+    .application-video-left {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .application-video-thumbnail {
+      max-width: 300px;
+    }
+
+    .application-video-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 300px;
+    }
+    
+    
+    .application-video-title {
+      font-size: 20px;
+      text-align: center;
+   
+    } 
+  
+    .application-video-description {
+      font-size: 14px;
+      text-align: center;
+    }
+
+
+    .company-profile-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .company-profile-text-content {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .company-profile-text-content h2 {
+      font-size: 24px;
+    }
+  
+    .company-profile-text-content p {
+      font-size: 14px;
+    }
+  
+    .company-profile-image-container {
+      max-width: 80%;
+      margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+  }
+  
+  

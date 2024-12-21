@@ -49,5 +49,105 @@
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScrollY = window.scrollY;
+    const preheader = document.querySelector('.preheader');
+    const navbar = document.querySelector('.navbar');
+  
+    if (preheader && navbar) {
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+  
+        if (currentScrollY > lastScrollY) {
+          // Scrolling down
+          preheader.classList.add('hidden');
+          navbar.classList.add('top');
+        } else {
+          // Scrolling up
+          preheader.classList.remove('hidden');
+          navbar.classList.remove('top');
+        }
+  
+        lastScrollY = currentScrollY;
+      });
+    } else {
+      console.error('Preheader or Navbar element not found in the DOM.');
+    }
+  });
 
 
+
+
+// // Get references to the toggle button, navbar links, and submenus
+// const toggleButton = document.getElementById('sidebar-toggle');
+// const navbarLinks = document.querySelector('.navbar__links__wrapper');
+// const subMenus = document.querySelectorAll('.markets__submenu');
+// const subSubMenus = document.querySelectorAll('.sub-submenu');
+
+// // Toggle menu visibility when the button is clicked
+// toggleButton.addEventListener('click', () => {
+//   navbarLinks.classList.toggle('open'); // Toggle the display of the navbar
+// });
+
+// // Handle submenu toggle for mobile
+// subMenus.forEach(subMenu => {
+//   subMenu.addEventListener('click', () => {
+//     // Close all other submenus and sub-submenus
+//     subMenus.forEach(menu => menu !== subMenu && (menu.style.display = 'none'));
+//     subSubMenus.forEach(subSubMenu => subSubMenu !== subMenu && (subSubMenu.style.display = 'none'));
+
+//     // Toggle the clicked submenu
+//     const subSubMenu = subMenu.querySelector('.sub-submenu');
+//     subSubMenu.style.display = subSubMenu.style.display === 'block' ? 'none' : 'block';
+//   });
+// });
+
+// // Handle submenu fade-in and fade-out with delay
+// subMenus.forEach(subMenu => {
+//   const subSubMenu = subMenu.querySelector('.sub-submenu');
+
+//   if (subSubMenu) {
+//     // Show the subsubmenu when hovering over the submenu link
+//     subMenu.addEventListener('mouseenter', () => {
+//       subSubMenu.style.display = 'block';
+//       subSubMenu.style.opacity = '1';
+//       subSubMenu.style.transform = 'translateY(0)';
+
+//       // Clear any previous fade-out timer to keep it visible
+//       if (subSubMenu.fadeTimeout) {
+//         clearTimeout(subSubMenu.fadeTimeout);
+//       }
+//     });
+
+//     // Start fade-out process with a delay when mouse leaves the submenu link
+//     subMenu.addEventListener('mouseleave', () => {
+//       subSubMenu.fadeTimeout = setTimeout(() => {
+//         subSubMenu.style.opacity = '0'; // Start fading out
+//         subSubMenu.style.transform = 'translateY(-10px)'; // Add transition for smooth fading
+//         setTimeout(() => {
+//           subSubMenu.style.display = 'none'; // Hide completely after fade-out
+//         }, 2000); // Wait for fade-out animation to finish
+//       }, 5000); // Keep it visible for 3 seconds before fading out
+//     });
+
+//     // Prevent fade-out while hovering over the subsubmenu
+//     subSubMenu.addEventListener('mouseenter', () => {
+//       if (subSubMenu.fadeTimeout) {
+//         clearTimeout(subSubMenu.fadeTimeout);
+//       }
+//       subSubMenu.style.opacity = '1';
+//       subSubMenu.style.transform = 'translateY(0)';
+//     });
+
+//     // Start fade-out process with a delay when mouse leaves the subsubmenu
+//     subSubMenu.addEventListener('mouseleave', () => {
+//       subSubMenu.fadeTimeout = setTimeout(() => {
+//         subSubMenu.style.opacity = '0'; // Start fading out
+//         subSubMenu.style.transform = 'translateY(-10px)'; // Add transition for smooth fading
+//         setTimeout(() => {
+//           subSubMenu.style.display = 'none'; // Hide completely after fade-out
+//         }, 2000); // Wait for fade-out animation to finish
+//       }, 5000); // Keep it visible for 3 seconds before fading out
+//     });
+//   }
+// });

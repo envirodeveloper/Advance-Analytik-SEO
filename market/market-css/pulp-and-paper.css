@@ -1,0 +1,33 @@
+.pulp-paper-map-graph-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  .pulp-paper-map-detail-image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .pulp-paper-map-detail-highlight {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    border: 2px dashed transparent;
+  }
+
+  .pulp-paper-map-detail-text {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 3;
+    cursor: pointer;
+  }

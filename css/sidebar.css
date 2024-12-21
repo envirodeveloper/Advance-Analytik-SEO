@@ -1,22 +1,52 @@
-html, body {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Removes tap highlight */
-  -webkit-touch-callout: none; /* Prevents text callout when long pressing */
-/* Prevents text selection */
-  -webkit-overflow-scrolling: touch; /* Enables smooth scrolling */
-}
+
 
 @media (min-width: 721px) {
     .sidebar {
         display: none; /* Hide sidebar on screens wider than 720px */
     }
+
+    .sidebar-navbar {
+      display: none; /* Hide sidebar on screens wider than 720px */
+  }
 }
 
 @media (max-width: 720px) {
+
+  .sidebar-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
   
+  /* Logo Styles */
+  .sidebar-navbar .sidebar-logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+
+  .sidebar-navbar .sidebar-logo img {
+    height: 35px;
+  }
+    
+  .sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+    
+    
     .navbar-links{
        display: none; /* Hide the navbar when the screen width is 720px or less */
       }
-        
+    
     .toggle-btn {
       position: fixed;
       top: 25px;
@@ -58,7 +88,7 @@ html, body {
       width: 350px;
       position: fixed;
       top: 0;
-      right: -350px;
+      right: -550px;
       height: 100%;
       overflow-y: auto;
       transition: all 0.3s ease;

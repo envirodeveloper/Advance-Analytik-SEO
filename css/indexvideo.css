@@ -1,0 +1,762 @@
+
+
+/* 
+.video-header-section {
+  position: relative;
+  width: 100%;
+}
+
+.video-header-section video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover
+}
+
+.video-header-text {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.video-header-subtext {
+  position: absolute;
+  top: 315px; 
+  left: 100px;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+} */
+
+
+.video-header-section {
+  position: relative;
+  width: 100%;
+}
+
+.video-header-section video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+}
+
+.video-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* Safari */
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.video-header-subtext {
+  position: absolute;
+  top: calc(50% + 50px); /* Positioned slightly below the main text */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* Safari */
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.bubble-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  animation: rise 6s linear infinite;
+  -webkit-animation: rise 6s linear infinite; /* Safari */
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(0.8);
+    -webkit-transform: translateY(0) scale(0.8); /* Safari */
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) scale(1.2);
+    -webkit-transform: translateY(-600px) scale(1.2); /* Safari */
+    opacity: 0;
+  }
+}
+
+/* Header Titles Section */
+
+/* Container for the heading */
+/* Container for the heading */
+/* Container for the heading */
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align elements to the left */
+  margin-bottom: 20px; /* Space between the title and the header image section */
+  position: relative;
+  width: 100%; /* Ensure it spans the full width */
+}
+
+/* Line before the text */
+.left-line {
+  width: 200px; /* Fixed width for the left line */
+  height: 2px;
+  background-color: #bd0202; /* Same red as the label */
+  margin-right: 20px; /* Space between the left line and the text */
+}
+
+/* Space around the text */
+.header-title h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Days', sans-serif;
+  margin: 0; /* Remove default margin */
+}
+
+/* Line after the text */
+.right-line {
+  flex-grow: 1; /* Allow the right line to stretch fully */
+  height: 2px;
+  background-color: #bd0202; /* Same red as the label */
+  margin-left: 20px; /* Space between the text and the right line */
+}
+
+
+
+/* Red Label at Top-Left Corner */
+/* Red Label with Arrow-Shaped Corners */
+.header-image-label {
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  text-align: end;
+  background-color: #bd0202;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px; /* Adjust for proper padding */
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  z-index: 3;
+  clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 20px 100%, 0% 50%);
+  -webkit-clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 20px 100%, 0% 50%); /* Safari */
+  /* Creates arrow effect by clipping */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Safari */
+}
+
+
+/* Ensure the Section Maintains Layout */
+.header-image-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  overflow: hidden;
+}
+
+
+/* Content Container */
+.header-image-content {
+  z-index: 2; /* Place above the background */
+  width: 55%;
+  padding: 40px 40px 40px 80px;
+  text-align: left;
+  font-family: 'Days', sans-serif;
+}
+
+.header-image-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.header-image-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+
+}
+
+/* Image Wrapper */
+.header-image-wrapper {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.header-image {
+  max-width: 60%;
+  height: auto;
+  z-index: 3; /* Ensure it's above the red section */
+}
+
+/* Red Background with Fading Effect */
+.header-image-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0; /* Place the red section on the right side */
+  width: 50%; /* Half of the section width */
+  height: 100%; /* Full height of the section */
+  /*background: linear-gradient(to left, rgba(189, 2, 2, 1) 40%, rgba(189, 2, 2, 0)); /* Gradient from full red to transparent */
+  z-index: 1; /* Positioned behind the content and image */
+}
+
+/* Main container for video section */
+
+/* Red Label for Applications */
+
+/* Main container for the video section */
+/* Main container for video section */
+/* Main container for video section */
+.app-video-main-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #dfdfdf;
+}
+
+/* Title styling for the video section */
+.application-video-main-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  background-color: #dfdfdf;
+}
+
+.application-video-section {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Video container */
+.application-video-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+  overflow: hidden;
+}
+
+.application-video-thumbnail {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.application-video-player {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  -webkit-object-fit: cover; /* Safari */
+}
+
+.application-video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* Safari */
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.application-video-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 40%;
+}
+
+.application-video-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+}
+
+.application-video-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.application-video-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.application-video-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #bd0202;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 140px;
+  align-self: flex-end;
+}
+
+.application-video-button:hover {
+  background-color: darkred;
+}
+
+
+/* Certification Section Styles */
+#certifications {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.certification-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.certification {
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certification img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.5s;
+}
+
+.certification p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hover Effects */
+.certification:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px #ccc, -10px -10px 20px #fff;
+}
+
+.certification:hover img {
+  transform: rotate(15deg) scale(1.1);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* Keyframe Animations */
+.certification img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0); /* Safari */
+  }
+  50% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10); /* Safari */
+  }
+}
+
+/* 
+.controller-main-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+.controller-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.controller-card-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.controller-card {
+  width: 200px;
+  height: 250px;
+  perspective: 1000px;
+  border-radius: 40px
+}
+.controller-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.controller-card:hover .controller-card-inner {
+  transform: rotateY(180deg);
+}
+.controller-card-front,
+.controller-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.controller-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controller-card-front img {
+  width: 80%;
+  height: auto;
+}
+.controller-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transform: rotateY(180deg);
+}
+.controller-card-back h3 {
+  margin: 10px 0;
+}
+.controller-card-back button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #bd0202;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.controller-card-back button:hover {
+  background-color: darkred;
+}
+.controller-card-red {
+  background-color: #bd0202;
+}
+.controller-card-white {
+  background-color: white;
+}
+
+.controller-card-white .controller-card-back {
+  background-color: #bd0202;
+} */
+
+
+
+/* Red Label at Top-Left Corner */
+.controller-pro-label {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 200px;
+  text-align: end;
+  background-color: #bd0202;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px; /* Adjust for proper padding */
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  z-index: 3;
+  clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 20px 100%, 0% 50%);
+  -webkit-clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 20px 100%, 0% 50%); /* Safari */
+}
+
+/* Ensure the Section Has Relative Positioning */
+.controller-pro-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: #dfdfdf;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Ensure the left section has relative positioning for the label */
+.controller-pro-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* Styling for the title in the right section */
+.controller-pro-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: black;
+}
+
+
+/* Individual image with its title below */
+.controller-pro-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controller-pro-image-wrapper img {
+  width: 170px;
+  height: auto;
+
+}
+
+.controller-pro-image-wrapper h4 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+  font-family: 'Days', sans-serif;
+}
+
+/* Right side container for description and button */
+.controller-pro-right {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.controller-pro-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.controller-pro-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #bd0202;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 140px;
+}
+
+.controller-pro-button:hover {
+  background-color: darkred;
+}
+
+
+
+
+
+
+    /* Styling for the main section */
+    /* Styling for the main section */
+    .controller-classic-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px;
+      background-color: #f9f9f9;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Left side container for description and button */
+    .controller-classic-left {
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .controller-classic-title {
+      font-size: 24px;
+      color: black;
+      font-weight: 800;
+    }
+
+    .controller-classic-description {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .controller-classic-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #bd0202;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-transform: uppercase;
+      width: 140px;
+    }
+
+    .controller-classic-button:hover {
+      background-color: darkred;;
+    }
+
+    /* Right side container for images in a horizontal line */
+    .controller-classic-right {
+      display: flex;
+      gap: 30px;
+    }
+
+    .controller-classic-image-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .controller-classic-image-wrapper img {
+      width: 170px;
+      height: auto;
+    }
+
+    .controller-classic-image-wrapper h4 {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      color: #333;
+      font-family: 'Days', sans-serif;
+    }
+    
+
+
+
+
+
+
+
+    /* Section Layout */
+.company-profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px 40px 100px;
+  background: linear-gradient(to right, #f8f8f8, #eaeaea);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: company-profile-fadeIn 1s ease-out;
+}
+
+/* Text Content */
+.company-profile-text-content {
+  flex: 1;
+  max-width: 40%;
+}
+
+.company-profile-text-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+  animation: company-profile-slideInLeft 1s ease-out;
+}
+
+.company-profile-text-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.company-profile-download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #bd0202;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease; /* Safari */
+}
+
+.company-profile-download-button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Image Container */
+.company-profile-image-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  animation: company-profile-slideInRight 1s ease-out;
+}
+
+.company-profile-image-container img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Safari */
+}
+
