@@ -1,0 +1,154 @@
+.hazardous-waste-header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../marketImages/hazardouswate.jpg') center/cover;
+    color: white;
+}
+
+.hazardous-waste-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hazardous-waste-header p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hazardous-waste-section {
+    padding: 20px 40px;
+}
+
+.hazardous-waste-section:nth-child(even) {
+    background: #fff;
+}
+
+.hazardous-waste-description {
+    max-width: 1400px;
+}
+
+.hazardous-waste-description h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.hazardous-waste-description p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.hazardous-waste-benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hazardous-waste-benefit {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hazardous-waste-benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hazardous-waste-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hazardous-waste-benefit p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.hazardous-waste-uses h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.hazardous-waste-uses ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.hazardous-waste-uses ul li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.hazardous-waste-uses ul li::before {
+    content: '\2022';
+    color: #007BFF;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.hazardous-waste-map-graph-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  .hazardous-waste-map-detail-image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .hazardous-waste-map-detail-highlight {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    border: 2px dashed transparent;
+  }
+
+  .hazardous-waste-map-detail-text {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 3;
+    cursor: pointer;
+  }
+

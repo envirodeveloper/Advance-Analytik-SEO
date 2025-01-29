@@ -691,7 +691,6 @@ body {
   height: 320px;
 }
 
-
 .pro-images {
   display: flex;
   animation: pro-slide 30s linear infinite;
@@ -726,7 +725,7 @@ body {
 }
 
 .pro-image-figure a:hover {
-  color: #0078d4; /* Change text color on hover */
+  color: #1c2835; /* Change text color on hover */
   transform: scale(1.05); /* Slight zoom effect */
 }
 
@@ -738,7 +737,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #0078d4; /* Match the hover text color */
+  background-color: #1c2835; /* Match the hover text color */
   transition: width 0.3s ease; /* Smooth underline effect */
 }
 
@@ -757,7 +756,7 @@ figcaption {
 }
 
 .pro-image-figure:hover figcaption {
-  color: #0078d4; /* Change text color on hover */
+  color: #1c2835; /* Change text color on hover */
   transform: translateY(-5px); /* Slight upward motion */
 }
 
@@ -799,3 +798,94 @@ figcaption {
     width: 90%;
     margin: 0 auto;
 }
+
+
+.municipal-container {
+  position: relative; 
+  align-items: center;
+  padding: 80px;
+  background-color: #dfdfdf;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.municipal-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.municipal-heading h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #333;
+}
+
+.municipal-heading p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.municipal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.municipal-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.municipal-card h3 {
+  font-size: 1.3em;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.municipal-card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+.municipal-read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.municipal-read-more-btn:hover {
+  background: black;
+  color: white;
+}
+
+.municipal-read-more-btn::after {
+  content: '➜'; /* Unicode arrow symbol */
+  font-size: 18px;
+  margin-left: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.municipal-read-more-btn:hover::after {
+  transform: translateX(5px);
+}
+
+

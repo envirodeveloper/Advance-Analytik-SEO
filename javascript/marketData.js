@@ -8,8 +8,8 @@ const marketData = [
         des2: "Efficiency and quality are paramount in the highly competitive Pulp and Paper industry. That's why we offer a comprehensive range of state-of-the-art monitoring solutions that enable you to stay ahead of the curve. Our advanced pH meters, ORP meters, TDS meters, turbidity meters, COD/BOD/TSS analyzers, chlorine meters, and conductivity meters are engineered to deliver accurate and reliable measurements, empowering you to make informed decisions and optimize your operations.By implementing our monitoring solutions, you can streamline your production processes, enhance product quality, and maximize resource utilization. Our technologies enable you to monitor critical parameters such as pH levels, oxidation-reduction potential (ORP), total dissolved solids (TDS), turbidity, chemical oxygen demand (COD), biochemical oxygen demand (BOD), total suspended solids (TSS), chlorine levels, and conductivity. This comprehensive monitoring ensures that your production stays on track, meets the required standards, and minimizes environmental impact.",
         des3: "At Advance Analytik, we understand the importance of compliance with environmental regulations in the Pulp and Paper industry. Our monitoring solutions help you maintain water quality, optimize chemical dosing, and ensure efficient wastewater treatment. By doing so, you can not only meet regulatory requirements but also contribute to sustainability efforts, fostering a positive reputation for your business.Partner with us to benefit from our extensive industry experience and expertise. We take pride in delivering customized monitoring solutions that address your specific challenges and goals. With our advanced technologies and dedicated support, you can achieve greater operational efficiency, reduce costs, and enhance overall productivity.",
         des4: "Don't settle for outdated monitoring practices. Stay ahead of the competition and unlock the full potential of your Pulp and Paper operations with our advanced monitoring solutions. Contact us today to learn more about how Advance Analytik can empower your business in the Pulp and Paper market.",
-        img: "../market/marketImages/PulpandPaper.jpg",
-        bgImg: "../images/market images/pulp-and-paper.jpeg"   
+        img: "../../market/marketImages/PulpandPaper.jpg",
+        bgImg: "../../images/market images/pulp-and-paper.jpeg"   
       },
      {
         route: "distillery",
@@ -20,8 +20,8 @@ const marketData = [
         des2: "The distillery market is a dynamic and competitive industry that revolves around the production of high-quality alcoholic beverages. From whiskey and vodka to rum and gin, distilleries strive to create unique flavors and memorable experiences for consumers. To achieve this, precise control over the distillation process, fermentation, and aging is essential.",
         des3: "At Advance Analytik, we understand the critical role that monitoring plays in ensuring the desired flavor profiles and product consistency in the distillery market. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and alcohol meters, provide accurate and reliable measurements. By closely monitoring key parameters such as temperature, pH levels, alcohol content, and maturation time, distilleries can achieve exceptional results and maintain consistent quality.",
         des4: "Maximize the potential of your distillery operations with our advanced monitoring solutions. Craft exceptional spirits, enhance operational efficiency, and meet the demands of discerning consumers. Contact us today to learn more about how Advance Analytik can empower your distillery business.",
-        img: "../market/marketImages/Distillery.jpg",
-        bgImg: "../images/market images/distillery.jpg"     
+        img: "../../market/marketImages/Distillery.jpg",
+        bgImg: "../../images/market images/distillery.jpg"     
       },
       {
         route: "sugar",
@@ -31,8 +31,8 @@ const marketData = [
         des2: "The sugar market is a dynamic and highly competitive industry that plays a vital role in providing sweeteners for various sectors, including food and beverage, confectionery, and pharmaceuticals. In this fast-paced industry, achieving optimal production efficiency and maintaining product quality is crucial.",
         des3: "At Advance Analytik, we understand the challenges faced by sugar producers. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and conductivity meters, offer accurate and reliable measurements throughout the sugar production process. By closely monitoring key parameters such as pH levels, impurities, conductivity, and turbidity, sugar producers can ensure precise control and maximize the efficiency of their operations.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your sugar operations. Maximize efficiency, ensure product quality, and achieve superior results in the sugar market. Contact us today to learn more about how we can empower your sugar business.",
-        img: "../market/marketImages/Sugar.jpg",
-        bgImg: "../images/market images/sugar.jpg"     
+        img: "../../market/marketImages/Sugar.jpg",
+        bgImg: "../../images/market images/sugar.jpg"     
       },
       {
         route: "tanneries",
@@ -43,8 +43,8 @@ const marketData = [
         des2: "The tanneries market plays a significant role in the leather industry, transforming raw hides into high-quality leather products. As the demand for leather goods continues to rise, tanneries face the challenge of meeting environmental standards while maintaining operational efficiency.",
         des3: "At Advance Analytik, we understand the importance of sustainable practices in the tanneries market. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and COD/BOD/TSS analyzers, enable tanneries to closely monitor and control critical parameters throughout the leather production process. By monitoring factors such as pH levels, organic load, suspended solids, and wastewater quality, tanneries can ensure compliance with environmental regulations and minimize their environmental impact.",
         des4: "Partner with Advance Analytik to achieve sustainable leather production and enhance your competitive advantage in the tanneries market. Experience the difference our advanced monitoring solutions can make in your operations. Contact us today to learn more about how we can empower your tannery business.",
-        img: "../market/marketImages/tannieries.jpg",
-        bgImg: "../images/market images/tanneries.jpeg"     
+        img: "../../market/marketImages/tannieries.jpg",
+        bgImg: "../../images/market images/tanneries.jpeg"     
       },
       {
         route: "powerplants",
@@ -54,8 +54,8 @@ const marketData = [
         des2: "The power plant industry plays a crucial role in generating electricity to meet the growing energy demands of society. As power plants strive to deliver uninterrupted power supply, they face challenges such as operational efficiency, environmental impact, and regulatory compliance.",
         des3: "At Advance Analytik, we understand the importance of reliable and efficient power generation. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and conductivity meters, enable power plants to closely monitor critical parameters in various stages of the energy production process. By continuously monitoring factors such as water quality, chemical levels, and system performance, power plants can ensure optimal operation and early detection of potential issues.",
         des4: "Partner with Advance Analytik to enhance the reliability and efficiency of your power plant operations. Experience the difference our advanced monitoring solutions can make in optimizing energy production and ensuring compliance. Contact us today to learn more about how we can empower your power plant business.",
-        img: "../market/marketImages/powerplant.jpg",
-        bgImg: "../images/market images/power plant.png"     
+        img: "../../market/marketImages/powerplant.jpg",
+        bgImg: "../../images/market images/power plant.png"     
       },
       {
         route: "cement",
@@ -65,8 +65,8 @@ const marketData = [
         des2: "The cement market is a vital sector in the construction industry, providing the foundation for infrastructure development worldwide. Cement manufacturers face the challenge of producing high-quality cement while optimizing energy consumption and minimizing environmental impact.",
         des3: "At Advance Analytik, we understand the importance of efficient cement production. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and COD/BOD/TSS analyzers, offer accurate and reliable measurements throughout the cement manufacturing process. By closely monitoring key parameters such as pH levels, suspended solids, and water quality, cement manufacturers can ensure precise control and optimize their operations.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your cement operations. Maximize efficiency, ensure product quality, and contribute to sustainable construction practices. Contact us today to learn more about how we can empower your cement business.",
-        img: "../market/marketImages/cement.jpg",
-        bgImg: "../images/market images/cement.webp"     
+        img: "../../market/marketImages/cement.jpg",
+        bgImg: "../../images/market images/cement.webp"     
       },
       {
         route: "choralakaliplants",
@@ -76,8 +76,8 @@ const marketData = [
         des2: "Chloral alkali plants play a critical role in producing chemicals such as chlorine, caustic soda, and hydrogen. As the demand for these chemicals continues to rise, chloral alkali producers face the challenge of maintaining operational efficiency, ensuring product quality, and adhering to stringent safety and environmental regulations.",
         des3: "At Advance Analytik, we understand the importance of safe and efficient operations in chloral alkali plants. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and conductivity meters, enable precise monitoring of critical parameters throughout the production process. By continuously monitoring factors such as pH levels, conductivity, and impurities, chloral alkali plant operators can ensure optimal process control, minimize downtime, and prevent safety incidents.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your chloral alkali plant operations. Ensure safe and efficient production, meet regulatory requirements, and enhance your competitive advantage. Contact us today to learn more about how we can empower your chloral alkali business.",
-        img: "../market/marketImages/chloralalkaliplants.jpg",
-        bgImg: "../images/market images/chloral-alkali-plant.jpg"     
+        img: "../../market/marketImages/chloralalkaliplants.jpg",
+        bgImg: "../../images/market images/chloral-alkali-plant.jpg"     
       },
       {
         route: "oilrefineries",
@@ -87,8 +87,8 @@ const marketData = [
         des2: "Oil refineries play a crucial role in transforming crude oil into various refined products such as gasoline, diesel, and jet fuel. Refineries face the challenge of producing high-quality products while meeting strict regulatory standards, minimizing environmental impact, and optimizing energy consumption.",
         des3: "At Advance Analytik, we understand the importance of efficient refining operations. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and COD/BOD/TSS analyzers, offer precise and reliable measurements throughout the refining process. By closely monitoring critical parameters such as pH levels, suspended solids, and water quality, oil refineries can achieve optimal control and maximize productivity.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your oil refinery operations. Optimize refining processes, ensure product quality, and contribute to sustainable energy production. Contact us today to learn more about how we can empower your oil refining business.",
-        img: "../market/marketImages/oilrefinery.jpg",
-        bgImg: "../images/market images/oil refinery.jpeg"     
+        img: "../../market/marketImages/oilrefinery.jpg",
+        bgImg: "../../images/market images/oil refinery.jpeg"     
       },
       {
         route: "dyeintermediateunits",
@@ -98,8 +98,8 @@ const marketData = [
         des2: "Dye and dye intermediate units play a crucial role in the production of colorants used in various industries, including textiles, printing, and cosmetics. These units face the challenge of producing vibrant and consistent colorants while maintaining high productivity, minimizing waste, and adhering to stringent quality standards.",
         des3: "At Advance Analytik, we understand the importance of precise and efficient colorant production. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and conductivity meters, offer accurate and reliable measurements throughout the production process. By closely monitoring critical parameters such as pH levels, chemical concentrations, and water quality, dye and dye intermediate units can achieve optimal control and ensure consistent colorant output.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your colorant production. Optimize color consistency, ensure product quality, and contribute to sustainable manufacturing practices. Contact us today to learn more about how we can empower your dye and dye intermediate business.",
-        img: "../market/marketImages/dyingUnit.jpg",
-        bgImg: "../images/market images/dye-intermediate.jpg"     
+        img: "../../market/marketImages/dyingUnit.jpg",
+        bgImg: "../../images/market images/dye-intermediate.jpg"     
       },
       {
         route: "cetp&stps",
@@ -110,8 +110,8 @@ const marketData = [
         des2: "CETPs and STPs play a crucial role in treating industrial and municipal wastewater, protecting water bodies, and preserving the environment. These plants face the challenge of efficiently removing pollutants, minimizing the impact on ecosystems, and ensuring compliance with stringent wastewater discharge regulations.",
         des3: "At Advance Analytik, we understand the importance of sustainable wastewater management. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and COD/BOD/TSS analyzers, offer accurate and reliable measurements throughout the treatment process. By closely monitoring critical parameters such as pH levels, chemical concentrations, and suspended solids, CETPs and STPs can achieve effective treatment, optimize resource usage, and minimize environmental pollution.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your wastewater management. Achieve sustainable treatment processes, ensure regulatory compliance, and contribute to a cleaner and healthier environment. Contact us today to learn more about how we can empower your CETP or STP operations.",
-        img: "../market/marketImages/cetpandstp.jpg",
-        bgImg: "../images/market images/cetp.jpeg"
+        img: "../../market/marketImages/cetpandstp.jpg",
+        bgImg: "../../images/market images/cetp.jpeg"
       },
       {
         route: "pesticides",
@@ -121,8 +121,8 @@ const marketData = [
         des2: "Pesticides play a crucial role in safeguarding crops from pests, diseases, and weeds, ensuring higher yields and quality agricultural produce. However, the responsible and effective use of pesticides requires careful monitoring of application methods, dosage, and environmental impact.",
         des3: "At Advance Analytik, we understand the importance of precise and efficient pesticide monitoring. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and conductivity meters, offer accurate and reliable measurements throughout the pesticide application process. By closely monitoring critical parameters such as pH levels, chemical concentrations, and water quality, pesticide users can optimize application practices, minimize environmental contamination, and ensure the safety of crops and surrounding ecosystems.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your pesticide applications. Optimize crop protection practices, ensure environmental sustainability, and contribute to the growth of the agriculture industry. Contact us today to learn more about how we can empower your pesticide-related activities.",
-        img: "../market/marketImages/pesticides.jpg",
-        bgImg: "../images/market images/pesticides.jpeg"     
+        img: "../../market/marketImages/pesticides.jpg",
+        bgImg: "../../images/market images/pesticides.jpeg"     
       },
       {
         route: "pharmaceuticalsector",
@@ -132,8 +132,8 @@ const marketData = [
         des2: "The pharmaceutical sector plays a critical role in developing and producing life-saving medications. To ensure the safety and efficacy of pharmaceutical products, strict quality control measures and regulatory compliance are essential. Accurate and reliable monitoring of critical parameters is crucial throughout the pharmaceutical manufacturing process.",
         des3: "At Advance Analytik, we understand the importance of precise and efficient monitoring in the pharmaceutical sector. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and conductivity meters, offer reliable measurements and data analysis for key process parameters. By closely monitoring factors such as pH levels, chemical concentrations, and water quality, pharmaceutical companies can optimize production processes, maintain batch-to-batch consistency, and ensure compliance with regulatory guidelines.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your pharmaceutical operations. Ensure product quality, regulatory compliance, and the safety of patients. Contact us today to learn more about how we can empower your pharmaceutical business.",
-        img: "../market/marketImages/pharmasuticals.jpg",
-        bgImg: "../images/market images/pharmaceutical.jpeg"     
+        img: "../../market/marketImages/pharmasuticals.jpg",
+        bgImg: "../../images/market images/pharmaceutical.jpeg"     
       },
       {
         route: "commonbiomedicalwaste",
@@ -144,8 +144,8 @@ const marketData = [
         des2: "Common biomedical waste includes various types of waste generated in healthcare facilities, such as hospitals, clinics, laboratories, and research centers. The proper management and disposal of biomedical waste are crucial to prevent the spread of infections, protect healthcare workers and the public, and minimize environmental impact.",
         des3: "At Advance Analytik, we understand the importance of effective monitoring in handling common biomedical waste. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and COD/BOD/TSS analyzers, offer accurate and reliable measurements to assess the quality and safety of biomedical waste. By closely monitoring critical parameters such as pH levels, chemical concentrations, and the presence of organic matter, healthcare facilities can ensure compliance with regulatory guidelines and implement appropriate waste management protocols.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your common biomedical waste management. Ensure safe handling, proper disposal, and environmental protection. Contact us today to learn more about how we can empower your healthcare facility.",
-        img: "../market/marketImages/biomedicalwaste.jpg",
-        bgImg: "../images/market images/bio-medical-waste.jpg"     
+        img: "../../market/marketImages/biomedicalwaste.jpg",
+        bgImg: "../../images/market images/bio-medical-waste.jpg"     
       },
       {
         route: "commonhazardouswasteincinerator",
@@ -156,8 +156,20 @@ const marketData = [
         des2: "Common hazardous waste incinerators play a crucial role in the proper disposal of hazardous materials and chemicals. To ensure the safety of workers, prevent air and soil pollution, and comply with environmental regulations, accurate and reliable monitoring of incinerator operations is essential.",
         des3: "At Advance Analytik, we understand the importance of precise and efficient monitoring in common hazardous waste incineration. Our advanced monitoring solutions, including pH meters, ORP meters, TDS meters, turbidity meters, and COD/BOD/TSS analyzers, offer real-time monitoring and analysis of critical parameters. By closely monitoring factors such as combustion efficiency, emissions, and air quality, incinerator operators can optimize processes, maintain compliance with regulatory limits, and minimize the impact on the environment.",
         des4: "Partner with Advance Analytik and experience the difference our advanced monitoring solutions can make in your common hazardous waste incineration operations. Ensure safe and efficient waste treatment, comply with regulations, and protect the environment. Contact us today to learn more about how we can empower your facility.",
-        img: "../market/marketImages/hazardouswate.jpg",
-        bgImg: "../images/market images/hazardous-waste.jpeg"     
+        img: "../../market/marketImages/hazardouswate.jpg",
+        bgImg: "../../images/market images/hazardous-waste.jpeg"     
       },
+      {
+        route: "foodprocessing",
+        name: "Food Processing",
+        tagline: "Ensuring Quality and Safety in Food Production",
+        des1: "In the food processing industry, maintaining quality and safety is paramount. Advance Analytik offers specialized analytical solutions to meet these demands, ensuring compliance with strict industry standards while optimizing operational efficiency.",
+        des2: "The food processing industry faces unique challenges such as ensuring product consistency, maintaining hygiene, and complying with regulatory standards. Advanced monitoring solutions are essential to address these challenges effectively.",
+        des3: "Our portfolio includes cutting-edge instruments like pH meters, conductivity meters, and turbidity meters, designed to monitor critical parameters during food production. With our solutions, you can ensure product quality, minimize waste, and enhance operational efficiency.",
+        des4: "Advance Analytik is your trusted partner in the food processing industry. Let us help you achieve excellence in quality and safety. Contact us today to explore how our solutions can be tailored to your needs.",
+        img: "../../market/marketImages/food_processing.jpg",
+        bgImg: "../../images/market images/food-processing.webp"     
+      }
   ];
   
+

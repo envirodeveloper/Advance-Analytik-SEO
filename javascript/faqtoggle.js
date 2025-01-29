@@ -11,3 +11,4 @@ faqItems.forEach(item => {
         toggleButton.textContent = answer.classList.contains('hidden') ? '+' : '−'; // Change button text based on visibility
     });
 });
+

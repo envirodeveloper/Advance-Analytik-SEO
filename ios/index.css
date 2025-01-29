@@ -1,6 +1,8 @@
 
 @media (max-width: 480px) {
-
+  body {
+    -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on iOS */
+  }
 
   .bubble-container {
     height: 300px;
@@ -235,13 +237,35 @@
   
     /* Adjust the Pro Slider Container Height */
     .pro-slider {
-      height: 200px;
+      height: 250px;
     }
   
     /* Ensure smooth transition for Safari */
     .pro-slider, .pro-image, .pro-image-figure {
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
+    }
+
+    .company-profile-section {
+      padding: 15px;
+    }
+  
+    .company-profile-text-content h2 {
+      font-size: 22px; /* Smaller heading font size */
+    }
+  
+    .company-profile-text-content p {
+      font-size: 14px;
+    }
+  
+    .company-profile-download-button {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  
+    .company-profile-video-container iframe {
+      width: 100%; /* Full width for small screens */
+      height: 180px; /* Adjust iframe height */
     }
 
 }

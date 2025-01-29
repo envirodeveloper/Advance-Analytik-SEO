@@ -79,10 +79,10 @@ a{
 .preheader__social a:hover {
   color: #ff4d4d; /* Highlight color on hover */
 }
-  
-  .preheader.hidden {
+
+.preheader.hidden {
     transform: translateY(-100%); /* Slide out of view */
-  }
+}
 
   /* Navbar */
   .navbar {
@@ -100,22 +100,21 @@ a{
     background-color: white ;/* No background color */
     -webkit-transition: transform 0.4s ease-in-out, top 0.4s ease-in-out; /* Safari */
   }
-  
+
   .navbar.top {
     top: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional box-shadow */
   }
-  
+
   /* Logo */
-/* Logo */
-.navbar__logo {
+   .navbar__logo {
     position: absolute;
     left: 60px;
     height: 40px; /* Adjust the height of the logo */
     display: flex;
     align-items: center;
   }
-  
+
   .navbar__logo img {
     height:30px; /* Make sure the logo fits within the navbar */
     width:150px;  /* Maintain aspect ratio of the logo */
@@ -123,7 +122,6 @@ a{
     margin-bottom: 5px;
   }
 
-  
   /* Navbar Links */
   .navbar__links__wrapper {
     display: flex;
@@ -133,9 +131,8 @@ a{
     align-items: center;
     list-style: none;
     -webkit-flex-wrap: wrap; /* Safari fix for flex-wrap */
-
   }
-  
+
   .navbar__link {
     position: relative;
     padding: 8px 12px;
@@ -147,7 +144,7 @@ a{
     transition: color 0.3s ease, transform 0.3s ease;
     -webkit-transition: color 0.3s ease, transform 0.3s ease; /* Safari */
   }
-  
+
   .navbar__link::after {
     content: '';
     position: absolute;
@@ -159,23 +156,21 @@ a{
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease; /* Safari */
   }
-  
+
   .navbar__link:hover {
     color: #bd0202; /* Change text color on hover */
     transform: translateY(-3px); /* Slight lift effect */
     -webkit-transform: translateY(-3px); /* Safari */
   }
-  
+
   .navbar__link:hover::after {
     width: 100%; /* Expand underline to full width */
   }
-  
-  
+
   .navbar__links__wrapper li {
     margin: 0 5px;
     position: relative;
   }
-
 
   /* Dropdowns */
   .markets__submenu {
@@ -314,8 +309,34 @@ a{
 .markets__submenu__link:hover .sub-submenu {
   top: 0; /* Ensure it aligns at the same height */
 }
-  
-  
+
+.language-change-dropdown {
+  position: relative;
+}
+
+.language-change-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+}
+
+.language-change-dropdown:hover .language-change-menu {
+  display: block;
+}
+
+.language-change-menu li {
+  padding: 8px;
+}
+
+.language-change-menu li a {
+  text-decoration: none;
+  color: #333;
+}
 
 
   @media (max-width: 720px) {

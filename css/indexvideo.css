@@ -261,12 +261,13 @@
   justify-content: center;
   align-items: center;
   height: 65vh;
-  background-color: #dfdfdf;
+  /* background-color: #dfdfdf; */
 }
 
 .application-video-section {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 20px;
   gap: 20px;
   justify-content: space-between;
@@ -274,8 +275,8 @@
 
 /* Video container */
 .application-video-left {
-  flex: 1;
   display: flex;
+  flex: 1 1 100%; 
   justify-content: flex-start;
   align-items: center;
   gap: 100px;
@@ -290,13 +291,23 @@
   overflow: hidden;
 }
 
-.application-video-player {
+/* .application-video-player {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-  -webkit-object-fit: cover; /* Safari */
+  -webkit-object-fit: cover;
+} */
+
+
+.application-video-player {
+  width: 100%;
+  height: 225px; /* Adjust height based on design preference */
+  overflow: hidden;
+  -webkit-border-radius: 8px; /* Safari compatibility */
+  -webkit-object-fit: cover; /* Ensures proper scaling of iframe/video */
 }
+
 
 .application-video-play-button {
   position: absolute;
@@ -419,7 +430,7 @@
   }
 }
 
-/* 
+/*
 .controller-main-card-container {
   display: flex;
   justify-content: center;
@@ -610,10 +621,6 @@
 }
 
 
-
-
-
-
     /* Styling for the main section */
     /* Styling for the main section */
     .controller-classic-section {
@@ -695,7 +702,7 @@
 
 
 
-    /* Section Layout */
+/* 
 .company-profile-section {
   display: flex;
   align-items: center;
@@ -707,7 +714,6 @@
   animation: company-profile-fadeIn 1s ease-out;
 }
 
-/* Text Content */
 .company-profile-text-content {
   flex: 1;
   max-width: 40%;
@@ -736,14 +742,13 @@
   font-size: 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  -webkit-transition: background-color 0.3s ease; /* Safari */
+  -webkit-transition: background-color 0.3s ease; 
 }
 
 .company-profile-download-button:hover {
   background-color: #ff4d4d;
 }
 
-/* Image Container */
 .company-profile-image-container {
   flex: 1;
   max-width: 50%;
@@ -757,6 +762,75 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Safari */
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+ */
+
+
+ /* Section Layout */
+.company-profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px 40px 100px;
+  /* background: linear-gradient(to right, #f8f8f8, #eaeaea); */
+  background: #dfdfdf;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: company-profile-fadeIn 1s ease-out;
+  -webkit-box-sizing: border-box; /* Safari */;
+  box-sizing: border-box;
 }
 
+/* Text Content */
+.company-profile-text-content {
+  flex: 1;
+  max-width: 45%;
+}
+
+.company-profile-text-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+  animation: company-profile-slideInLeft 1s ease-out;
+}
+
+.company-profile-text-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.company-profile-download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #bd0202;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.company-profile-download-button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Video Container */
+.company-profile-video-container {
+  flex: 1;
+  max-width: 42.1%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  animation: company-profile-slideInRight 1s ease-out;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+}
+
+.company-profile-video-container iframe {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

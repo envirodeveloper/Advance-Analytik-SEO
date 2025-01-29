@@ -334,41 +334,43 @@
       width: 300px;
     }
     
-    
+
     .application-video-title {
       font-size: 20px;
       text-align: center;
    
     } 
-  
+
     .application-video-description {
       font-size: 14px;
       text-align: center;
     }
 
-
     .company-profile-section {
       flex-direction: column;
       padding: 20px;
     }
-  
+
     .company-profile-text-content {
       max-width: 100%;
       text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .company-profile-video-container {
+      flex: 1;
+      max-width: 300px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      animation: company-profile-slideInRight 1s ease-out;
     }
   
-    .company-profile-text-content h2 {
-      font-size: 24px;
+    .company-profile-video-container iframe {
+      width: 300x; /* Adjust to fit smaller screens */
+      height: auto;
     }
   
-    .company-profile-text-content p {
-      font-size: 14px;
-    }
-  
-    .company-profile-image-container {
-      max-width: 80%;
-      margin-top: 20px;
-    }
 
 
 

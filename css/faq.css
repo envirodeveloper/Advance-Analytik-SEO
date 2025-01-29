@@ -1,39 +1,44 @@
 
 .faq-section {
-    padding: 0 5%;
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 8px; /* Rounded corners */
-    margin-top: 20px;
-  }
-  
-  .faq-section__title {
-    margin-bottom: 5px;
-    font-size: 1.8rem;
-    color:#d50100;
-  }
-  
-  .faq-item {
-    border-bottom: 1px solid #ccc; /* Divider line between FAQs */
-    padding: 10px 0;
-  }
-  
-  .faq-item__question {
-    display: flex; /* Flexbox for alignment */
-    justify-content: space-between; /* Space between question and button */
-    align-items: center; /* Center align items vertically */
-    cursor: pointer; /* Pointer cursor for interaction */
-  }
-  
-  .faq-toggle-button {
-    background: none; /* No background */
-    border: none; /* No border */
-    font-size: 18px; /* Size of toggle button */
-    color: #d50100; /* Button color */
-    cursor: pointer; /* Pointer cursor for interaction */
-  }
-  
-  .faq-item__answer {
-    margin-top: 10px; /* Space above answer */
-    color: #555; /* Text color for answer */
-  }
-  
+  padding: 0 5%;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px;
+}
+
+.faq-section__title {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color:#333;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc; /* Divider line between FAQs */
+  padding: 10px 0;
+}
+
+.faq-item__question {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between question and button */
+  align-items: center; /* Center align items vertically */
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+.faq-toggle-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  font-size: 18px; /* Size of toggle button */
+  color: #d50100; /* Button color */
+  cursor: pointer; /* Pointer cursor for interaction */
+  -webkit-appearance: none;
+}
+
+.faq-item__answer {
+  margin-top: 10px; /* Space above answer */
+  color: #555; /* Text color for answer */
+}
+
+.hidden {
+  display: none;
+}
+

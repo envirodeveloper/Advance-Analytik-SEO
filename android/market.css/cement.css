@@ -1,0 +1,72 @@
+@media (max-width: 720px) {
+    .cement-section {
+        padding: 15px 20px;
+    }
+
+    .cement-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .cement-description p {
+        font-size: 1rem;
+    }
+
+    .challenges-benefits {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .challenges-section,
+    .benefits-section {
+        flex: 1; /* Full width for each section */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .side-content h2 {
+        font-size: 18px;
+    }
+
+    .side-content li {
+        font-size: 14px;
+    }
+
+    .cement-solutions-section h2 {
+        font-size: 20px;
+    }
+
+    .cement-solutions-section li {
+        font-size: 14px;
+    }
+
+    .cement-uses h2 {
+        font-size: 1.5rem;
+    }
+
+    .cement-uses ul li {
+        font-size: 1rem;
+    }
+
+    .call-to-action {
+        padding: 30px 15px;
+        margin: 20px 20px;
+      }
+    
+      .call-to-action h2 {
+        font-size: 1.8rem;
+      }
+    
+      .call-to-action p {
+        font-size: 1rem;
+      }
+    
+      .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .cta-button {
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 10px 20px;
+      }
+
+}

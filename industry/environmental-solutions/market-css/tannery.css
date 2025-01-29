@@ -1,0 +1,167 @@
+.tannery-header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../marketImages/tannieries.jpg') center/cover;
+    color: white;
+}
+  
+.tannery-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+  
+.tannery-header p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    animation: fadeIn 2s ease-in-out;
+}
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
+.tannery-section {
+    padding: 20px 40px;
+}
+  
+.tannery-section:nth-child(even) {
+    background: #fff;
+}
+  
+.tannery-description {
+    max-width: 1400px;
+}
+  
+.tannery-description h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+}
+  
+.tannery-description p {
+    font-size: 1.2rem;
+    color: #555;
+}
+  
+.tannery-benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+  
+.tannery-benefit {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+  
+.tannery-benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+  
+.tannery-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+  
+.tannery-benefit p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.tannery-uses h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+}
+  
+.tannery-uses ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+  
+.tannery-uses ul li {
+    position: relative;
+    padding-left: 30px;
+}
+  
+.tannery-uses ul li::before {
+    content: '\2022';
+    color: #007BFF;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+  
+.tannery-map-graph-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+  
+.tannery-map-left img {
+    max-width: 500px;
+    height: auto;
+}
+  
+.tannery-map-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+  
+.industry-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.industry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.industry-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.industry-card a:hover {
+    background-color: #0056b3;
+}

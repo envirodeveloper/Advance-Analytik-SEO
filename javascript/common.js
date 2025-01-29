@@ -79,3 +79,6 @@ function toggleSidebar() {
     var arrow = document.querySelector('.has-dropdown a.' + section + '.arrow');
     arrow.classList.toggle("up", dropdown.classList.contains("show")); // Add this line
   }
+
+
+
