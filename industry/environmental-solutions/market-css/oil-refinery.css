@@ -1,22 +1,26 @@
-.oil-refinery-header {
+/* cetp Header Section */
+.cetp-header {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../marketImages/oilrefinery.jpg') center/cover;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('../marketImages/oilrefinery.jpg') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('../marketImages/oilrefinery.jpg') center/cover;
     color: white;
 }
 
-.oil-refinery-header h1 {
+.cetp-header h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 10px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.oil-refinery-header p {
+.cetp-header p {
     font-size: 1.5rem;
     font-weight: 400;
     animation: fadeIn 2s ease-in-out;
@@ -31,125 +35,275 @@
     }
 }
 
-.oil-refinery-section {
+/* General Section Styling */
+.cetp-section {
     padding: 20px 40px;
 }
 
-.oil-refinery-section:nth-child(even) {
+.cetp-section:nth-child(even) {
     background: #fff;
 }
 
-.oil-refinery-description {
+.cetp-description {
     max-width: 1400px;
 }
 
-.oil-refinery-description h2 {
+.cetp-description h2 {
     font-size: 1.8rem;
     font-weight: 600;
     color: #222;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.cetp-description p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Challenges and Benefits Section */
+.challenges-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.challenges-section {
+    flex: 2;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.challenges-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.challenge-item {
     margin-bottom: 20px;
 }
 
-.oil-refinery-description p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.oil-refinery-benefits {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.oil-refinery-benefit {
-    flex: 1;
-    min-width: 300px;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.oil-refinery-benefit:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.oil-refinery-section h2 {
-    font-size: 1.8rem;
+.challenge-item h3 {
+    font-size: 18px;
     color: #333;
-    margin-bottom: 15px;
 }
 
-.oil-refinery-benefit p {
-    font-size: 1rem;
+.challenge-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.challenge-item ul li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.benefits-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-content {
+    padding: 20px;
+    background-color: #00263b;
+    color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.side-content p {
+    line-height: 1.6;
+}
+
+.side-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.side-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.side-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-content li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.side-content li::before {
+    content: "✔";
+    -webkit-content: "✔";
+    position: absolute;
+    left: 0;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* Solutions Section */
+.cetp-solutions-section {
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.cetp-solutions-section p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cetp-solutions-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.cetp-solutions-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cetp-solutions-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cetp-solutions-section li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
     color: #555;
 }
 
-.oil-refinery-uses h2 {
+.cetp-solutions-section li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #bd0202;
+    font-weight: bold;
+}
+
+
+
+
+/* Call to Action Section */
+.call-to-action {
+    background: #00263b;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 40px;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    animation: fadeIn 1.8s ease-in-out;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .primary-button {
+    background-color: #bd0202;
+    color: white;
+  }
+  
+  .primary-button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(189, 2, 2, 0.5);
+  }
+  
+  .secondary-button {
+    background-color: #004e68;
+    color: white;
+  }
+  
+  .secondary-button:hover {
+    background-color: #006c8c;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 78, 104, 0.5);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .partner-solution{
+    padding: 20px 40px;
+  }
+
+  .partner-solution h2{
     font-size: 1.8rem;
     font-weight: 600;
     color: #222;
-}
 
-.oil-refinery-uses ul {
-    list-style: none;
-    text-align: left;
-    padding: 0;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #555;
-}
-
-.oil-refinery-uses ul li {
-    position: relative;
-    padding-left: 30px;
-}
-
-.oil-refinery-uses ul li::before {
-    content: '\2022';
-    color: #007BFF;
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-
-.oil-refinery-map-graph-container {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
   }
 
-  .oil-refinery-map-detail-image-container {
-    position: relative;
-    display: inline-block;
-  }
-
-  .oil-refinery-map-detail-highlight {
-    position: absolute;
-    cursor: pointer;
-    z-index: 2;
-    border: 2px dashed transparent;
-  }
-
-  .oil-refinery-map-detail-text {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    z-index: 3;
-    cursor: pointer;
-  }
-
-  
+  .partner-solution p {
+    color: #333;
+    margin-top: 5px;
+    line-height: 1.6;
+}

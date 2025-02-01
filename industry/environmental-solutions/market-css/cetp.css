@@ -1,5 +1,5 @@
-/* Cement Header Section */
-.cement-header {
+/* cetp Header Section */
+.cetp-header {
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -7,20 +7,20 @@
     text-align: center;
     position: relative;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url('../marketImages/cement.jpg') center/cover;
+    url('../marketImages/cetpandstp.jpg') center/cover;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url('../marketImages/cement.jpg') center/cover;
+    url('../marketImages/cetpandstp.jpg') center/cover;
     color: white;
 }
 
-.cement-header h1 {
+.cetp-header h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 10px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.cement-header p {
+.cetp-header p {
     font-size: 1.5rem;
     font-weight: 400;
     animation: fadeIn 2s ease-in-out;
@@ -36,19 +36,19 @@
 }
 
 /* General Section Styling */
-.cement-section {
+.cetp-section {
     padding: 20px 40px;
 }
 
-.cement-section:nth-child(even) {
+.cetp-section:nth-child(even) {
     background: #fff;
 }
 
-.cement-description {
+.cetp-description {
     max-width: 1400px;
 }
 
-.cement-description h2 {
+.cetp-description h2 {
     font-size: 1.8rem;
     font-weight: 600;
     color: #222;
@@ -56,7 +56,7 @@
     text-decoration: underline;
 }
 
-.cement-description p {
+.cetp-description p {
     font-size: 1.2rem;
     color: #555;
 }
@@ -165,20 +165,20 @@
 }
 
 /* Solutions Section */
-.cement-solutions-section {
+.cetp-solutions-section {
     margin-top: 40px;
     background-color: #f9f9f9;
     border-radius: 8px;
     -webkit-border-radius: 8px;
 }
 
-.cement-solutions-section p {
+.cetp-solutions-section p {
 
     color: #333;
     margin-bottom: 10px;
 }
 
-.cement-solutions-section h2 {
+.cetp-solutions-section h2 {
     font-size: 24px;
     font-weight: bold;
     color: #333;
@@ -186,20 +186,20 @@
     text-decoration: underline;
 }
 
-.cement-solutions-section h3 {
+.cetp-solutions-section h3 {
     font-size: 20px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.cement-solutions-section ul {
+.cetp-solutions-section ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.cement-solutions-section li {
+.cetp-solutions-section li {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
@@ -208,7 +208,7 @@
     color: #555;
 }
 
-.cement-solutions-section li::before {
+.cetp-solutions-section li::before {
     content: "•";
     position: absolute;
     left: 0;
