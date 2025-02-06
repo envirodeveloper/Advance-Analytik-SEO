@@ -1,0 +1,42 @@
+/* Responsive CSS for max-width 720px and 480px */
+@media (max-width: 720px) {
+
+    .distillery-header {
+        height: 50vh;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .distillery-header h1 {
+        font-size: 2rem;
+    }
+    
+    .distillery-header p {
+        font-size: 1.2rem;
+    }
+    
+    .distillery-section {
+        padding: 15px 20px;
+    }
+    
+    .distillery-description h2 {
+        font-size: 1.5rem;
+    }
+    
+    .distillery-description p {
+        font-size: 1rem;
+    }
+    
+    .challenges-benefits {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .challenges-section, .benefits-section {
+        flex: 1;
+    }
+    
+    .side-content {
+        padding: 15px;
+    }
+}

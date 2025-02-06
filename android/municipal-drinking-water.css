@@ -1,0 +1,24 @@
+/* Styles for max-width 720px */
+@media (max-width: 720px) {
+    .municipal-water-header {
+        padding: 80px 15px;
+    }
+    .municipal-water-header h1 {
+        font-size: 2.5rem;
+    }
+    .municipal-water-header h2 {
+        font-size: 1.25rem;
+    }
+    .municipal-water-content-section {
+        padding: 0 15px;
+    }
+    .challenges-chart {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .challenge-card {
+        height: 180px;
+    }
+    .card-front img {
+        height: 120px;
+    }
+}

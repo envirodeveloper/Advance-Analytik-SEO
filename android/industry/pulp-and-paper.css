@@ -1,0 +1,42 @@
+/* Responsive CSS for max-width 720px and 480px */
+@media (max-width: 720px) {
+
+  .pulp-paper-header {
+      height: 50vh;
+      padding: 20px;
+      margin-top: 30px;
+  }
+  
+  .pulp-paper-header h1 {
+      font-size: 2rem;
+  }
+  
+  .pulp-paper-header p {
+      font-size: 1.2rem;
+  }
+  
+  .pulp-paper-section {
+      padding: 15px 20px;
+  }
+  
+  .pulp-paper-description h2 {
+      font-size: 1.5rem;
+  }
+  
+  .pulp-paper-description p {
+      font-size: 1rem;
+  }
+  
+  .challenges-benefits {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .challenges-section, .benefits-section {
+      flex: 1;
+  }
+  
+  .side-content {
+      padding: 15px;
+  }
+}

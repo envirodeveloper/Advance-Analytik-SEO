@@ -96,8 +96,6 @@
     height: 150px;
     margin-bottom: 10px;
     object-fit: cover;
-    /* border-radius: 50%; */
-    /* border: 2px solid #007BFF; */
 }
 
 .card-front h3 {
@@ -117,7 +115,6 @@
     padding: 20px;
 }
 
-
 .municipal-water-cta-buttons {
     display: flex;
     justify-content: center;
@@ -136,5 +133,7 @@
 .municipal-water-cta-buttons a:hover {
     background: #218838;
 }
+
+
 
 

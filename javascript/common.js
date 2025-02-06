@@ -5,22 +5,41 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Function to dynamically load components
+// function loadComponent(id, url, callback) {
+//     fetch(url)
+//         .then(response => response.text())
+//         .then(data => {
+//             const element = document.getElementById(id);
+//             if (element) {
+//                 element.innerHTML = data;
+//                 if (typeof callback === 'function') {
+//                     callback(); // Execute callback after the component is loaded
+//                 }
+//             } else {
+//                 console.error(`Element with id '${id}' not found.`);
+//             }
+//         })
+//         .catch(error => console.error('Error loading component:', error));
+// }
+
 function loadComponent(id, url, callback) {
-    fetch(url)
-        .then(response => response.text())
-        .then(data => {
-            const element = document.getElementById(id);
-            if (element) {
-                element.innerHTML = data;
-                if (typeof callback === 'function') {
-                    callback(); // Execute callback after the component is loaded
-                }
-            } else {
-                console.error(`Element with id '${id}' not found.`);
-            }
-        })
-        .catch(error => console.error('Error loading component:', error));
+    const cachedData = sessionStorage.getItem(url);
+    
+    if (cachedData) {
+        document.getElementById(id).innerHTML = cachedData;
+        if (callback) callback();
+    } else {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                sessionStorage.setItem(url, data); // Cache response
+                document.getElementById(id).innerHTML = data;
+                if (callback) callback();
+            })
+            .catch(error => console.error('Error loading component:', error));
+    }
 }
+
 
 // Scroll behavior for preheader and navbar
 function initializeScrollBehavior() {
@@ -48,8 +67,6 @@ function initializeScrollBehavior() {
         console.error('Preheader or Navbar element not found in the dynamically loaded content.');
     }
 }
-
-
 
 
 

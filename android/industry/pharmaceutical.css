@@ -1,0 +1,42 @@
+/* Responsive CSS for max-width 720px and 480px */
+@media (max-width: 720px) {
+
+    .pharmaceutical-header {
+        height: 50vh;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .pharmaceutical-header h1 {
+        font-size: 2rem;
+    }
+    
+    .pharmaceutical-header p {
+        font-size: 1.2rem;
+    }
+    
+    .pharmaceutical-section {
+        padding: 15px 20px;
+    }
+    
+    .pharmaceutical-description h2 {
+        font-size: 1.5rem;
+    }
+    
+    .pharmaceutical-description p {
+        font-size: 1rem;
+    }
+    
+    .challenges-benefits {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .challenges-section, .benefits-section {
+        flex: 1;
+    }
+    
+    .side-content {
+        padding: 15px;
+    }
+}

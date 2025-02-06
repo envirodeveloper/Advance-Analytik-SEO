@@ -65,23 +65,21 @@
     object-fit: cover;
   }
   
-
   .careers__section__three {
     width: 80%;
     text-align: center;
     margin-top: 5%;
   }
   
-
   .careers__section__three h1 {
     font-size: 2.5rem;
     font-weight: 600;
   }
   
-
   .careers__section__three p {
     margin-bottom: 5%;
   }
+
 /*   
   .faq {
     display: flex;
@@ -101,7 +99,6 @@
     align-items: center;
   }
   
-
   .faq__question {
     font-size: 1.3rem;
     font-weight: 500;
@@ -112,19 +109,16 @@
     transition: all 0.3s ease;
   }
   
-
   .faq__item.active .faq__answer {
     display: block;
     text-align: justify;
   }
-  
   
   .faq__question__icons__wrapper .icon {
     font-size: 2rem;
     cursor: pointer;
   }
    */
-
    
 .faq-section {
   padding: 0 5%;

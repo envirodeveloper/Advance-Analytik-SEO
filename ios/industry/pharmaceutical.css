@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+    .pharmaceutical-header {
+        height: 40vh;
+        
+    }
+    .pharmaceutical-header h1 {
+        font-size: 1.8rem;
+    }
+    .pharmaceutical-header p {
+        font-size: 1rem;
+    }
+    
+    .pharmaceutical-section {
+        padding: 10px 15px;
+    }
+    .pharmaceutical-description h2 {
+        font-size: 1.3rem;
+    }
+    .pharmaceutical-description p {
+        font-size: 0.9rem;
+    }
+    
+    .challenges-benefits {
+        gap: 10px;
+    }
+    .challenges-section, .benefits-section {
+        flex: 1;
+    }
+    .side-content {
+        padding: 10px;
+    }
+    .side-content h2, .side-content h3 {
+        font-size: 1.2rem;
+    }
+    .side-content li {
+        font-size: 0.9rem;
+    }
+}

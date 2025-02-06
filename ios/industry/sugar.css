@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+    .sugar-header {
+        height: 40vh;
+        
+    }
+    .sugar-header h1 {
+        font-size: 1.8rem;
+    }
+    .sugar-header p {
+        font-size: 1rem;
+    }
+    
+    .sugar-section {
+        padding: 10px 15px;
+    }
+    .sugar-description h2 {
+        font-size: 1.3rem;
+    }
+    .sugar-description p {
+        font-size: 0.9rem;
+    }
+    
+    .challenges-benefits {
+        gap: 10px;
+    }
+    .challenges-section, .benefits-section {
+        flex: 1;
+    }
+    .side-content {
+        padding: 10px;
+    }
+    .side-content h2, .side-content h3 {
+        font-size: 1.2rem;
+    }
+    .side-content li {
+        font-size: 0.9rem;
+    }
+}

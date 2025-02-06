@@ -8,7 +8,10 @@ body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased; /* Improve text rendering on iOS */
   text-rendering: optimizeLegibility;
+  
 }
+
+
 
 .about-section {
   display: flex;

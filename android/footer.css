@@ -1,0 +1,30 @@
+/* Responsive Styles for max-width 720px */
+@media screen and (max-width: 720px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    .footer-logo {
+      max-width: 120px;
+    }
+    
+    .footer-contact h3 {
+      font-size: 16px;
+    }
+  
+    .footer-product-category ul,
+    .footer-markets ul,
+    .footer-contact address {
+      font-size: 13px;
+    }
+  
+    .marquee-w {
+      height: 40px;
+    }
+    
+    .marquee span {
+      font-size: 16px;
+      line-height: 40px;
+    }
+  }

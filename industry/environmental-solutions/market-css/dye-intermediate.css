@@ -1,6 +1,6 @@
-/* cetp Header Section */
+/* dye Header Section */
 
-.cetp-header {
+.dye-header {
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -14,14 +14,14 @@
   color: white;
 }
 
-.cetp-header h1 {
+.dye-header h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 10px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.cetp-header p {
+.dye-header p {
   font-size: 1.5rem;
   font-weight: 400;
   animation: fadeIn 2s ease-in-out;
@@ -37,19 +37,19 @@
 }
 
 /* General Section Styling */
-.cetp-section {
+.dye-section {
   padding: 20px 40px;
 }
 
-.cetp-section:nth-child(even) {
+.dye-section:nth-child(even) {
   background: #fff;
 }
 
-.cetp-description {
+.dye-description {
   max-width: 1400px;
 }
 
-.cetp-description h2 {
+.dye-description h2 {
   font-size: 1.8rem;
   font-weight: 600;
   color: #222;
@@ -57,7 +57,7 @@
   text-decoration: underline;
 }
 
-.cetp-description p {
+.dye-description p {
   font-size: 1.2rem;
   color: #555;
 }
@@ -163,19 +163,19 @@
 }
 
 /* Solutions Section */
-.cetp-solutions-section {
+.dye-solutions-section {
   margin-bottom: 40px;
   background-color: #f9f9f9;
   border-radius: 8px;
   -webkit-border-radius: 8px;
 }
 
-.cetp-solutions-section p {
+.dye-solutions-section p {
   color: #333;
   margin-bottom: 10px;
 }
 
-.cetp-solutions-section h2 {
+.dye-solutions-section h2 {
   font-size: 24px;
   font-weight: bold;
   color: #333;
@@ -183,20 +183,20 @@
   text-decoration: underline;
 }
 
-.cetp-solutions-section h3 {
+.dye-solutions-section h3 {
   font-size: 20px;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
 }
 
-.cetp-solutions-section ul {
+.dye-solutions-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.cetp-solutions-section li {
+.dye-solutions-section li {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
@@ -205,7 +205,7 @@
   color: #555;
 }
 
-.cetp-solutions-section li::before {
+.dye-solutions-section li::before {
   content: "•";
   position: absolute;
   left: 0;

@@ -10,15 +10,17 @@
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/indexvideo.css">
   <link rel="stylesheet" href="./android/index.css">
-  <!-- <link rel="stylesheet" href="./mac/index.css"> -->
-  <!-- <link rel="stylesheet" href="./tablet/index.css"> -->
   <link rel="stylesheet" href="./ios/index.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Days&display=swap" rel="stylesheet">
+  
   <script src="./javascript/index.js" defer></script>
   <script src="./javascript/common.js" defer></script>
-  <script src="./javascript/languages.js" defer></script>
 <!-- Link to the language script -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Days&display=swap" rel="stylesheet">
 
   <title>Advanced Analytical Instrumentation Solutions in Hungary | Advance Analytik</title>
   <meta name="description" content="Advance Analytik is a leading Analytical Instrumentation Company in Hungary, providing cutting-edge analytical instruments, manufacturing as well as IT solutions in Budapest. Contact us for top-tier analytical instrumentation providers." />
@@ -26,7 +28,201 @@
 
 <body>
 
-    <div id="navbar-placeholder"></div>
+    <!-- <div id="navbar-placeholder"></div> -->
+
+    
+    <!-- Preheader -->
+  <div id="preheader" class="preheader">
+
+    <div class="preheader__content">
+      <!-- Left: Contact Info -->
+      <div class="preheader__contact">
+        <i class="fas fa-phone"></i>+36 703286862 <div>|</div> <i class="fas fa-envelope"></i> sales@advanceanalytik.com
+      </div>
+
+      <!-- Right: Social Media Icons -->
+      <div class="preheader__social">
+        <a href="https://www.facebook.com/share/dUTVgdFtNVwiZygu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@Advance-Analytik-KFT" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/advance-analytik-kft" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/advance_analytik/profilecard/?igsh=MWc3Ymk0NGx3MWF1YQ==" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar">
+  <div class="navbar__logo">
+    <!-- Logo Image -->
+    <a href="/index.html">
+      <img src="../../images/logo/advanceanalytik.png" alt="Company Logo">
+    </a>
+  </div>
+
+  <ul class="navbar__links__wrapper" role="navigation" aria-label="Main menu">
+    <li><a href="../../" class="navbar__link home">Home</a></li>
+    <li><a href="../../about.html" class="navbar__link about">About</a></li>
+   <!-- Products Dropdown Menu -->
+  <li><a href="../../products/analytical-instrumentation.html" class="navbar__link">Products</a>
+  <div class="markets__submenu">
+    <div class="markets__submenu__links__wrapper">
+
+      <!-- Analyzers -->
+      <a href="../../products/analyzers.html" class="markets__submenu__link">Analyzers  <i class="fa-solid fa-angle-right"></i> </a>
+      <div class="sub-submenu" id="analyzers-submenu">
+        <a href="../../products/analyzers/optics-1000.html" class="sub-submenu__link">Optics-1000</a>
+        <a href="../../products/analyzers/optics-1000-alkalinity.html" class="sub-submenu__link">Optics-1000 Alkalinity</a>
+        <a href="../../products/analyzers/optics-1000-boron-lr.html" class="sub-submenu__link">Optics-1000 Boron (Lr)</a>
+        <a href="../../products/analyzers/optics-1000-boron-hr.html" class="sub-submenu__link">Optics-1000 Boron (Hr)</a>
+        <a href="../../products/analyzers/optics-1000-chloride.html" class="sub-submenu__link">Optics-1000 Chloride (Cl-)</a>
+        <a href="../../products/analyzers/optics-1000-chromium.html" class="sub-submenu__link">Optics-1000 Chromium VI (Cr)</a>
+        <a href="../../products/analyzers/optics-1000-cyanide.html" class="sub-submenu__link">Optics-1000 Cyanide (CN-)</a>
+        <!-- <a href="../../products/analyzers/optics-1000-general.html" class="sub-submenu__link">Optics-1000 General</a> -->
+        <a href="../../products/analyzers/optics-1000-hydrazine.html" class="sub-submenu__link">Optics-1000 Hydrazine (N2H4)</a>
+        <a href="../../products/analyzers/optics-1000-iron-lr.html" class="sub-submenu__link">Optics-1000 Iron (Lr)</a>
+        <a href="../../products/analyzers/optics-1000-nickel.html" class="sub-submenu__link">Optics-1000 Nickel (Ni)</a>
+        <a href="../../products/analyzers/optics-1000-phenol.html" class="sub-submenu__link">Optics-1000 Phenol</a>
+        <a href="../../products/analyzers/optics-1000-phosphate-hr.html" class="sub-submenu__link">Optics-1000 Phosphate (Hr)</a>
+        <a href="../../products/analyzers/optics-1000-phosphate-lr.html" class="sub-submenu__link">Optics-1000 Phosphate (Lr)</a>
+        <a href="../../products/analyzers/optics-1000-silica-hr.html" class="sub-submenu__link">Optics-1000 Silica (Hr)</a>
+        <a href="../../products/analyzers/optics-1000-silica-lr.html" class="sub-submenu__link">Optics-1000 Silica (Lr)</a>
+        <a href="../../products/analyzers.html" class="sub-submenu__link">Check More</a>
+        <!-- <a href="../../products/analyzers/optics-1000-total-hardness.html" class="sub-submenu__link">Optics-1000 Total Hardness (Hd)</a> -->
+      </div>
+
+      <!-- Controllers -->
+      <a href="../../products/controllers.html" class="markets__submenu__link">Controllers <i class="fa-solid fa-angle-right"></i> </a>
+      <div class="sub-submenu" id="controllers-submenu">
+        <a href="../../products/controllers/viz-solo.html" class="sub-submenu__link">Viz Pro Solo</a>
+        <a href="../../products/controllers/viz-duo.html" class="sub-submenu__link">Viz Pro Duo</a>
+        <a href="../../products/controllers/viz-multi.html" class="sub-submenu__link">Viz Pro Multi</a>
+        <a href="../../products/controllers/viz-eco-solo.html" class="sub-submenu__link">Viz Eco Solo</a>
+        <a href="../../products/controllers/viz-eco-duo.html" class="sub-submenu__link">Viz Eco Duo</a>
+        <a href="../../products/controllers/viz-eco-multi.html" class="sub-submenu__link">Viz Eco Multi</a>
+        <a href="../../products/controllers/viz-classic-conductivity-tds.html" class="sub-submenu__link">Viz Classic Conductivity/TDS</a>
+        <a href="../../products/controllers/viz-classic-ph-orp.html" class="sub-submenu__link">Viz Classic pH/ORP</a>
+      </div>
+
+      <!-- Sensors -->
+      <a href="../../products/sensors.html" class="markets__submenu__link">Sensors <i class="fa-solid fa-angle-right"></i> </a>
+      <div class="sub-submenu" id="sensors-submenu">
+        <a href="../../products/sensors/vizsens-ph-analog.html" class="sub-submenu__link">VizSens-PH(Analog)</a>
+        <a href="../../products/sensors/vizsens-orp-analog.html" class="sub-submenu__link">VizSens-ORP(Analog)</a>
+        <a href="../../products/sensors/vizsens-ec-analog.html" class="sub-submenu__link">VizSens-EC(Analog)</a>
+        <a href="../../products/sensors/vizsens-ph-digital.html" class="sub-submenu__link">VizSens-PH(Digital)</a>
+        <a href="../../products/sensors/vizsens-ec-digital.html" class="sub-submenu__link">VizSens-EC(Digital)</a>
+        <a href="../../products/sensors/vizsens-odo.html" class="sub-submenu__link">VizSens-ODO</a>
+        <a href="../../products/sensors/vizsens-rcl.html" class="sub-submenu__link">VizSens-RCL</a>
+        <a href="../../products/sensors/vizsens-uvcod.html" class="sub-submenu__link">VizSens-UVCOD</a>
+        <a href="../../products/sensors/vizsens-ss.html" class="sub-submenu__link">VizSens-SS</a>
+        <a href="../../products/sensors/vizsens-turb.html" class="sub-submenu__link">VizSens-Turb</a>
+        <a href="../../products/sensors/vizsens-turb-lo.html" class="sub-submenu__link">VizSens-TurbLo</a>
+        <a href="../../products/sensors/vizsens-cphl.html" class="sub-submenu__link">VizSens-CPHL</a>
+        <a href="../../products/sensors/vizsens-bga.html" class="sub-submenu__link">Vizsens-BGA</a>
+        <a href="../../products/sensors/vizsens-oiw.html" class="sub-submenu__link">VizSens-OIW</a>
+        <a href="../../products/sensors/vizsens-nh4n.html" class="sub-submenu__link">VizSens-NH4N</a>
+        <a href="../../products/sensors/vizsens-no3n.html" class="sub-submenu__link">VizSens-NO3N</a>
+      </div>
+    </div>
+  </div>
+</li>
+
+    <li><a href="#" class="navbar__link">Market</a>
+      <div class="markets__submenu">
+        <div class="markets__submenu__links__wrapper">
+          <a href="../../industry/environmental-solutions/cement.html" class="markets__submenu__link">Cement</a>
+          <a href="../../industry/environmental-solutions/cetp-and-stps.html" class="markets__submenu__link">CETP & STPS</a>
+          <a href="../../industry/environmental-solutions/common-biomedical-waste.html" class="markets__submenu__link">Common Biomedical Waste</a>
+          <a href="../../industry/environmental-solutions/common-hazardous-waste-incinerator.html" class="markets__submenu__link">Common Hazardous Waste Incinerator</a>
+          <a href="../../industry/environmental-solutions/chloral-alkali-plants.html" class="markets__submenu__link">Chloral Alkali Plants</a>
+          <a href="../../industry/environmental-solutions/distillery.html" class="markets__submenu__link">Distillery</a>
+          <a href="../../industry/environmental-solutions/dye-and-dye-intermediate-units.html" class="markets__submenu__link">Dye & Dye Intermediate Units</a>
+          <a href="../../industry/environmental-solutions/food-processing.html" class="markets__submenu__link">Food Processing</a>
+          <a href="../../industry/environmental-solutions/oil-refineries.html" class="markets__submenu__link">Oil Refineries</a>
+          <a href="../../industry/environmental-solutions/power-plants.html" class="markets__submenu__link">Power Plants</a>
+          <a href="../../industry/environmental-solutions/pesticides.html" class="markets__submenu__link">Pesticides</a>
+          <a href="../../industry/environmental-solutions/pharmaceutical-sector.html" class="markets__submenu__link">Pharmaceutical Sector</a>
+          <a href="../../industry/environmental-solutions/pulp-and-paper.html" class="markets__submenu__link">Pulp & Paper</a>
+          <a href="../../industry/environmental-solutions/sugar.html" class="markets__submenu__link">Sugar</a>
+          <a href="../../industry/environmental-solutions/tanneries.html" class="markets__submenu__link">Tanneries</a>
+        </div>
+      </div>
+    </li>
+    <!-- <li><a href="../../blog.html" class="navbar__link">Blog</a></li> -->
+    <li><a href="../../careers.html" class="navbar__link careers">Careers</a></li>
+    <li><a href="../../contact.html" class="navbar__link contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+<div class="sidebar-navbar">
+  <div class="sidebar-logo">
+    <a href="/index.html">
+      <img src="../../images/logo/advance_analytik.png" alt="Company Logo">
+    </a>
+  </div>
+  <div class="toggle-btn" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+
+<div class="sidebar" id="sidebar">
+
+  <ul class="sidebar-nav">
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../about.html">About</a></li>
+
+
+    <li class="has-dropdown">
+      <a href="javascript:void(0);" onclick="toggleDropdown('application')">Products
+        <span class="arrow"></span>
+      </a>
+      <ul class="sidebar-dropdown-menu" id="application-dropdown">
+        <li><a href="../../products/analyzers.html">Analyzers</a></li>
+        <li><a href="../../products/controllers.html">Controllers</a></li>
+        <li><a href="../../products/sensors.html">Sensors</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="javascript:void(0);" onclick="toggleDropdown('products')">Market
+        <span class="arrow"></span>
+      </a>
+      <ul class="sidebar-dropdown-menu" id="products-dropdown">
+         <li><a href="../../industry/environmental-solutions/pulp-and-paper.html">Pulp & Paper</a></li>
+         <li><a href="../../industry/environmental-solutions/distillery.html">Distillery</a></li>
+         <li><a href="../../industry/environmental-solutions/sugar.html">Sugar</a></li>
+         <li><a href="../../industry/environmental-solutions/tanneries.html">Tanneries</a></li>
+         <li><a href="../../industry/environmental-solutions/power-plants.html">Power Plants</a></li>
+         <li><a href="../../industry/environmental-solutions/cement.html">Cement</a></li>
+         <li><a href="../../industry/environmental-solutions/chloral-alkali-plants.html">Chloral Alkali Plants</a></li>
+         <li><a href="../../industry/environmental-solutions/oil-refineries.html">Oil Refineries</a></li>
+         <li><a href="../../industry/environmental-solutions/dye-and-dye-intermediate-units.html">Dye & Dye Intermediate Units</a></li>
+         <li><a href="../../industry/environmental-solutions/cetp-and-stps.html">CETP & STPS</a></li>
+         <li><a href="../../industry/environmental-solutions/pesticides.html">Pesticides</a></li>
+         <li><a href="../../industry/environmental-solutions/pharmaceutical-sector.html">Pharmaceutical Sector</a></li>
+         <li><a href="../../industry/environmental-solutions/common-biomedical-waste.html">Common Biomedical Waste</a></li>
+         <li><a href="../../industry/environmental-solutions/common-hazardous-waste-incinerator.html">Common Hazardous Waste Incinerator</a></li>
+         <li><a href="../../industry/environmental-solutions/food-processing.html">Food Processing</a></li>
+      </ul>
+    </li>
+    <!-- <li><a href="../../blog.html" >Careers</a></li> -->
+    <li><a href="../../careers.html" >Careers</a></li>
+    <li><a href="../../contact.html" >Contact</a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
     <div class="full-page">
 
       <section class="video-header-section">
@@ -43,7 +239,7 @@
         <div class="header-title-line right-line"></div>
       </div>
 
-    <section class="about-section">
+      <section class="about-section">
       <div class="about-text">
         <h3>Revolutionizing Analytical Technology</h3>
         <p>Welcome to Advance Analytik, a leading manufacturer of advanced analytical instrumentation solutions. We are dedicated to empowering industries, research laboratories, and scientific communities with cutting-edge technology, reliable instruments, and exceptional support. Our commitment to excellence drives us to deliver innovative solutions that enable precise analysis, informed decision-making, and transformative discoveries.</p>
@@ -51,17 +247,17 @@
       <div class="about-link">
         <a href="/about.html">Learn More <i class="fa-solid fa-angles-right"></i></a>
       </div>
-    </section>
+      </section>
 
-    </section>
+      </section>
 
-    <section class="header-section">
+      <section class="header-section">
       <div class="header-title">
         <div class="header-title-line left-line"></div>
         <h2>Fields We Impact</h2>
         <div class="header-title-line right-line"></div>
       </div>
-    <section class="industries-section">
+      <section class="industries-section">
       <div class="industries-container">
         <div class="industry-card">
             <img src="./images/Industry images/pulp and paper.avif" alt="Pulp and Paper" class="industry-img">
@@ -96,7 +292,7 @@
             <a href="./industry/environmental-solutions/oil-refineries.html"  class="text-overlay">Oil Refineries</a>
         </div>
         <div class="industry-card">
-            <img src="./images/Industry images/dye-intermediate.jpg" alt="Dye & Dye Intermediate Units" class="industry-img">
+            <img src="./images/Industry images/dye-and-dye.jpeg" alt="Dye & Dye Intermediate Units" class="industry-img">
             <a href="./industry/environmental-solutions/dye-and-dye-intermediate-units.html"  class="text-overlay">Dye & Dye Intermediate Units</a>
         </div>
         <div class="industry-card">
@@ -477,10 +673,211 @@
   </main>
 </div>
   
-  <div id="footer-placeholder"></div>
+  
+
+
+<div>
+  <div class="marquee-w">
+    <div class="marquee">
+      <span>
+        <div class="devices">
+          <i class="fas fa-network-wired icon"></i> Electronic
+          <div class="devices-gap"></div>
+          <i class="fas fa-eye icon"></i> Optics
+          <div class="devices-gap"></div>
+          <i class="fas fa-tint icon"></i> Fluids
+          <div class="devices-gap"></div>
+          <i class="fas fa-flask icon"></i> Chemistry
+          <div class="devices-gap"></div>
+          <i class="fas fa-temperature-low icon"></i> Thermal
+          <div class="devices-gap"></div>
+          <i class="fas fa-search icon"></i> Research Development
+          <div class="devices-gap"></div>
+          <i class="fas fa-chart-line icon"></i> Quality Performance
+          <div class="devices-gap"></div>
+          <i class="fas fa-handshake icon"></i> Strong Reliable Partnership
+          <div class="devices-gap"></div>
+        </div>
+      </span>
+    </div>
+  
+    <div class="marquee marquee2">
+      <span>
+        <div class="devices">
+          <i class="fas fa-network-wired icon"></i> Electronic
+          <div class="devices-gap"></div>
+          <i class="fas fa-eye icon"></i> Optics
+          <div class="devices-gap"></div>
+          <i class="fas fa-tint icon"></i> Fluids
+          <div class="devices-gap"></div>
+          <i class="fas fa-flask icon"></i> Chemistry
+          <div class="devices-gap"></div>
+          <i class="fas fa-temperature-low icon"></i> Thermal
+          <div class="devices-gap"></div>
+          <i class="fas fa-search icon"></i> Research Development
+          <div class="devices-gap"></div>
+          <i class="fas fa-chart-line icon"></i> Quality Performance
+          <div class="devices-gap"></div>
+          <i class="fas fa-handshake icon"></i> Strong Reliable Partnership
+          <div class="devices-gap"></div>
+        </div>
+      </span>
+    </div>
+  </div>
+  
+
+  <footer>
+  <div class="footer-container">
+        
+    <!-- Logo and Description -->
+    <div class="footer-logo-section">
+      <img src="/images/logo/footerlogo-white.png" alt="Advance Analytik logo" class="footer-logo">
+      <p>Advance Analytik KFT is a leading manufacturer of Process and Analytical Instrumentation company providing cutting-edge solutions for businesses worldwide.</p>
+      
+      
+      <div class="footer-social">
+          <h4>Connect with Us</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/dUTVgdFtNVwiZygu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@Advance-Analytik-KFT" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/advance-analytik-kft" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/advance_analytik/profilecard/?igsh=MWc3Ymk0NGx3MWF1YQ==" class="social-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      
+      
+  </div>
+
+    <!-- Product Categories -->
+    <div class="footer-products">
+      <h4>Product Categories</h4>
+      <div class="footer-product-category">
+        <h5>Analyzers</h5>
+        <ul>
+          <li><a href="../../products/analyzers/optics-1000.html">OPTICS-1000</a></li>
+        </ul>
+      </div>
+      <div class="footer-product-category">
+        <h5>Controllers</h5>
+        <ul>
+          <li><a href="../../products/controllers/viz-solo.html">Viz Pro Solo</a></li>
+          <li><a href="../../products/controllers/viz-duo.html">Viz Pro Duo</a></li>
+          <li><a href="../../products/controllers/viz-multi.html">Viz Pro Multi</a></li>
+          <li><a href="../../products/controllers/viz-eco-solo.html">Viz Eco Solo</a></li>
+          <li class="see-more-item">
+              <a href="../../products/controllers.html" class="see-more-link">
+                <i class="fas fa-arrow-right"></i>Explore Range of Controllers
+              </a>
+          </li>
+        </ul>
+       
+      </div>
+      <div class="footer-product-category">
+        <h5>Sensors</h5>
+        <ul>
+          <li><a href="../../products/sensors/vizsens-ph-analog.html">VizSens-PH(Analog)</a></li>
+          <li><a href="../../products/sensors/vizsens-orp-analog.html">VizSens-ORP(Analog)</a></li>
+          <li><a href="../../products/sensors/vizsens-ph-digital.html">VizSens-PH(Digital)</a></li>
+          <li><a href="../../products/sensors/vizsens-ec-digital.html">VizSens-EC(Digital)</a></li>
+          <li class="see-more-item">
+              <a href="../../products/sensors.html" class="see-more-link">
+                <i class="fas fa-arrow-right"></i>Explore Range of Sensors
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Market Areas -->
+    <div class="footer-markets">
+      <h4>Market Areas</h4>
+      <ul>
+        <li><a href="../../industry/environmental-solutions/pulp-and-paper.html">Pulp and Paper</a></li>
+        <li><a href="../../industry/environmental-solutions/distillery.html">Distillery</a></li>
+        <li><a href="../../industry/environmental-solutions/sugar.html">Sugar</a></li>
+        <li><a href="../../industry/environmental-solutions/tanneries.html">Tanneries</a></li>
+        <li><a href="../../industry/environmental-solutions/power-plants.html">Power Plants</a></li>
+        <li><a href="../../industry/environmental-solutions/cement.html">Cement</a></li>
+        <li><a href="../../industry/environmental-solutions/chloral-alkali-plants.html">Chloral Alkali Plants</a></li>
+        <li><a href="../../industry/environmental-solutions/oil-refineries.html">Oil Refineries</a></li>
+        <li><a href="../../industry/environmental-solutions/dye-and-dye-intermediate-units.html">Dye & Dye Intermediate Units</a></li>
+        <li><a href="../../industry/environmental-solutions/cetp-and-stps.html">CETP & STP</a></li>
+        <li><a href="../../industry/environmental-solutions/pesticides.html">Pesticides</a></li>
+        <li><a href="../../industry/environmental-solutions/pharmaceutical-sector.html">Pharmaceutical Sector</a></li>
+        <li><a href="../../industry/environmental-solutions/common-biomedical-waste.html">Common Biomedical Waste</a></li>
+        <li><a href="../../industry/environmental-solutions/common-hazardous-waste-incinerator.html">Common Hazardous Waste Incinerator</a></li>
+      </ul>
+    </div>
+
+    <!-- Address and Contact Information -->
+    
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <address>
+        <h3>Our Headquarter Budapest, Hungary</h3>
+        <p class="footer-contact-para"><i class="fas fa-map-marker-alt"></i> 1132, Budapest Váci ut 16 Faz 12. ajto</p>
+        <p class="footer-contact-para"><i class="fas fa-envelope"></i> <a href="mailto:sales@advanceanalytik.com">sales@advanceanalytik.com</a></p>
+        <p class="footer-contact-para"><i class="fas fa-phone"></i><a href="tel:+36703286862">+36 70328 6862</a></p>
+      </address>
+
+      <!-- <address>
+          <h3>Our Distribution Office Advance Analytik LLC </h3>
+          <p class="footer-contact-para"><i class="fas fa-map-marker-alt"></i> 1801 Oberlin Rd, Suite 207 Middletown PA 17057</p>
+        </address> -->
+
+        <address>
+          <h3>Our Factory Edelény, Hungary</h3>
+          <!-- <p class="footer-contact-para"><i class="fas fa-map-marker-alt"></i> Edelényi Iparterület</p> -->
+          <p class="footer-contact-para"><i class="fas fa-map-marker-alt"></i> 3780 Edelény, Szentpéteri út hrsz 015/104</p>
+          <!-- <p class="footer-contact-para">3780 Edelény</p> -->
+          <!--<p class="footer-contact-para">Szentpéteri út hrsz 015/104</p>-->
+        </address>
+
+     
+    </div>
+
+  </div>
+  
+  <div class="footer-bottom">
+    <a class="privacy-policy" href="../../legal/privacy-policy.html">Privacy Policy</a>
+    <a class="privacy-policy" href="../../legal/terms-of-use.html">Terms Of Use</a>
+    <a class="privacy-policy" href="../../sitemap.html">Sitemap</a>
+    <p class="footer-rights"> &copy; 2024 Advance Analytik KFT. All rights reserved.</p>
+  </div>
+  </footer>
+
+</div>
   <script src="./javascript/faqtoggle.js"></script>
   <script src="js/sidebar.js"></script>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const preheader = document.querySelector('#preheader');
+      const navbar = document.querySelector('#navbar');
+      let lastScrollY = window.scrollY;
+  
+      window.addEventListener('scroll', () => {
+          const currentScrollY = window.scrollY;
+  
+          if (currentScrollY > lastScrollY) {
+              // Scrolling down: Hide preheader & move navbar up
+              preheader.style.transform = "translateY(-100%)";
+              navbar.style.transform = "translateY(-40px)"; // Adjust if needed
+          } else {
+              // Scrolling up: Show preheader & reset navbar
+              preheader.style.transform = "translateY(0)";
+              navbar.style.transform = "translateY(0)";
+          }
+  
+          lastScrollY = currentScrollY;
+      });
+  });
+  
+
+  </script>
+
   
 </body>
-
 </html>
