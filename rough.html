@@ -1,163 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environmental Solutions for the Cement Industry</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        .cement-container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        .cement-introduction {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-        }
-
-        .cement-introduction h1 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-
-        .cement-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .cement-left-section {
-            flex: 2;
-        }
-
-        .cement-challenges,
-        .cement-benefits {
-            margin-bottom: 30px;
-        }
-
-        .cement-card {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .cement-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .cement-card h3 {
-            font-size: 1.2em;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        .cement-card p {
-            line-height: 1.6;
-        }
-
-        .cement-benefits ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-
-        .cement-benefits li {
-            margin-bottom: 10px;
-        }
-
-        .cement-solutions {
-            flex: 1;
-            background: linear-gradient(to bottom, #ffffff, #f0f0f5);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .cement-solutions .cement-card {
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .cement-content {
-                flex-direction: column;
-            }
-
-            .cement-solutions {
-                order: -1;
-            }
-        }
-    </style>
-</head>
+<html>
 <body>
-    <div class="cement-container">
-        <div class="cement-introduction">
-            <h1>Environmental Solutions for the Cement Industry</h1>
-            <p>The cement industry faces numerous environmental challenges, from controlling dust emissions to managing wastewater and monitoring air quality. As one of the leading contributors to industrial pollution, cement plants require robust solutions to mitigate their environmental impact while maintaining efficiency. At Advance Analytik, we specialize in delivering innovative monitoring systems and sustainable solutions tailored to the cement industry's unique needs. Our advanced technologies ensure compliance with stringent environmental regulations, fostering sustainable and eco-friendly cement production.</p>
-        </div>
 
-        <div class="cement-content">
-            <!-- Left Section: Challenges and Benefits -->
-            <div class="cement-left-section">
-                <div class="cement-challenges">
-                    <div class="cement-card">
-                        <h3>Dust and Particulate Emissions</h3>
-                        <p>Cement plants generate significant dust during production, which can harm both the environment and human health. Effective dust monitoring and control are critical for regulatory compliance and operational safety.</p>
-                    </div>
-                    <div class="cement-card">
-                        <h3>Water Pollution and Treatment</h3>
-                        <p>Wastewater from cement plants often contains harmful substances that must be treated before discharge. Efficient water quality monitoring ensures compliance with environmental standards and reduces water wastage.</p>
-                    </div>
-                    <div class="cement-card">
-                        <h3>Air Quality and Gaseous Emissions</h3>
-                        <p>Gaseous emissions, including CO2, NOx, and SO2, pose environmental risks. Monitoring these emissions is essential for meeting environmental guidelines and reducing the industry's carbon footprint.</p>
-                    </div>
-                </div>
+<h1>HTML5 Canvas - Draw a Line</h1>
 
-                <div class="cement-benefits">
-                    <div class="cement-card">
-                        <h3>Benefits of Partnering with Advance Analytik</h3>
-                        <ul>
-                            <li>Enhanced compliance with environmental regulations.</li>
-                            <li>Reduced operational costs through efficient monitoring systems.</li>
-                            <li>Real-time data insights for proactive decision-making.</li>
-                            <li>Improved sustainability in cement manufacturing processes.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
 
-            <!-- Right Section: Solutions -->
-            <aside class="cement-solutions">
-                <div class="cement-card">
-                    <h3>Air Quality Analyzers</h3>
-                    <p>Real-time monitoring of particulate matter and gaseous emissions.</p>
-                </div>
-                <div class="cement-card">
-                    <h3>Dust Monitoring Solutions</h3>
-                    <p>Advanced systems to detect and control dust emissions.</p>
-                </div>
-                <div class="cement-card">
-                    <h3>Water Quality Monitoring Systems</h3>
-                    <p>Reliable solutions for wastewater analysis and treatment.</p>
-                </div>
-            </aside>
-        </div>
-    </div>
+
+<script>
+// Create a canvas
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+// Define a new path
+ctx.beginPath();
+
+// Set a start-point
+ctx.moveTo(0,0);
+
+// Set an end-point
+ctx.lineTo(200,100);
+
+// Draw it
+ctx.stroke();
+</script>
+
 </body>
 </html>
-
-

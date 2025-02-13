@@ -6,137 +6,8 @@
     <title>Water Quality Analyzer</title>
     <script src="./javascript/careers.js" defer></script>
     <script src="./javascript/common.js" defer></script>
-    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./water-quality-analyzer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-      * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: Arial, sans-serif;
-      }
-      
-      .water-analyzer-header {
-          position: relative;
-          width: 100%;
-          height: 350px;
-          background: url('./images/water-analyzer-images/pixelcut-export.jpg') no-repeat center center/cover;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          margin-top: 50px;
-      }
-
-      .water-analyzer-header-title {
-          font-size: 32px;
-          font-weight: bold;
-          padding: 15px 30px;
-          border-radius: 10px;
-          color: white;
-      }
-      
-      .water-analyzer-cards-container {
-          position: absolute;
-          bottom: -75px;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-      }
-      
-      .water-analyzer-card {
-          background: white;
-          width: 260px;
-          padding: 20px;
-          text-align: left;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          display: flex;
-          align-items: center;
-          gap: 15px;
-      }
-      
-      .water-analyzer-card:hover {
-          color: white;
-          background: #1c2835;
-      }
-      
-      .water-analyzer-card:hover .water-analyzer-icon {
-          color: white;
-      }
-      
-      .water-analyzer-icon {
-          font-size: 30px;
-          color: #1c2835;
-          position: relative;
-          bottom: 25px;
-      }
-      
-      .water-analyzer-card-content h3 {
-          font-size: 18px;
-          margin-bottom: 5px;
-      }
-      
-      .water-analyzer-card-content p {
-          font-size: 14px;
-      }
-
-      .water-analyzer-content-section {
-          margin: 100px auto 0px;
-          width: 80%;
-          padding: 20px;
-          text-align: left;
-      }
-
-      .water-analyzer-content-title {
-          font-size: 26px;
-          margin-bottom: 5px;
-          color: #1c2835;
-      }
-
-      .water-analyzer-content-section p, .water-analyzer-content-section ul {
-          font-size: 16px;
-          margin-bottom: 18px;
-          line-height: 1.6;
-      }
-
-      .water-analyzer-content-section ul {
-          padding-left: 20px;
-      }
-
-      .water-analyzer-content-section ul li {
-          margin-bottom: 10px;
-      }
-
-
-      .water-analyzer-table-content-section {
-        margin: 0px auto;
-        width: 80%;
-        padding: 20px;
-        text-align: left;
-    }
-      
-      .water-analyzer-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 30px;
-    }
-    
-    .water-analyzer-table th, .water-analyzer-table td {
-        border: 1px solid #ddd;
-        padding: 12px;
-        text-align: left;
-    }
-    
-    .water-analyzer-table th {
-        background-color: #1c2835;
-        color: white;
-    }
-    
-    .water-analyzer-table tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-    
-    </style>
 </head>
 <body>
 
@@ -201,9 +72,6 @@
       </ul>
   </div>
 
-
-
-
   <div class="water-analyzer-table-content-section">
     <h2 class="water-analyzer-content-title">Technical Specifications</h2>
     <table class="water-analyzer-table">
@@ -254,19 +122,20 @@
           <td>HART 5, 6, 7</td>
           <td>MODBUS RS485 (standard), 4G: UDP/TCP, NB: UDP (optional)</td>
           <td>RS232, RS485</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
         <td>Device Diagnostics</td>
         <td>Sensor open/short, out-of-range, test output current</td>
         <td>Full system diagnostics, automatic error detection with alarm indications</td>
         <td>Full system diagnostics, sensor health check</td>
-    </tr>
-    <tr>
-      <td>Calibration</td>
-      <td>Dual/three-point sensor calibration, current loop calibration, two-point temperature calibration</td>
-      <td>Programmable calibration for each sensor, Quick electrode installation and replacement</td>
-      <td>Programmable calibration for each sensor</td>
-  </tr>
+        </tr>
+        <tr>
+       <td>Calibration</td>
+       <td>Dual/three-point sensor calibration, current loop calibration, two-point temperature calibration</td>
+       <td>Programmable calibration for each sensor, Quick electrode installation and replacement</td>
+       <td>Programmable calibration for each sensor</td>
+       </tr>
+
   <tr>
     <td>Temperature Range</td>
     <td>-20 to 200°C</td>
@@ -280,27 +149,30 @@
   <td>IP65 / NEMA 4X</td>
   <td>IP66, IP68 (submersible up to 2M, 24H)</td>
 </tr>
+
 <tr>
 <td>Relays</td>
 <td>Not applicable</td>
 <td>4 x electromechanical SPDT (form C) contact, 5A, Programmable individually for high/low alarm</td>
 <td>4 x SPDT (5A) relays, individually programmable</td>
 </tr>
+
 <tr>
 <td>Measuring Mode</td>
 <td>Continuous</td>
 <td>Continuous with dynamic monitoring</td>
 <td>Continuous/Cyclic/Dynamic Mode</td>
 </tr>
+
 <tr>
 <td>Dimensions</td>
 <td>12.7 x 5.7 x 7.9 cm</td>
 <td>260mm x 200mm x 123.3mm (L×W×H)</td>
 <td>296 x 225 x 185 mm</td>
 </tr>
+
     </table>
 </div>
-
 
 
   <div class="faq-section section-divider">
