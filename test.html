@@ -3,358 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Quality Analyzer</title>
-    <script src="./javascript/careers.js" defer></script>
-    <script src="./javascript/common.js" defer></script>
-    <link rel="stylesheet" href="./css/faq.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Dashboard</title>
     <style>
-      * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: Arial, sans-serif;
-      }
-      
-      .water-analyzer-header {
-          position: relative;
-          width: 100%;
-          height: 350px;
-          background: url('./images/water-analyzer-images/pixelcut-export.jpg') no-repeat center center/cover;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          margin-top: 50px;
-      }
-
-      .water-analyzer-header-title {
-          font-size: 32px;
-          font-weight: bold;
-          padding: 15px 30px;
-          border-radius: 10px;
-          color: white;
-      }
-      
-      .water-analyzer-cards-container {
-          position: absolute;
-          bottom: -75px;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-      }
-      
-      .water-analyzer-card {
-          background: white;
-          width: 260px;
-          padding: 20px;
-          text-align: left;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          display: flex;
-          align-items: center;
-          gap: 15px;
-      }
-      
-      .water-analyzer-card:hover {
-          color: white;
-          background: #1c2835;
-      }
-      
-      .water-analyzer-card:hover .water-analyzer-icon {
-          color: white;
-      }
-      
-      .water-analyzer-icon {
-          font-size: 30px;
-          color: #1c2835;
-          position: relative;
-          bottom: 25px;
-      }
-      
-      .water-analyzer-card-content h3 {
-          font-size: 18px;
-          margin-bottom: 5px;
-      }
-      
-      .water-analyzer-card-content p {
-          font-size: 14px;
-      }
-
-      .water-analyzer-content-section {
-          margin: 100px auto 0px;
-          width: 80%;
-          padding: 20px;
-          text-align: left;
-      }
-
-      .water-analyzer-content-title {
-          font-size: 26px;
-          margin-bottom: 5px;
-          color: #1c2835;
-      }
-
-      .water-analyzer-content-section p, .water-analyzer-content-section ul {
-          font-size: 16px;
-          margin-bottom: 18px;
-          line-height: 1.6;
-      }
-
-      .water-analyzer-content-section ul {
-          padding-left: 20px;
-      }
-
-      .water-analyzer-content-section ul li {
-          margin-bottom: 10px;
-      }
-
-
-      .water-analyzer-table-content-section {
-        margin: 0px auto;
-        width: 80%;
-        padding: 20px;
-        text-align: left;
-    }
-      
-      .water-analyzer-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 30px;
-    }
-    
-    .water-analyzer-table th, .water-analyzer-table td {
-        border: 1px solid #ddd;
-        padding: 12px;
-        text-align: left;
-    }
-    
-    .water-analyzer-table th {
-        background-color: #1c2835;
-        color: white;
-    }
-    
-    .water-analyzer-table tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .quick-navigate {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .table-container {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .subscription-alert {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-
-  <div id="navbar-placeholder"></div>
-
-  <div class="water-analyzer-header">
-      <h1 class="water-analyzer-header-title">Advanced Water Monitoring Solutions</h1>
-      <div class="water-analyzer-cards-container">
-          <div class="water-analyzer-card">
-              <i class="water-analyzer-icon fas fa-microchip"></i>
-              <div class="water-analyzer-card-content">
-                  <h3>High-Accuracy Sensors</h3>
-                  <p>Ensures precise and reliable readings</p>
-              </div>
-          </div>
-          <div class="water-analyzer-card">
-              <i class="water-analyzer-icon fas fa-chart-line"></i>
-              <div class="water-analyzer-card-content">
-                  <h3>Real-Time Data Monitoring</h3>
-                  <p>Enables instant decision-making</p>
-              </div>
-          </div>
-          <div class="water-analyzer-card">
-              <i class="water-analyzer-icon fas fa-cogs"></i>
-              <div class="water-analyzer-card-content">
-                  <h3>Customizable Solutions</h3>
-                  <p>Adapted to industry-specific needs</p>
-              </div>
-          </div>
-          <div class="water-analyzer-card">
-            <i class="water-analyzer-icon fas fa-shield-alt"></i>
-            <div class="water-analyzer-card-content">
-                <h3>Durable & Long-Lasting</h3>
-                <p>Designed for harsh environmental conditions</p>
-            </div>
+    <div class="dashboard-container">
+        <div class="card">
+            <h2>Total Sites</h2>
+            <p>65</p>
+            <small>Active: 37 | Inactive: 28 | Delayed: 0</small>
         </div>
-      </div>
-  </div>
-
-  <div class="water-analyzer-content-section">
-      <h2 class="water-analyzer-content-title">Our Advanced Water Quality Analyzers</h2>
-      <p>Advance Analytik provides highly accurate and reliable water quality analyzers for a variety of applications, including online monitoring, laboratory testing, and portable water testing kits.</p>
-
-      <h2 class="water-analyzer-content-title">Parameters We Measure</h2>
-      <ul>
-          <li><strong>pH & ORP Analyzer</strong> – Measures water acidity and oxidation levels</li>
-          <li><strong>Turbidity Analyzer</strong> – Detects clarity and suspended particles</li>
-          <li><strong>Conductivity & TDS Analyzer</strong> – Monitors salinity and dissolved solids</li>
-          <li><strong>Dissolved Oxygen (DO) Sensor</strong> – Ensures proper aeration in water systems</li>
-          <li><strong>Nitrate, Ammonia & Phosphate Analyzer</strong> – Identifies nutrient contamination</li>
-          <li><strong>Chlorine & Hardness Analyzer</strong> – Ensures water treatment efficiency</li>
-      </ul>
-
-      <h2 class="water-analyzer-content-title">Industries We Serve</h2>
-      <ul>
-          <li><strong>Wastewater Treatment Plants</strong> – Monitoring effluent discharge quality</li>
-          <li><strong>Drinking Water Facilities</strong> – Ensuring safe potable water supply</li>
-          <li><strong>Pharmaceutical & Chemical Industries</strong> – Maintaining purity in production processes</li>
-          <li><strong>Food & Beverage Processing</strong> – Complying with hygiene and safety regulations</li>
-          <li><strong>Power Plants</strong> – Monitoring cooling and boiler feed water</li>
-          <li><strong>Aquaculture & Fisheries</strong> – Ensuring optimal water conditions for marine life</li>
-      </ul>
-  </div>
-
-
-
-
-  <div class="water-analyzer-table-content-section">
-    <h2 class="water-analyzer-content-title">Technical Specifications</h2>
-    <table class="water-analyzer-table">
-        <tr>
-            <th>Specification</th>
-            <th>Viz-Classic</th>
-            <th>Viz-Eco Multi</th>
-            <th>Viz-Pro Multi</th>
-        </tr>
-        <tr>
-            <td>Inputs</td>
-            <td>pH, ORP, Conductivity, TDS, Temperature</td>
-            <td>Supports up to 7 sensors for multiple parameters</td>
-            <td>Select any four sensors</td>
-        </tr>
-        <tr>
-            <td>Outputs</td>
-            <td>1 x 4-20mA with HART</td>
-            <td>8 x 4-20mA, MODBUS, Wireless Transmission</td>
-            <td>4 x 4-20mA</td>
-        </tr>
-        <tr>
-            <td>Mounting</td>
-            <td>Wall/Panel Mount</td>
-            <td>Wall/Panel Mount</td>
-            <td>Wall, Panel, Pipe, or Pole Mount</td>
-        </tr>
-        <tr>
-          <td>Measurement Range</td>
-          <td>pH 0-14, ORP -1500 to +1500 mV, Conductivity 0-50000 µS/cm, TDS 0-50000 ppm</td>
-          <td>pH 0-14, ORP ±2000mV, Conductivity 0-20mS/cm, DO 0-20 mg/L, TDS 0-20000 ppm, Turbidity 0.01-4000 NTU, etc.</td>
-          <td>Depends on selected sensors</td>
-        </tr>
-        <tr>
-            <td>Display</td>
-            <td>16x2 Character Display</td>
-            <td>7-inch Color Touchscreen</td>
-            <td>5.0" TFT LCD Touch Screen</td>
-        </tr>
-        <tr>
-            <td>Power Supply</td>
-            <td>12-32V DC</td>
-            <td>85-265 VAC; 9-36 VDC</td>
-            <td>90-265 VAC or 24V DC</td>
-        </tr>
-        <tr>
-          <td>Communication</td>
-          <td>HART 5, 6, 7</td>
-          <td>MODBUS RS485 (standard), 4G: UDP/TCP, NB: UDP (optional)</td>
-          <td>RS232, RS485</td>
-      </tr>
-      <tr>
-        <td>Device Diagnostics</td>
-        <td>Sensor open/short, out-of-range, test output current</td>
-        <td>Full system diagnostics, automatic error detection with alarm indications</td>
-        <td>Full system diagnostics, sensor health check</td>
-    </tr>
-    <tr>
-      <td>Calibration</td>
-      <td>Dual/three-point sensor calibration, current loop calibration, two-point temperature calibration</td>
-      <td>Programmable calibration for each sensor, Quick electrode installation and replacement</td>
-      <td>Programmable calibration for each sensor</td>
-  </tr>
-  <tr>
-    <td>Temperature Range</td>
-    <td>-20 to 200°C</td>
-    <td>0-80°C</td>
-    <td>Based on selected sensors</td>
-</tr>
-
-<tr>
-  <td>Enclosure</td>
-  <td>IP65 (Wall mount), Front fascia IP65 (Panel mount)</td>
-  <td>IP65 / NEMA 4X</td>
-  <td>IP66, IP68 (submersible up to 2M, 24H)</td>
-</tr>
-<tr>
-<td>Relays</td>
-<td>Not applicable</td>
-<td>4 x electromechanical SPDT (form C) contact, 5A, Programmable individually for high/low alarm</td>
-<td>4 x SPDT (5A) relays, individually programmable</td>
-</tr>
-<tr>
-<td>Measuring Mode</td>
-<td>Continuous</td>
-<td>Continuous with dynamic monitoring</td>
-<td>Continuous/Cyclic/Dynamic Mode</td>
-</tr>
-<tr>
-<td>Dimensions</td>
-<td>12.7 x 5.7 x 7.9 cm</td>
-<td>260mm x 200mm x 123.3mm (L×W×H)</td>
-<td>296 x 225 x 185 mm</td>
-</tr>
-    </table>
-</div>
-
-
-
-  <div class="faq-section section-divider">
-    <h2 class="faq-section__title">Frequently Asked Questions</h2>
-
-    <div class="faq-item">
-        <div class="faq-item__question">
-            <span>Q1: How does a water quality analyzer work?</span>
-            <button class="faq-toggle-button">+</button>
+        <div class="card">
+            <h2>Total Stations</h2>
+            <p>66</p>
+            <small>Effluent: 64 | Emission: 2</small>
         </div>
-        <div class="faq-item__answer hidden">
-            <p>A water quality analyzer uses advanced sensors to measure key water parameters, detecting variations in pH, conductivity, turbidity, dissolved oxygen, and more.</p>
+        <div class="card">
+            <h2>Total Parameters</h2>
+            <p>316</p>
         </div>
     </div>
-
-    <div class="faq-item">
-        <div class="faq-item__question">
-            <span>Q2: Which industries require water quality monitoring?</span>
-            <button class="faq-toggle-button">+</button>
+    
+    <div class="quick-navigate">
+        <h3>Quick Navigate</h3>
+        <a href="#">Site Summary</a>
+        <a href="#">Site Status</a>
+        <a href="#">Custom Report</a>
+    </div>
+    
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Site Name</th>
+                <th>Today Exceedance</th>
+            </tr>
+            <tr>
+                <td class="subscription-alert">Subscription Expired</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Indo Amines Key Organics</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Deonar Slaughter House</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>M/s MMA CETP Co.Op. Society Ltd.-OUTLET</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Molson Coors India Pvt Ltd</td>
+                <td>48</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="chart-container">
+        <div>
+            <h3>Total Stations</h3>
+            <img src="station_chart.png" alt="Pie Chart">
         </div>
-        <div class="faq-item__answer hidden">
-            <p>Industries like wastewater treatment, pharmaceuticals, food processing, power generation, and aquaculture rely on water quality analyzers to maintain safe and efficient operations.</p>
+        <div>
+            <h3>Category Wise</h3>
+            <img src="category_chart.png" alt="Pie Chart">
         </div>
     </div>
-
-    <div class="faq-item">
-      <div class="faq-item__question">
-          <span>Q3: Can your water analyzers support continuous monitoring?</span>
-          <button class="faq-toggle-button">+</button>
-      </div>
-      <div class="faq-item__answer hidden">
-          <p>Yes, our online water quality analyzers provide 24/7 real-time monitoring, ensuring continuous tracking of water parameters.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-    <div class="faq-item__question">
-        <span>Q4: How do I choose the right water quality analyzer?</span>
-        <button class="faq-toggle-button">+</button>
-    </div>
-    <div class="faq-item__answer hidden">
-        <p>Selecting the right analyzer depends on:</p>
-        <ul>
-          <li>The parameters you need to measure.</li>
-          <li>Application environment (industrial, municipal, lab, etc.)</li>
-          <li>Regulatory requirements for your industry</li>
-        </ul>
-    </div>
-    </div>
-
-</div>
-
-
-  <div id="footer-placeholder"></div>
-  <script src="../javascript/faqtoggle.js"></script>
 </body>
 </html>

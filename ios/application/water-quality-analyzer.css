@@ -1,0 +1,58 @@
+/* Responsive styles for 480px and below */
+@media screen and (max-width: 480px) {
+    .water-analyzer-header-title {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .water-analyzer-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .water-analyzer-cards-container {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        gap: 10px;
+        padding: 10px;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .water-analyzer-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        text-align: center;
+        flex-shrink: 0; /* Prevent cards from shrinking */
+        width: 180px; /* Adjust card width for smaller screens */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keep shadow */
+        position: relative;
+    }
+
+    .water-analyzer-card-content {
+        margin-top: 30px;
+     }
+
+    .water-analyzer-icon {
+        font-size: 30px; /* Adjust icon size for smaller screen */
+        color: #1c2835;
+        position: absolute;
+        top: 15px; /* Place icon at the top */
+        left: 50%;
+        transform: translateX(-50%); /* Center the icon horizontally */
+    }
+    .water-analyzer-content-section {
+        padding: 15px;
+    }
+    .water-analyzer-table {
+        font-size: 0.8rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .faq-item__question {
+        font-size: 1rem;
+    }
+}
+

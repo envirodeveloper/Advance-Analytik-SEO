@@ -172,7 +172,7 @@ const products = [
     productId: "006",
     name: "VizSens-EC(Analog) ",
     img: "../productImages/img003.png",
-    dataSheetLink: "../productsDataSheets/Vizsens-Ec-Analog.pdf",
+    dataSheetLink: "../productsDataSheets/Vizsens-EC-Analog.pdf",
     introduction:
       "The VizSens-EC(A) Conductivity Sensor, featuring a glass platinum electrode, is a reliable instrument for accurate conductivity monitoring. This sensor utilizes voltage and current values to determine conductivity, making it an essential tool for applications in water treatment, hydrological monitoring, wastewater treatment,swimming pools, fish ponds, as well as in fertilizers, chemicals, and biology industries.",
       features: [
