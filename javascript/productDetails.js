@@ -31,9 +31,9 @@ const products = [
       { name: "Weight", value: "3 kg approx. (Depending on Configuration)" },
     ],
   },
-  
-
-  {
+    
+    
+  {  
     productId: "002",
     name: "Viz Pro Duo",
     img: "../productImages/img001A.png",
@@ -135,6 +135,7 @@ const products = [
       { name: "Response Time", value: "≤ 10 Seconds (After stirring)" },
     ],
   },
+
 
   {
     productId: "005",
@@ -255,7 +256,7 @@ const products = [
         "RS485 communication interface, the standard Modbus protocol, ease of integration.",
         "Sensor power supply positive and negative reverse connection protection.",
         "Sensor RS485 A/B terminal is connected to the power supply protection."
-      ],  
+      ],
 
     attributes: [
       { name: "Main materials", value: "316L Stainless Steel + Polyoxymethylene" },
@@ -295,7 +296,7 @@ const products = [
         "Factory calibration with optional field calibration.",
         "High anti-jamming digital sensor with standard signal output.",
         "Integration and networking capabilities."
-      ],      
+      ],
     attributes: [
       { name: "Dimensions", value: "Diameter 49.5 mm * Length 251.3 mm" },
       { name: "Cable Material", value: "Polyurethane"},

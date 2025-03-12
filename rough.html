@@ -1,30 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Image Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .card-container {
+            width: 30%;
+            text-align: center;
+        }
+
+        .image-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .card {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .visible {
+            opacity: 1;
+        }
+    </style>
+</head>
 <body>
 
-<h1>HTML5 Canvas - Draw a Line</h1>
-
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
-Sorry, your browser does not support canvas.
-</canvas>
-
+<div class="container">
+    <div class="card-container">
+        <div class="image-name"></div>
+        <div class="card"></div>
+    </div>
+    <div class="card-container">
+        <div class="image-name"></div>
+        <div class="card"></div>
+    </div>
+    <div class="card-container">
+        <div class="image-name"></div>
+        <div class="card"></div>
+    </div>
+</div>
 
 <script>
-// Create a canvas
-const canvas = document.getElementById("myCanvas");
-const ctx = canvas.getContext("2d");
+    const images = [
+        './images/Industry%20images/cetp-and-wstp.jpg',
+        './images/Industry%20images/Distillery.jpg',
+        './images/Industry%20images/Tannery.jpg',
+        './images/Industry%20images/cement.jpg',
+        './images/Industry%20images/chloral-alkali-plant.jpg',
+        './images/Industry%20images/oil-refinery.jpg',
+        './images/Industry%20images/dye-and-dye.jpeg',
+        './images/Industry%20images/common-bio-medical-waste.jpg',
+        './images/Industry%20images/Hazardous-Waste.webp'
+    ];
 
-// Define a new path
-ctx.beginPath();
+    let index = 0;
+    const cards = document.querySelectorAll('.card');
+    const imageNames = document.querySelectorAll('.image-name');
 
-// Set a start-point
-ctx.moveTo(0,0);
+    function updateCards() {
+        cards.forEach(card => card.classList.remove('visible')); // Fade out
+        setTimeout(() => {
+            for (let i = 0; i < 3; i++) {
+                let imgIndex = (index + i) % images.length;
+                let imagePath = images[imgIndex];
+                
+                // Extract filename from the path
+                let imageName = imagePath.split('/').pop().split('.')[0].replace(/-/g, ' ');
+                
+                cards[i].style.backgroundImage = `url(${imagePath})`;
+                imageNames[i].textContent = imageName.charAt(0).toUpperCase() + imageName.slice(1); // Capitalize first letter
+            }
+            index = (index + 3) % images.length;
+            cards.forEach(card => card.classList.add('visible')); // Fade in
+        }, 1000);
+    }
 
-// Set an end-point
-ctx.lineTo(200,100);
-
-// Draw it
-ctx.stroke();
+    updateCards();
+    setInterval(updateCards, 3000);
 </script>
 
 </body>
