@@ -1,0 +1,337 @@
+.uae-industries-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        background-color: #dfdfdff4;
+}
+
+.uae-industry-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+h2 {
+    color: #333;
+}
+.uae-industry-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+.uae-industry-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+.uae-industry-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.uae-industry-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.uae-industry-card h3 {
+    color: #1c2835;
+    margin-bottom: 10px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*  Products section    */
+
+.uae-product-header-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.uae-products-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.uae-products-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #dfdfdf;;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.uae-products-section h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 15px;
+}
+.uae-products-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.uae-products-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+    text-align: left;
+}
+.uae-products-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+.uae-products-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.uae-products-reverse .uae-products-content {
+    flex-direction: row-reverse;
+}
+
+/* Partners */
+
+.uae-technical-partners-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.uae-technical-partner {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.uae-technical-partner:hover {
+    transform: scale(1.1);
+    background-color: #1c2835;
+    color: white;
+}
+.uae-technical-partners-section {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.6;
+}
+.uae-technical-partner-highlight {
+    font-weight: bold;
+    color: #1c2835;
+}
+
+
+/* blog */
+
+
+.uae-blog-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.uae-blog-section {
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.uae-blog-section h2 {
+    color: #1c2835;
+    font-size: 32px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.uae-blog-section h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #1c2835;
+    display: block;
+    margin: 8px auto 0;
+}
+.uae-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.uae-blog-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.uae-blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.uae-blog-image {
+    width: 100%;
+    height: 180px;
+    background: #1c2835;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.uae-blog-content {
+    padding: 15px;
+    flex: 1;
+}
+.uae-blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c2835;
+    margin-bottom: 10px;
+}
+.uae-blog-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.uae-blog-read-more {
+    color: #1c2835;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.uae-blog-read-more:hover {
+    color: #005bb5;
+}
+
+
+/* client */
+
+.uae-clients-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.uae-clients-section {
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+.uae-clients-section h2 {
+    color: #1c2835;
+    font-size: 34px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.uae-clients-section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #333;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.uae-clients-description {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 25px;
+    max-width: 1200px;
+    text-align: left;
+    line-height: 1.6;
+}
+.uae-clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+.uae-client-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #1c2835;
+}
+.uae-client-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: #1c2835;
+    color: white;
+}
+.uae-client-icon {
+    font-size: 50px;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+}
+.uae-client-item:hover .uae-client-icon {
+    color: white;
+}
+.uae-client-title {
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}

@@ -6,6 +6,12 @@ footer {
   line-height: 1.5;
 }
 
+footer h4 {
+  margin: 0; /* or your preferred spacing */
+  font-weight: 600; /* optional */
+}
+
+
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -97,6 +103,15 @@ footer {
 .footer-social .social-icons a:hover {
   color: white;
 }
+
+
+.blog-link{
+   position: relative;
+   top:10px;
+   color: white;
+}
+
+
 
 .footer-bottom {
   margin-top: 30px;
