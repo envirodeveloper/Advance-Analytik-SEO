@@ -3,7 +3,7 @@ const products = [
     productId: "001",
     name: "Viz Pro Solo",
     img: "../productImages/img001.png",
-    dataSheetLink: "../productsDataSheets/pro-Solo-Transmitter.pdf",
+    dataSheetLink: "../productsDataSheets/pro-solo-transmitter.pdf",
     introduction:"Advance Analytics VizSens Series Single channel transmitter, measured parameters include PH, DO, ORP, conductivity, turbidity, SS, chlorophyll, blue-green algae and other parameters. And realize the plug and play of the sensor, the configuration is flexible and convenient.",
     features: [
         "Achieve plug and play of sensors, quick and convenient electrode installation and replacement",
@@ -33,7 +33,7 @@ const products = [
   },
     
     
-  {  
+   {
     productId: "002",
     name: "Viz Pro Duo",
     img: "../productImages/img001A.png",
@@ -645,42 +645,30 @@ const products = [
 
   {
     productId: "020",
-    name: "OPTICS-1000",
-    img: "../productImages/img026.png",
-    dataSheetLink: "../productsDataSheets/Analyzer-Optics1000.pdf",
+    name: "OPTICS-1000 Multi Parameter",
+    img: "../productImages/optics1000-multi-parameter.png",
+    dataSheetLink: "../productsDataSheets/Analyzer-Optics1000-MultiParameter.pdf",
     introduction:
-      "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters such as Ammonium, Nitrates, Nitrites, Total Nitrogen, Phosphates,Total Phosphates, Organic Matter, Total Organic Carbon, Sulfides, Sulfites, Total Sulfur, Total Suspended Solids, Turbidity,Color, Chlorine, Chlorine Dioxide, Hydrocarbon, Aromatic Compounds, Phenol, Dissolved Oxygen, Conductivity, Ozone and pH. Designed with state-of-the-art optical technology, it ensures exceptional stability, low operating costs, and high precision for various industries, including wastewater treatment plants and river monitoring stations. This device offers versatility for a wide range of applications also, the user-friendly interface enables user to pick any 4 modules and any 8 parameters of choice to be added in this modular analyser.",
+      "The Optic 1000 Multi Parameters is a high-performance online water analyser that provides accurate and reliable measurements upto 7 parameters for a wide range of water quality parameters such as Ammonium, Nitrates, Nitrites, Total Nitrogen,  Phosphates, Total Phosphates, Organic Matter [COD, BOD, TSS], Total Organic Carbon, Sulfides, Sulfites, Total Sulfur, Total Suspended Solids, Turbidity, Color, Chlorine, Chlorine Dioxide, Hydrocarbon, Aromatic Compounds, Phenol, Dissolved Oxygen, Conductivity, Ozone and pH. Designed with state-of-the-art optical technology, it ensures exceptional stability, low operating costs, and high precision for various industries, including wastewater treatment plants and river monitoring stations. This device offers versatility for a wide range of applications also, the user-friendly interface enables user to pick any 7 parameters of choice to be added in this modular analyser.",
     features: [
       "Multi-parameter monitoring:Simultaneous measurement of organic matter, nitrate, color, turbidity, and more.",
       "Advanced Optics: High-resolution optics with a scanning wavelength range from 180 to 750 nm.",
       "Durability: Built-in automatic cleaning system with long-lasting lamps.",
       "Modular Design: Expandable with external probes for additional measurements like pH, conductivity, and dissolved oxygen.",
       "User-Friendly Interface: Large, intuitive touch screen for easy operation and maintenance diagnostics.",
-     
     ],
     attributes: [
-      { name: "Type", value: "Panel Mounted/Wall Mounted" },
-      { name: "Material", value: "SS316L" },
+      { name: "Display", value: "7-inch touch screen, simple operation interface" },
+      { name: "Power supply", value: "AC power supply: 85-500 VAC or DC power supply: 9-36 VDC" },
+      { name: "Output", value: "4-20mA analog output (optional)" },
+      { name: "Relay", value: "A relay, programmable response parameters and response values" },
       { name: "Dimensions (HxWxD)", value: "450x350x200 mm" },
-      { name: "Weight",value: "± 15 kg" },
-      { name: "Protection class", value: "IP65" },
-      { name: "Area Classification", value: "Safe, Zone 1 or 2 (Available on request)" },
-      { name: "Flow", value: "0.2 L/min" },
-      { name: "Pressure", value: "< 2 bars" },
-      { name: "Temperature", value: "0... 60°C" },
-      { name: "Display", value: "8.5’’ TFT colour screen 16/9 (LED backlight)" },
-      { name: "Resolution", value: "800 x 480 px"},
-      { name: "Touch screen", value: "Glass to glass" },
-      { name: "Memory", value: "16 GB SD card" },
-      { name: "Data transfer", value: "USB type A" },
-      { name: "Operating temperature", value: "0... 50°C" },
-      { name: "Operating humidity", value: "< 90 % RH" },
-      { name: "Analog", value: "4-20 mA isolated (Active or Passive) / 500 Ω max" },
-      { name: "Relay", value: "Programmable limit or fault alarms / 5A (NO) 3A (NC) @ 277 VAC" },
-      { name: "Digital",value: "RS485 / Modbus (Slave or Master) - Show value, calibration status, fault status..." },
-      { name: "Voltage",value: "100 ... 240 VAC (50 - 60 Hz) or 24 VDC (Universal)"},
-      { name: "Consumption",value: "< 20 W (60 W max.)" },
-    
+      { name: "Communication protocol",value: "MODBUS RS485 communication function is equipped as standard, whichcantransmitthemeasured value in real time." },
+      { name: "Fittings", value: "Inlet: straight through to hard pipe ∅ 8 \nOutlet: straight through to hard pipe ∅ 12" },
+      { name: "Storage temperature", value: "0-45°C" },
+      { name: "Operating temperature", value: "0-50°C" },
+      { name: "Enclosure rating", value: "IP 65" },
+      { name: "Dimensions", value: "350*270*550 mm (L*W*H)" },
     ],
   },
 
@@ -690,7 +678,7 @@ const products = [
     name: "Viz Eco Solo",
     img: "../productImages/viz-eco-solo.png",
     dataSheetLink: "../productsDataSheets/VizEcoSolo.pdf",
-    introduction:"The Advance Analytik Viz-Eco-Solo, a Single - channel transmitter, is an advanced instrument designed for comprehensive water quality monitoring. Compatible with multiple different sensors such as pH, DO, ORP,conductivity, turbidity, SS, COD, BOD, TOC, TSS, TDS, Nitrate, Nitrite, Color, Sludge Level, ISE, Residual Chlorine and others, this device offers versatility for a wide range of applications. Its plug-and-play sensor integration simplifies setup, while the flexible configuration allows users to adapt the system to their specific monitoring needs. The transmitter's user-friendly interface enables real-time data visualization and seamless integration with data logging systems, ensuring efficient data management.",
+    introduction:"The Advance Analytik® Viz-Eco-Solo, a Single - channel transmitter, is an advanced instrument designed for comprehensive water quality monitoring. Compatible with multiple different sensors such as pH, DO, ORP,conductivity, turbidity, SS, COD, BOD, TOC, TSS, TDS, Nitrate, Nitrite, Color, Sludge Level, ISE, Residual Chlorine and others, this device offers versatility for a wide range of applications. Its plug-and-play sensor integration simplifies setup, while the flexible configuration allows users to adapt the system to their specific monitoring needs. The transmitter's user-friendly interface enables real-time data visualization and seamless integration with data logging systems, ensuring efficient data management.",
     features: [
         "Enables plug-and-play sensor functionality with fast and convenient electrode installation and replacement.",
         "Easy to operate with reliable results and intuitive interface instructions to minimize operational errors.",
@@ -1241,7 +1229,7 @@ const products = [
   introduction:
     "The sample is titrated with hydrochloric acid to a colorimetric end point corresponding to a specific pH. Phenolphthalein alkalinity is determined by titration to a pH of 8.3, as evidenced by the color change of phenolphthale in indicator, and indicates the total hydroxide and one half the carbonate present.",
   features: [
-    "The method is specific for alkalinity, and thanks to the accuracy of the system of Advance Analytik the repeatability achieved is really high.",
+    "The method is specific for alkalinity, and thanks to the accuracy of the system of Advance Analytik® the repeatability achieved is really high.",
   ],
   attributes:[
     { name: "Range", value: "From 0 to 100 ppm / 250 ppm / 500 ppm / 1000ppm. (Adjustable higher concentrations with internal dilution.)" },
@@ -1254,6 +1242,33 @@ const products = [
     { name: "LED Wavelength", value: "625 nm" },
     { name: "Reagent 1 Consumption", value: "1 ml / analysis - 0.75L / month" },
     { name: "Reagent 2 Consumption", value: "4 ml / analysis - 3.0L / month (Monthly consumption calculated assuming 1 analysis per hour)" },
+],
+},
+{
+  productId: "044",
+  name: "VizSens O3",
+  img: "../productImages/vizsens-o3.png",
+  dataSheetLink: "../productsDataSheets/Vizsens-O3.pdf",
+  introduction:
+    "VizSens-O3 electrode is a 2-electrode measurement system using the coating method. The detection part adopts a special permeable membrane technology, which has the characteristics of resisting chemical (mainly surfactant) interference and reducing pH dependence. \n Fast speed, stable performance, low cost and low maintenance, providing users with reliable and accurate data.",
+  features: [
+    "Basically not affected by PH.",
+    "Internal processing of digital signal data, free from electromagnetic interference.",
+    "Stable work and fast response.",
+    "Low cost and less maintenance."
+  ],
+  attributes:[
+    { name: "Measurement Range", value: "0~20 ppm" },
+    { name: "Precision Range", value: "0~2ppm: Less than 1%" },
+    { name: "pH Range", value: "2~11" },
+    { name: "Flow rate", value: "In the flow cell: 250~500ml/min, the flow rate has little effect on it." },
+    { name: "Response time", value: "T90: about 15s (up to 90% of the measured value)" },
+    { name: "Slope calibration", value: "On the measuring device, determined by analytical methods" },
+    { name: "Temp compensation", value: "Integrated automatic temp. compensation" },
+    { name: "Material", value: "PVC-U, Semipermeable membrane, ABS" },
+    { name: "Operating temp", value: "Measuring water temp.: 0~45 °C (no condensation in water), \n Ambient room temp.: 0~55 °C" },
+    { name: "Size", value: "Diameter 25mm * length 220mm" },
+    { name: "Cable length", value: "Standard:10m, the maximum may be extended to 100m" },
 ],
 },
   // Add more products as necessary

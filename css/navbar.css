@@ -5,6 +5,55 @@
   font-family: Arial, sans-serif;
 }
 
+/* Hide the Google top banner */
+/* .goog-te-banner-frame.skiptranslate {
+  display: none !important;
+} */
+
+/* .goog-tooltip,
+.goog-tooltip span,
+.goog-te-balloon-frame {
+  display: none !important;
+} */
+
+
+.goog-te-gadget span {
+  display: none !important;
+}
+
+
+iframe.goog-te-menu-frame {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-size: 0 !important; 
+}
+
+.goog-te-gadget select {
+  font-size: 14px !important; /* restore readable font size */
+  color: #000 !important;
+  /* padding: 5px; */
+  border-radius: 6px;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+  width: 0% !important;
+}
+
+
+
+
+/* 
+.goog-te-gadget {
+  font-size: 0 !important;  
+  color: transparent !important;
+}
+
+.goog-te-gadget img {
+  display: none !important; 
+} */
+
 a{
     text-decoration: none;
     color: inherit;
@@ -32,7 +81,7 @@ a{
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 9999999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +99,6 @@ a{
 }
 
 /* Left: Contact Info */
-/* Left: Contact Info */
 .preheader__contact {
   font-size: 14px;
   position: relative;
@@ -62,8 +110,8 @@ a{
 }
 
 /* .preheader__contact i {
- 
-
+    
+  
 } */
 
 
@@ -118,8 +166,7 @@ a{
   .navbar__logo img {
     height:30px; /* Make sure the logo fits within the navbar */
     width:150px;  /* Maintain aspect ratio of the logo */
-    margin-top: 12px;
-    margin-bottom: 5px;
+
   }
 
   /* Navbar Links */
@@ -131,6 +178,7 @@ a{
     align-items: center;
     list-style: none;
     -webkit-flex-wrap: wrap; /* Safari fix for flex-wrap */
+    margin-left:120px;
   }
 
   .navbar__link {
@@ -310,33 +358,20 @@ a{
   top: 0; /* Ensure it aligns at the same height */
 }
 
-.language-change-dropdown {
-  position: relative;
+
+.language-switcher select {
+  padding: 5px 10px;
+  border: none;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.language-change-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  list-style: none;
-  padding: 10px;
-  top: 100%;
-  left: 0;
+.language-switcher select option {
+  padding: 5px;
 }
 
-.language-change-dropdown:hover .language-change-menu {
-  display: block;
-}
-
-.language-change-menu li {
-  padding: 8px;
-}
-
-.language-change-menu li a {
-  text-decoration: none;
-  color: #333;
-}
 
 
   @media (max-width: 720px) {

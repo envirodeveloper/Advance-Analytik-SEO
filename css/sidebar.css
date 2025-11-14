@@ -25,6 +25,11 @@
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
   
+  .google_translate_element{
+    z-index: 99999;
+  }
+
+
   /* Logo Styles */
   .sidebar-navbar .sidebar-logo img {
     height: 40px;

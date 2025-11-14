@@ -1,6 +1,6 @@
 function playVideo(button) {
     const video = button.previousElementSibling; // Select the video element (previous sibling)
-    
+  
     // Enable controls
     video.controls = true;
   
@@ -13,6 +13,7 @@ function playVideo(button) {
     // Hide the play button
     button.style.display = "none"; 
   }
+    
 
   const bubbleContainer = document.querySelector('.bubble-container');
   const texts = ['pH', 'TDS', 'BOD', 'TSS', 'COD', 'OIW', 'NO3-', 'NO2-', 'NH4+', 'S2-', 'TS', 'Cl2', 'ClO2', 'TC', 'BTEX', 'O3', 'TP', 'Turb', 'DO', 'EC'];
@@ -40,8 +41,8 @@ function playVideo(button) {
           bubble.textContent = texts[Math.floor(Math.random() * texts.length)];
           bubbleContainer.appendChild(bubble);
           currentBubbles++;
-          newBubblePositions.push(leftPos); // Track bubble position
-  
+          newBubblePositions.push(leftPos);
+    
           // Remove the bubble after animation
           bubble.addEventListener('animationend', () => {
               bubble.remove();
@@ -49,6 +50,6 @@ function playVideo(button) {
           });
       }
   }
-  
+    
   setInterval(createBubble, 1000);
   

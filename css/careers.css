@@ -162,6 +162,147 @@
   display: none;
 }
 
+
+/* career form */
+
+/* Landscape Career Form */
+.career-form {
+  padding: 60px 20px;
+  background: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+.career-form .container {
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.career-form h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Two-column layout */
+.career-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 30px;
+  align-items: start;
+}
+
+.career-form label {
+  font-weight: 500;
+  font-size: 15px;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.career-form input,
+.career-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.career-form input:focus,
+.career-form textarea:focus {
+  outline: none;
+  border-color: #d50100;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(213, 1, 0, 0.4), 
+              0 0 0 2px rgba(213, 1, 0, 0.6);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.career-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Make address and resume span both columns */
+#address,
+#resume {
+  grid-column: span 2;
+}
+
+/* Submit button spans full width */
+#career-submit-btn {
+  grid-column: span 2;
+  background: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#career-submit-btn:hover {
+  background: #d50100;
+}
+
+#career-submit-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Message */
+#career-message {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#career-message.success { color: #16a34a; }
+#career-message.error { color: #dc2626; }
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .career-form form {
+    grid-template-columns: 1fr;
+  }
+  #address,
+  #resume,
+  #career-submit-btn,
+  #career-message {
+    grid-column: span 1;
+  }
+}
+
+
 /* Media Queries for max-width 720px */
 @media screen and (max-width: 720px) {
   .careers__header {

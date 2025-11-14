@@ -1,127 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .dashboard-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .quick-navigate {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .table-container {
-            margin-top: 20px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-        .chart-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .subscription-alert {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advance Analytik® is a leading Analytical Instrumentation Company in Hungary, providing cutting-edge analytical instruments, manufacturing as well as IT solutions in Budapest. Contact us for top-tier analytical instrumentation providers" />
+  <meta name="google-site-verification" content="xsVXhlVj3HZkHbs_MwflapAwLlmqEEhny3LdRdkKsKE" />
+  <link rel="icon" type="image/svg+xml" href="./images/logo/AdvanceAnalytiklogo.png" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/indexvideo.css">
+  <link rel="stylesheet" href="./android/index.css">
+  <link rel="stylesheet" href="./ios/index.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Days&display=swap" rel="stylesheet">
+  
+  <script src="./javascript/index.js" defer></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+  <!-- Link to the language script -->
+
+  <title>Advanced Analytical Instrumentation Solutions in Hungary | Advance Analytik®</title>
+  <meta name="description" content="Advance Analytik® is a leading Analytical Instrumentation Company in Hungary, providing cutting-edge analytical instruments, manufacturing as well as IT solutions in Budapest. Contact us for top-tier analytical instrumentation providers." />
 </head>
+
 <body>
-      
+
+    <!-- <div id="navbar-placeholder"></div> -->
+    <!-- Preheader -->
+      <div id="navbar-placeholder"></div>
+
+      <div class="full-page">
+
+      <section class="video-header-section">
+        <video src="./videos/main-header.mp4" autoplay muted loop></video>
+        <h1 class="video-header-text">Safe Efficient Compliance</h1>
+        <div class="video-header-subtext">water and wastewater treatment and hygiene</div>
+        <div class="bubble-container"></div>
+      </section>
+
+      <section class="header-section">
+      <div class="header-title">
+        <div class="header-title-line left-line"></div>
+        <h2>About Us</h2>
+        <div class="header-title-line right-line"></div>
+      </div>
+
+      <section class="about-section">
+      <div class="about-text">
+        <h3>Revolutionizing Analytical Technology</h3>
+        <p>Welcome to Advance Analytik®, a leading manufacturer of advanced analytical instrumentation solutions. We are dedicated to empowering industries, research laboratories, and scientific communities with cutting-edge technology, reliable instruments, and exceptional support. Our commitment to excellence drives us to deliver innovative solutions that enable precise analysis, informed decision-making, and transformative discoveries.</p>
+      </div>
+      <div class="about-link">
+        <a href="/about.html">Learn More <i class="fa-solid fa-angles-right"></i></a>
+      </div>
+      </section>
+
+      </section>
+
+      <section class="header-section">
+      <div class="header-title">
+        <div class="header-title-line left-line"></div>
+        <h2>Fields We Impact</h2>
+        <div class="header-title-line right-line"></div>
+      </div>
+      <section class="industries-section">
+
+    <div class="home-industry-field-container">
+      <div class="home-industry-field-card-container">
+          <div class="home-industry-field-image-name"></div>
+          <div class="home-industry-field-card"></div>
+      </div>
+      <div class="home-industry-field-card-container">
+          <div class="home-industry-field-image-name"></div>
+          <div class="home-industry-field-card"></div>
+      </div>
+      <div class="home-industry-field-card-container">
+          <div class="home-industry-field-image-name"></div>
+          <div class="home-industry-field-card"></div>
+      </div>
+  </div>
+
+    </section>
+    </section>
 
 
-    <div class="dashboard-container">
-        <div class="card">
-            <h2>Total Sites</h2>
-            <p>65</p>
-            <small>Active: 37 | Inactive: 28 | Delayed: 0</small>
-        </div>
-        <div class="card">
-            <h2>Total Stations</h2>
-            <p>66</p>
-            <small>Effluent: 64 | Emission: 2</small>
-        </div>
-        <div class="card">
-            <h2>Total Parameters</h2>
-            <p>316</p>
-        </div>
-    </div>
+    <section class="header-section">
+      <div class="header-title">
+        <div class="header-title-line left-line"></div>
+        <h2>Our Products</h2>
+        <div class="header-title-line right-line"></div>
+      </div>
+
+
+    <section class="header-image-section">
+      <!-- Red Label -->
+      <div class="header-image-label">Analyzer</div>
+        
+      <div class="header-image-content">
+        <h1>OPTICS-1000 Multi Parameter</h1>
+        <!-- <p>
+          The Optics 1000 Series is a modular, high-performance online water analyzer that offers precise monitoring of up to 8 user-selected parameters, including ammonium, nitrates, TOC, turbidity, pH, and more. Utilizing advanced optical technology, it ensures exceptional accuracy, stability, and low operating costs. Ideal for wastewater treatment, river monitoring, and various industries, its user-friendly design supports flexible module selection and efficient water quality analysis.
+        </p> -->
+        <p>
+          The Optic 1000 Multi Parameters is a high-performance online water analyser that provides accurate and reliable measurements upto 7 parameters for a wide range of water quality parameters such as Ammonium, Nitrates, Nitrites, Total Nitrogen,  Phosphates, Total Phosphates, Organic Matter [COD, BOD, TSS], Total Organic Carbon, Sulfides, Sulfites, Total Sulfur, Total Suspended Solids, Turbidity, Color, Chlorine, Chlorine Dioxide, Hydrocarbon, Aromatic Compounds, Phenol, Dissolved Oxygen, Conductivity, Ozone and pH. Designed with state-of-the-art optical technology, it ensures exceptional stability, low operating costs, and high precision for various industries. 
+        </p>
+      </div>
+      <div class="header-image-wrapper">
+        <img src="./images/home images/optics-1000-multi-parameter.png" alt="OPTICS-1000 Product" class="header-image">
+      </div>
+    </section>
     
-    <div class="quick-navigate">
-        <h3>Quick Navigate</h3>
-        <a href="#">Site Summary</a>
-        <a href="#">Site Status</a>
-        <a href="#">Custom Report</a>
-    </div>
+    
+  <main>
 
-    <div class="table-container">
-        <table>
-            <tr>
-                <th>Site Name</th>
-                <th>Today Exceedance</th>
-            </tr>
-            <tr>
-                <td class="subscription-alert">Subscription Expired</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Indo Amines Key Organics</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Deonar Slaughter House</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>M/s MMA CETP Co.Op. Society Ltd.-OUTLET</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Molson Coors India Pvt Ltd</td>
-                <td>48</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="chart-container">
-        <div>
-            <h3>Total Stations</h3>
-            <img src="station_chart.png" alt="Pie Chart">
+    <section class="controller-pro-section">
+      <div class="controller-pro-label">Controllers</div>
+      <!-- Left Section with Images and Titles -->
+      <div class="controller-pro-left">
+        <!-- First Image -->
+        <div class="controller-pro-image-wrapper">
+          <img src="./images/prod-images/img001.png" alt="Image 1">
+          <h4>Viz Pro Solo</h4>
         </div>
-        <div>
-            <h3>Category Wise</h3>
-            <img src="category_chart.png" alt="Pie Chart">
+        <!-- Second Image -->
+        <div class="controller-pro-image-wrapper">
+          <img src="./images/prod-images/img001A.png" alt="Image 2">
+          <h4>Viz Pro Duo</h4>
+        </div>
+        <!-- Third Image -->
+        <div class="controller-pro-image-wrapper">
+          <img src="./images/prod-images/img002.png" alt="Image 3">
+          <h4>Viz Pro Multi</h4>
+        </div>
+      </div>
+
+      <!-- Right Section with Description and Button -->
+      <div class="controller-pro-right">
+        <h3 class="controller-pro-title">Viz Pro Series</h3>
+        <p class="controller-pro-description">
+          The VizSens Series transmitters offer single (Solo), dual (Duo), or multi-parameter (Multi) monitoring for water quality. They feature plug-and-play sensors, user-friendly interfaces, and versatile data options for applications like wastewater, waterworks, and industrial monitoring.
+        </p>
+        <a href="./products/controllers.html" class="controller-pro-button">Read More</a>
+      </div>
+    </section>
+
+
+    <!-- <section class="controller-classic-section">
+    
+      <div class="controller-classic-left">
+        <h3 class="controller-classic-title">Viz Classic Series</h3>
+        <p class="controller-classic-description">
+          The Viz Classic Series offers high-performance single-channel transmitters for precise monitoring of conductivity, TDS, pH, and ORP. Featuring two-wire operation with HART protocol, they ensure seamless integration, reliable data transmission, and easy installation. Ideal for water treatment, industrial processes, aquaculture, and more, they deliver durability and precision in challenging environments.
+        </p>
+        <a href="./products/controllers.html" class="controller-classic-button">Read More</a>
+      </div>
+
+      <div class="controller-classic-right">
+        <div class="controller-classic-image-wrapper">
+          <img src="./images/prod-images/viz-classic-conductivity.png" alt="Image 1">
+          <h4>Viz Classic Conductivity</h4>
+        </div>
+
+        <div class="controller-classic-image-wrapper">
+          <img src="./images/prod-images/viz_classic_ph.png" alt="Image 2">
+          <h4>Viz Classic pH</h4>
+        </div>
+      </div>
+    </section> -->
+
+
+    
+    <section class="controller-classic-section">
+    
+      <div class="controller-classic-left">
+        <h3 class="controller-classic-title">Viz Eco Series</h3>
+        <p class="controller-classic-description">
+          The Viz Eco Series offers versatile transmitters for single (Solo), dual (Duo), or multi-channel (Multi) water quality monitoring. Supporting a wide range of sensors (e.g., pH, DO, ORP, COD, TDS, nitrate, and more), these devices feature plug-and-play integration, user-friendly interfaces, and flexible configurations. Ideal for wastewater, waterworks, and industrial applications, they provide efficient data management and reliable performance.
+        </p>
+        <a href="../../products/controllers.html" class="controller-classic-button">Read More</a>
+      </div>
+
+      <div class="controller-classic-right">
+        <div class="controller-classic-image-wrapper">
+          <img src="./images/prod-images/viz-eco-solo.png" alt="Image 1">
+          <h4>Viz Eco Solo</h4>
+        </div>
+
+        <div class="controller-classic-image-wrapper">
+          <img src="./images/prod-images/viz-eco-duo.png" alt="Image 2">
+          <h4>Viz Eco Duo</h4>
+        </div>
+
+        <div class="controller-classic-image-wrapper">
+          <img src="./images/prod-images/viz-eco-multi.png" alt="Image 3">
+          <h4>Viz Eco Multi</h4>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="controller-pro-section">
+      
+      <div class="controller-pro-left">
+        
+        <div class="controller-pro-image-wrapper">
+          <img src="./images/prod-images/viz-eco-solo.png" alt="Image 1">
+          <h4>Viz Eco Solo</h4>
+        </div>
+       
+        <div class="controller-pro-image-wrapper">
+          <img src="./images/prod-images/viz-eco-duo.png" alt="Image 2">
+          <h4>Viz Eco Duo</h4>
+        </div>
+
+        <div class="controller-pro-image-wrapper">
+          <img src="./images/prod-images/viz-eco-multi.png" alt="Image 3">
+          <h4>Viz Eco Multi</h4>
+        </div>
+      </div>
+
+
+      <div class="controller-pro-right">
+        <h3 class="controller-pro-title">Viz Eco Series</h3>
+        <p class="controller-pro-description">
+          The Viz Eco Series offers versatile transmitters for single (Solo), dual (Duo), or multi-channel (Multi) water quality monitoring. Supporting a wide range of sensors (e.g., pH, DO, ORP, COD, TDS, nitrate, and more), these devices feature plug-and-play integration, user-friendly interfaces, and flexible configurations. Ideal for wastewater, waterworks, and industrial applications, they provide efficient data management and reliable performance.
+        </p>
+        <a href="../../products/controllers.html" class="controller-pro-button">Read More</a>
+      </div>
+    </section>
+ -->
+
+    <section>
+    <div class="pro-slider">
+
+    <div class="pro-slider-label">Sensors</div>
+    <div class="pro-images">
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-ph-analog.html">
+          <img src="./images/prod-images/img003.png" alt="VizSens-PH(Analog)" class="pro-image" data-product-id="1">
+          <figcaption>VizSens-PH(Analog)</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-orp-analog.html">
+          <img src="./images/prod-images/img003.png" alt="VizSens-ORP(Analog)" class="pro-image" data-product-id="2">
+          <figcaption>VizSens-ORP(Analog)</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-ec-analog.html">
+          <img src="./images/prod-images/img003.png" alt="VizSens-EC(Analog)" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-EC(Analog)</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-ph-digital.html">
+          <img src="./images/prod-images/imgpH.png" alt="VizSens-PH(Digital)" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-PH(Digital)</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-ec-digital.html">
+          <img src="./images/prod-images/imgpH.png" alt="VizSens-EC(Digital)" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-EC(Digital)</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-odo.html">
+          <img src="./images/prod-images/img009.png" alt="VizSens-ODO" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-ODO</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-rcl.html">
+          <img src="./images/prod-images/img010.png" alt="VizSens-RCL" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-RCL</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-uvcod.html">
+          <img src="./images/prod-images/img011.png" alt="VizSens-UVCOD" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-UVCOD</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-ss.html">
+          <img src="./images/prod-images/img014.png" alt="VizSens-SS" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-SS</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-turb.html">
+          <img src="./images/prod-images/img014.png" alt="VizSens-Turb" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-Turb</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-turb-lo.html">
+          <img src="./images/prod-images/img015.png" alt="VizSens-TurbLo" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-TurbLo</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-cphl.html">
+          <img src="./images/prod-images/img016.png" alt="VizSens-CPHL" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-CPHL</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-bga.html">
+          <img src="./images/prod-images/img016.png" alt="Vizsens-BGA" class="pro-image" data-product-id="3">
+          <figcaption>Vizsens-BGA</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-oiw.html">
+          <img src="./images/prod-images/img018.png" alt="VizSens-OIW" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-OIW</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-nh4n.html">
+          <img src="./images/prod-images/img019.png" alt="VizSens-NH4N" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-NH4N</figcaption>
+        </a>
+      </figure>
+      <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-no3n.html">
+          <img src="./images/prod-images/img020.png" alt="VizSens-NO3N" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-NO3N</figcaption>
+        </a>
+      </figure>
+       <figure class="pro-image-figure">
+        <a href="./products/sensors/vizsens-o3.html">
+          <img src="./images/prod-images/vizsens-o3.png" alt="VizSens-NO3N" class="pro-image" data-product-id="3">
+          <figcaption>VizSens-O3</figcaption>
+        </a>
+      </figure>
+    </div>
+  </div>
+        
+</section>
+</section>
+        
+<section>
+        
+  <div class=" header-section">
+        
+    <div class="header-title">
+      <div class="header-title-line left-line"></div>
+      <h2>Municipal Solutions</h2>
+      <div class="header-title-line right-line"></div>
+    </div>
+        
+    <!-- <div class="municipal-heading">
+        <h1>Municipal Solutions for a Sustainable Future</h1>
+        <p>Innovative technologies for drinking water, wastewater treatment, and desalination.</p>
+    </div> -->
+        
+    <div class="municipal-cards municipal-container">
+        <!-- Municipal Drinking Water -->
+        <div class="municipal-card">
+            <h3>Municipal Drinking Water</h3>
+            <p>Ensure the quality and safety of drinking water through continuous monitoring and advanced water quality testing solutions.</p>
+            <a href="./municipal-drinking-water.html" class="municipal-read-more-btn">Read More</a>
+        </div>
+        
+        <!-- Municipal Wastewater -->
+        <div class="municipal-card">
+            <h3>Municipal Wastewater</h3>
+            <p>Optimize wastewater treatment processes to ensure safe and sustainable disposal or reuse of treated water.</p>
+            <a href="./municipal-waste-water.html" class="municipal-read-more-btn">Read More</a>
+        </div>
+        
+        <!-- Desalination -->
+        <div class="municipal-card">
+            <h3>Desalination</h3>
+            <p>Advanced technologies for desalination plants, ensuring a reliable source of potable water in coastal areas.</p>
+            <a href="./desalination.html" class="municipal-read-more-btn">Read More</a>
         </div>
     </div>
+</div>
+</section>
+  
+<section class="header-section">
+  <!-- Heading with Line -->
+  <div class="header-title">
+    <div class="header-title-line left-line"></div>
+    <h2>The Application</h2>
+    <div class="header-title-line right-line"></div>
+  </div>
+  
+  <section class="application-video-main-container">
+    <div class="application-video-section">
+      <div class="application-video-single">
+        <!-- Video Section -->
+        <div class="application-video-left"> 
+          <div class="application-video-thumbnail"> 
+            <iframe 
+              class="application-video-player" 
+              src="https://www.youtube.com/embed/WEheHOGwvXk" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen> 
+            </iframe> 
+          </div>
+          <div class="application-video-info">
+            <h4 class="application-video-title">Advanced Aircraft De-Icing Operation</h4>
+            <p class="application-video-description">
+              Modern aircraft de-icing operations are increasingly reliant on cutting-edge sensors and control systems to ensure precision, efficiency, and safety. These technologies provide real-time data and enable adaptive responses to rapidly changing conditions during winter operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+</section>
 
+
+  <section class="company-profile-section">
+    <div class="company-profile-text-content">
+      <h2>Advance Analytik® Company Profile</h2>
+      <p>
+        Explore our comprehensive company profile to learn more about our 
+        innovative solutions in process and environmental monitoring.
+      </p>
+      <a href="./Advance_Analytik Company Profile.pdf" download class="company-profile-download-button">
+        Download Profile
+      </a>
+    </div>
+
+    <div class="company-profile-video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/AvcBqgzuHbA?rel=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  </main>
+</div>
+  
+  
+
+
+<div>
+
+ <div id="footer-placeholder"></div>
+
+</div>
+
+<script src="./javascript/language.js" defer></script>
+<script src="./javascript/common.js" defer></script>
+
+  <script src="./javascript/faqtoggle.js"></script>
+  <script src="js/sidebar.js"></script>
+  
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const preheader = document.querySelector('#preheader');
+      const navbar = document.querySelector('#navbar');
+      let lastScrollY = window.scrollY;
+  
+      window.addEventListener('scroll', () => {
+          const currentScrollY = window.scrollY;
+  
+          if (currentScrollY > lastScrollY) {
+              // Scrolling down: Hide preheader & move navbar up
+              preheader.style.transform = "translateY(-100%)";
+              navbar.style.transform = "translateY(-40px)"; // Adjust if needed
+          } else {
+              // Scrolling up: Show preheader & reset navbar
+              preheader.style.transform = "translateY(0)";
+              navbar.style.transform = "translateY(0)";
+          }
+  
+          lastScrollY = currentScrollY;
+      });
+  });
+  
+
+  </script>
+
+
+
+  <script>
+    const images = [
+        './images/Industry%20images/cetp-and-wstp.jpg',
+        './images/Industry%20images/Distillery.jpg',
+        './images/Industry%20images/Tannery.jpg',
+        './images/Industry%20images/cement.jpg',
+        './images/Industry%20images/chloral-alkali-plant.jpg',
+        './images/Industry%20images/oil-refinery.jpg',
+        './images/Industry%20images/dye-and-dye.jpeg',
+        './images/Industry%20images/common-bio-medical-waste.jpg',
+        './images/Industry%20images/Hazardous-Waste.webp'
+    ];
+
+    let index = 0;
+    const cards = document.querySelectorAll('.home-industry-field-card');
+    const imageNames = document.querySelectorAll('.home-industry-field-image-name');
+
+    function updateCards() {
+        cards.forEach(card => card.classList.remove('home-industry-field-visible')); // Fade out
+        setTimeout(() => {
+            for (let i = 0; i < 3; i++) {
+                let imgIndex = (index + i) % images.length;
+                let imagePath = images[imgIndex];
+                
+                // Extract filename from the path
+                let imageName = imagePath.split('/').pop().split('.')[0].replace(/-/g, ' ');
+                
+                cards[i].style.backgroundImage = `url(${imagePath})`;
+                imageNames[i].textContent = imageName.charAt(0).toUpperCase() + imageName.slice(1); // Capitalize first letter
+            }
+            index = (index + 3) % images.length;
+            cards.forEach(card => card.classList.add('home-industry-field-visible')); // Fade in
+        }, 1000);
+    }
+
+    updateCards();
+    setInterval(updateCards, 3000);
+</script>
+
+  
 </body>
 </html>

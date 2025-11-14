@@ -42,7 +42,7 @@ const Contact = () => {
           <div className="contact__card__content">
             <h2>Visit us</h2>
             <span>
-              Advance Analytik KFT <br />  1132, Budapest Váci ut 16 Faz 12. ajto
+              Advance Analytik® KFT <br />  1132, Budapest Váci ut 16 Faz 12. ajto
             </span>
           </div>
         </div>
@@ -58,7 +58,7 @@ const Contact = () => {
       <div className="contact__map__wrapper">
         <h1>Discover Our Global Presence </h1>
         <p>
-          Advance Analytik is proud to serve clients around the world with our
+          Advance Analytik® is proud to serve clients around the world with our
           cutting-edge analytical solutions. With a strong global presence,
           we've strategically established locations in key regions to provide
           timely and efficient support to our valued customers

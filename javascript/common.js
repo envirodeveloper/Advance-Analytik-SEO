@@ -1,26 +1,83 @@
+// document.addEventListener("DOMContentLoaded", function () {
+//     loadComponent('navbar-placeholder', '../../navbar.html', initializeScrollBehavior);
+    
+//     loadComponent('footer-placeholder', '../../footer.html');
+    
+// });
+
+
+// let currentLang = localStorage.getItem("lang") || "en";
+
+// function toggleLanguage() {
+//   currentLang = currentLang === "en" ? "hu" : "en";
+//   localStorage.setItem("lang", currentLang);
+//   applyTranslations();
+// }
+
+
+
+// function applyTranslations() {
+//   document.querySelectorAll("[data-i18n]").forEach((el) => {
+//     const key = el.getAttribute("data-i18n");
+//     const keys = key.split("."); 
+
+//     let text = translations[currentLang];
+//     keys.forEach(k => {
+//       if (text && text[k]) {
+//         text = text[k];
+//       }
+//     });
+
+//     if (text) {
+//       el.innerHTML = text;
+//     }
+//   });
+// }
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Load navbar dynamically
     loadComponent('navbar-placeholder', '../../navbar.html', initializeScrollBehavior);
     loadComponent('footer-placeholder', '../../footer.html');
+
 });
 
-// Function to dynamically load components
-// function loadComponent(id, url, callback) {
-//     fetch(url)
-//         .then(response => response.text())
-//         .then(data => {
-//             const element = document.getElementById(id);
-//             if (element) {
-//                 element.innerHTML = data;
-//                 if (typeof callback === 'function') {
-//                     callback(); // Execute callback after the component is loaded
-//                 }
-//             } else {
-//                 console.error(`Element with id '${id}' not found.`);
-//             }
-//         })
-//         .catch(error => console.error('Error loading component:', error));
-// }
+let currentLang = localStorage.getItem("lang") || "en";
+
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: 'en', includedLanguages: 'en,hu,ar' },
+      'google_translate_element'
+    );
+
+    // Move widget on small screens
+    window.addEventListener("resize", moveTranslator);
+    moveTranslator(); // run on load
+  }
+
+
+  
+  function moveTranslator() {
+    const widget = document.querySelector("#google_translate_element");
+    const sidebarPlaceholder = document.querySelector("#sidebar_translate");
+    const navbarPlaceholder = document.querySelector("#google_translate_element");
+
+    if (window.innerWidth <= 768) {
+      // move into sidebar
+      if (widget && sidebarPlaceholder && !sidebarPlaceholder.contains(widget)) {
+        sidebarPlaceholder.appendChild(widget);
+      }
+    } else {
+      // move back into navbar
+      const navbarOriginal = document.querySelector(".navbar-right"); // adjust selector to your navbar container
+      if (widget && navbarOriginal && !navbarOriginal.contains(widget)) {
+        navbarOriginal.appendChild(widget);
+      }
+    }
+  }
+
+
 
 function loadComponent(id, url, callback) {
     const cachedData = sessionStorage.getItem(url);
@@ -96,6 +153,7 @@ function toggleSidebar() {
     var arrow = document.querySelector('.has-dropdown a.' + section + '.arrow');
     arrow.classList.toggle("up", dropdown.classList.contains("show")); // Add this line
   }
+
 
 
 

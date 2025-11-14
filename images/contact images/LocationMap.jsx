@@ -35,7 +35,7 @@ const countries = [
   },
   {
     name: "USA",
-    // name: "ADVANCE ANALYTIK LLC",
+    // name: "Advance Analytik® LLC",
     position: [40.314, -76.787],
   },
 ];
