@@ -1,0 +1,121 @@
+
+/* HERO */
+.wqn-hero{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:40px;
+  padding:90px 8%;
+  background:linear-gradient(135deg,#0a3cff,#00b4ff);
+  color:#fff;
+}
+.wqn-hero h1{font-size:3rem;margin-bottom:15px}
+.wqn-stat{
+  background:rgba(255,255,255,.15);
+  padding:25px;
+  border-radius:16px;
+  margin-bottom:15px;
+  text-align:center;
+  backdrop-filter:blur(10px);
+}
+
+/* SECTIONS */
+.wqn-section{max-width:1100px;margin:70px auto;padding:0 20px}
+.wqn-intro{font-size:1.15rem}
+
+/* HIGHLIGHT */
+.wqn-highlight{
+  background:#fff;
+  padding:70px 20px;
+}
+.wqn-highlight h2{text-align:center;margin-bottom:20px}
+
+/* SPLIT */
+.wqn-split{
+  max-width:1200px;
+  margin:80px auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  padding:0 20px;
+}
+.wqn-card{
+  background:#fff;
+  padding:25px;
+  border-radius:14px;
+  margin-bottom:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* APPLICATIONS */
+.wqn-applications{
+  background:#0a3cff;
+  color:#fff;
+  padding:70px 20px;
+}
+.wqn-app-grid{
+  max-width:1100px;
+  margin:30px auto 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:15px;
+}
+.wqn-app-grid span{
+  background:rgba(255,255,255,.15);
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+}
+
+/* WHY */
+.wqn-why{
+  max-width:1200px;
+  margin:80px auto;
+  padding:0 20px;
+}
+.wqn-why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:18px;
+}
+.wqn-why-grid div{
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+/* FAQ */
+.wqn-faq{
+  max-width:900px;
+  margin:80px auto;
+  padding:0 20px;
+}
+.faq-q{
+  width:100%;
+  text-align:left;
+  padding:15px;
+  background:#fff;
+  border:none;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  margin-bottom:10px;
+}
+.faq-a{
+  max-height:0;
+  overflow:hidden;
+  transition:.4s;
+  padding:0 15px;
+}
+.faq-a.open{
+  max-height:200px;
+  padding:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .wqn-hero{grid-template-columns:1fr}
+  .wqn-split{grid-template-columns:1fr}
+}

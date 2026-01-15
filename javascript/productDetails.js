@@ -1271,6 +1271,169 @@ const products = [
     { name: "Cable length", value: "Standard:10m, the maximum may be extended to 100m" },
 ],
 },
+{
+  productId: "045",
+  name: "Gaz CEMS",
+  img: "../productImages/gaz-cems.png",
+  dataSheetLink: "../productsDataSheets/Gaz-CEMS.pdf",
+  introduction:
+  "Gaz-CEMS is an advanced online gas analyzer designed to deliver accurate and reliable monitoring even in harsh conditions with dust, moisture, and tar-laden gases. Using Ultraviolet Differential Absorption Spectroscopy Technology (DOAS), a single analyzer can simultaneously measure multiple gases such as SOx, NOx, CO, CO₂, O₂, and many more with minimal cross-interference and high precision. Its fully automated operation, intelligent data management, and wide measurement range ensure low maintenance costs and seamless integration with centralized control systems.",
+features: [
+  "Low cross-interference: Differential optical analysis minimizes interference from dust, moisture, and other background gases, ensuring reliable readings.",
+  "Control unit: Fully automated testing, sampling, calibration, fault handling, and other operations.",
+  "Gas analysis unit: Internal gas sensing unit can simultaneously measure the volume concentration of multi-component gases such as SOx, NOx, CO, CO₂, O₂, etc.",
+  "Low maintenance and operation cost: Touch screen interface with online monitoring and display of system operation status; no manual supervision required, significantly reducing operating costs.",
+  "Intelligent data management: Data can be transmitted to the centralized control system through multiple interfaces, providing a real-time basis for remote monitoring and on-site process adjustment.",
+  "Wide measurement range: Capable of measuring both low and high gas concentrations with high precision."
+],
+
+attributes: [
+  { name: "Components", value: "SO, SO₂, NO, NO₂, CO, CO₂, O₂" },
+  { 
+    name: "Measuring Technology", 
+    value: "For SO, SO₂, NO, NO₂, CO, CO₂: Ultraviolet Differential Absorption Spectroscopy Technology (DOAS); For O₂: Electrochemical / Zirconia" 
+  },
+  { 
+    name: "Range", 
+    value: "SO: 0–1000 ppm; SO₂: 0–1000 ppm; NO: 0–1000 ppm; NO₂: 0–1000 ppm; CO: 0–1000 ppm; CO₂: 0–1000 ppm; O₂: 0–25%" 
+  },
+  { name: "Response Time", value: "< 60 seconds" },
+  { name: "Repeatability", value: "< 1%" },
+  { name: "Linear Error", value: "< ±1% F.S." },
+  { name: "24h Zero Drift", value: "< ±2% F.S." },
+  { name: "24h Range Drift", value: "< ±2% F.S." },
+  { name: "Sample Gas Flow Range", value: "1.5 L/min ± 0.2 L/min" },
+  { name: "Sample Gas Pressure Range", value: "Current ambient pressure ± 10 kPa" },
+  { name: "Sample Gas Humidity Range", value: "≤ 85%" },
+  { name: "Operating Temperature", value: "-15 to +55 °C" },
+  { name: "Power Supply", value: "AC (220 ± 22) V, (50 ± 1) Hz" },
+  { name: "Warm-up Time", value: "≥ 120 minutes" },
+  { name: "Enclosure", value: "Safe Area" },
+  { name: "Communication", value: "RS232 / RS485, 4–20 mA" },
+  { 
+    name: "Automatic Zeroing and Calibration", 
+    value: "Built-in air pump to achieve automatic air zeroing and calibration (depending on configuration)" 
+  },
+  { 
+    name: "Self-Diagnosis", 
+    value: "With self-diagnosis function, the analyzer status can be checked online" 
+  }
+]
+
+},
+{
+  productId: "046",
+  name: "Gaz SPM",
+  img: "../productImages/gaz-spm.png",
+  dataSheetLink: "../productsDataSheets/Gaz-SPM.pdf",
+  introduction:
+  "The Gaz-SPM Dust Analyser is a next generation online monitoring instrument designed for real-time, uninterrupted tracking of smoke emissions from pollution sources. Engineered to withstand harsh environmental conditions—including wind, rain, lightning, dust, and extreme temperatures—it ensures reliable long-term performance. Industries benefiting from this technology include cement, thermal power, steel, metallurgy, oil refining, aluminum, petrochemical, papermaking, and glass manufacturing. For cutting-edge air quality and emission monitoring solutions, Advance Analytik delivers precision-driven analytical instrumentation tailored to industrial compliance and efficiency needs.",
+     features: [
+  "Provides 24/7 real-time and continuous monitoring of smoke and dust emissions.",
+  "Designed to withstand extreme environmental conditions including wind, rain, lightning, dust, and temperature fluctuations.",
+  "Utilizes advanced optical measurement technology for precise smoke concentration analysis.",
+  "Ensures compliance with environmental regulations for industrial emission monitoring.",
+  "Delivers highly accurate and stable measurement data with minimal drift.",
+  "Equipped with self-diagnostics for reliable and error-free operation.",
+  "Seamlessly integrates with CEMS and industrial monitoring systems.",
+  "Detects a wide range of particulate concentrations with high sensitivity.",
+  "Supports remote monitoring and real-time data transmission."
+],
+attributes: [
+  { name: "Working Principle", value: "Laser backscatter" },
+  { name: "Measurement Object", value: "Industrial waste gas, smoke" },
+  { name: "Mechanical Properties", value: "Full metal shell; Dimensions: 186 × 200 × 182 mm (H × W × D)" },
+  { name: "Weight & Protection", value: "3 kg, IP65" },
+  { name: "Optical Properties", value: "Working wavelength: 650 ± 20 nm" },
+  { 
+    name: "Measuring Performance", 
+    value: "Measuring range: 0–60, 100, 500, 1000, 2000 mg/m³; Zero drift: ±2% FS / 24 h; Span drift: ±2% FS / 24 h; Response time: ≤ 10 s" 
+  },
+  { name: "Power Requirements", value: "DC 24 V / 0.5 A" },
+  { name: "Environmental Conditions", value: "Working temperature: 0 to +60 °C" },
+  { name: "Analog Output", value: "4–20 mA" },
+  { name: "Digital Output", value: "RS485" },
+  { name: "Flue Diameter", value: "0.2–20 m" }
+]
+
+
+},{
+  productId: "047",
+  name: "Gaz-AQMS-O3",
+  img: "../productImages/gaz-aqms-o3.png",
+  dataSheetLink: "../productsDataSheets/Gaz-AQMS-O3.pdf",
+  introduction:
+    "Ozone analyzer adopts ultraviolet spectrometry principle and combines with advanced microprocessor technology. It provides accurate and reliable detection of O3 at ppb* ppm level to meet the requirement of ambient gas monitoring. \n UV absorption Ozone analyzer is developed based on Beer-Lambert technology. It is applied to monitor low concentration O3 in ambient air.",
+features: [
+  "Measurement range: 0–20 ppm (auto-ranging)",
+  "Dual measurement range with automatic range selection",
+  "Ultraviolet spectrometry measurement principle",
+  "Microprocessor-based multi-functional operation",
+  "Task software for real-time monitoring of operational data",
+  "Continuous self-checking with alarm function",
+  "Automatic self-check for light source intensity decay",
+  "Bidirectional RS-232 port for remote control",
+  "Digital output of operating parameters",
+  "Optimized response time using self-adaptive signal filter technology",
+  "Temperature and pressure compensation function",
+  "USB and Ethernet communication interfaces",
+  "Color display with touchscreen operation",
+  "Large internal memory with automatic storage of historical data"
+],
+
+attributes: [
+  { name: "Range", value: "0–20 ppm (auto-ranging)" },
+  { name: "Concentration Units", value: "mg/m³, µg/m³, ng/m³, ppm, ppb, ppt" },
+  { name: "Lower Detection Limit", value: "< 0.5 ppb" },
+  { name: "Linearity", value: "< 1% of full scale" },
+  { name: "Precision", value: "0.1 ppm" },
+  { name: "Response Time", value: "30 seconds to 95%" },
+  { name: "STP Reference", value: "0 °C, 20 °C, 25 °C at 101.3 kPa" },
+  { name: "Sample Flow Rate", value: "500 cc/min" },
+  { name: "Temperature Range", value: "0–40 °C" },
+  { name: "Power Supply", value: "100–240 VAC, 50–60 Hz (auto-ranging)" },
+  { name: "Power Consumption", value: "260 VA (max at start-up); 150 VA (nominal)" },
+  { name: "Dimensions", value: "429 × 175 × 538 mm" },
+  { name: "Rack Spacing", value: "3.5 RU" },
+  { name: "Weight", value: "17.2 kg" }
+]},
+{
+  productId: "048",
+  name: "Gaz-PGA",
+  img: "../productImages/gaz-pga-o3.png",
+  dataSheetLink: "../productsDataSheets/Gaz-PGA.pdf",
+ introduction:
+  "Gaz-PGA series products are portable multi-gas detection instruments with high sensitivity for industrial use. They are suitable for gas leakage rescue, underground pipelines or mines, and similar applications, and can effectively ensure the safety of workers and protect production equipment from damage. The instruments can detect different gases based on various sensor types and offer rich functionality, simple operation, easy portability, and strong shock resistance. Equipped with high-resolution touch LCD technology, the display is intuitive, clear, and convenient to operate.",
+
+  features: [
+  "Large color screen with menu-driven operation",
+  "High-resolution touchscreen LCD display",
+  "Rapid detection of gas leak points",
+  "Adjustable measurement range",
+  "Fast preheating with quick response time",
+  "Audible and vibration alarm signals",
+  "Convenient and fast zero adjustment",
+  "Detection of up to 8 gases in free combination",
+  "High-temperature sampling gun provided for very high gas temperature applications"
+],
+
+
+attributes: [
+  { name: "Product Name", value: "Portable Multi-Gas Detector" },
+  { name: "Parameters", value: "O₃, CO₂, CH₄, NO, NO₂, O₂, H₂S, CO, SO₂, NOx" },
+  { name: "Sampling Mode", value: "Built-in pump suction type" },
+  { name: "Response Time", value: "≤ 30 s" },
+  { name: "Indication Error", value: "≤ 3% FS" },
+  { name: "Working Environment", value: "Temperature: −10 °C to 55 °C; Relative humidity: ≤ 93% (non-condensing)" },
+  { name: "Preheating Time", value: "≤ 90 s" },
+  { name: "Storage Environment", value: "Temperature: −10 °C to 55 °C; Relative humidity: ≤ 93% (no condensation)" },
+  { name: "Indication Mode", value: "LCD color touch display" },
+  { name: "Charging Time", value: "Not less than 10 hours" },
+  { name: "Continuous Working Time", value: "Not less than 15 hours" },
+  { name: "Battery Specification", value: "DC 7.2 V, 26 Ah lithium-ion rechargeable battery" },
+  { name: "Weight", value: "About 4.75 kg" },
+  { name: "Size", value: "293 × 110 × 210 mm" }
+]},
   // Add more products as necessary
 ];
 
@@ -1311,7 +1474,7 @@ function loadProductData() {
       console.error('Product not found');
   }
 }
-
+ 
 
 
 // Function to toggle between Features and Specifications
@@ -1349,3 +1512,8 @@ document.addEventListener('DOMContentLoaded', loadProductData);
         function closeQuotePopup() {
             document.getElementById('request-quote-popup').style.display = 'none';
         }
+
+
+
+
+

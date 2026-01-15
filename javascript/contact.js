@@ -65,8 +65,9 @@ countries.forEach(function (country) {
 
 // contact form 
 
+
 document.getElementById("enquiryForm").addEventListener("submit", async function(e) {
-  e.preventDefault(); // prevent normal form submission
+  e.preventDefault();
 
   const formData = {
     name: e.target.name.value,
@@ -83,14 +84,24 @@ document.getElementById("enquiryForm").addEventListener("submit", async function
     });
 
     const result = await response.json();
+
     if (response.ok) {
-      document.getElementById("formMessage").innerText = "✅ Enquiry submitted successfully!";
-      e.target.reset(); // clear form
+      showSuccessPopup();   // <--- show popup
+      e.target.reset();
     } else {
       document.getElementById("formMessage").innerText = "❌ Error: " + result.message;
     }
+
   } catch (error) {
     document.getElementById("formMessage").innerText = "⚠️ Network error. Try again later.";
   }
 });
 
+function showSuccessPopup() {
+  const popup = document.getElementById("successPopup");
+  popup.style.display = "flex";
+
+  setTimeout(() => {
+    popup.style.display = "none";
+  }, 2500); // hide after 2.5 seconds
+}

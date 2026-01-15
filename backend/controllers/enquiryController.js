@@ -1,44 +1,50 @@
 const Enquiry = require("../models/Enquiry");
 const nodemailer = require("nodemailer");
 
-// Create transporter using WebSMTP
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: process.env.SMTP_PORT,
-  secure: false, // use true if port 465
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-});
-
-// @desc  Submit enquiry + send email
 exports.submitEnquiry = async (req, res) => {
+  const { name, email, number, enquiry } = req.body;
+
+  if (!name || !email || !number || !enquiry) {
+    return res.status(400).json({ success: false, message: "All fields are required." });
+  }
+
   try {
-    const { name, email, number, enquiry } = req.body;
+    const newEnquiry = new Enquiry({ name, email, number, enquiry });
+    await newEnquiry.save();
 
-    // Save to DB
-    const newEnquiry = await Enquiry.create({ name, email, number, enquiry });
+    // Gmail Service (Simplest)
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
 
-    // Send email via WebSMTP
     await transporter.sendMail({
-      from: `"Website Enquiry" <${process.env.SMTP_USER}>`,
-      to: "sales@technicrafts.com", // receiver email
-      subject: "New Website Enquiry",
+      from: `"Advance analytik" <${process.env.EMAIL_USER}>`,
+      to: process.env.EMAIL_RECEIVER,
+      subject: `New Enquiry from ${name}`,
       html: `
         <h3>You have a new enquiry</h3>
-        <p><b>Name:</b> ${name}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Number:</b> ${number}</p>
-        <p><b>Enquiry:</b> ${enquiry}</p>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Number:</strong> ${number}</p>
+        <p><strong>Enquiry:</strong> ${enquiry}</p>
       `,
     });
 
-    res.status(201).json({ message: "Enquiry saved & email sent ✅", newEnquiry });
+    return res.status(200).json({
+      success: true,
+      message: "Enquiry saved & email sent!",
+      data: newEnquiry,
+    });
+
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error("Enquiry Error:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Server error. Please try again later.",
+    });
   }
 };
-
-
-
