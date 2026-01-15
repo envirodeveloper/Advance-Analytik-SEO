@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("http://localhost:5000/api/careers", {
+      const response = await fetch("https://advance-analytik-seo.onrender.com/api/careers", {
         method: "POST",
         body: formData, // automatically handles file + text fields
       });

@@ -65,16 +65,27 @@ countries.forEach(function (country) {
 
 // contact form 
 
-
-document.getElementById("enquiryForm").addEventListener("submit", async function(e) {
+document.getElementById("enquiryForm").addEventListener("submit", async function (e) {
   e.preventDefault();
 
+  const form = e.target;
+  const submitBtn = form.querySelector("button");
+  const loading = document.getElementById("loadingOverlay");
+  const formMessage = document.getElementById("formMessage");
+
   const formData = {
-    name: e.target.name.value,
-    email: e.target.email.value,
-    number: e.target.number.value,
-    enquiry: e.target.enquiry.value,
+    name: form.name.value,
+    email: form.email.value,
+    number: form.number.value,
+    enquiry: form.enquiry.value,
   };
+
+  // Reset messages
+  formMessage.innerText = "";
+
+  // Show loader + disable button
+  loading.style.display = "flex";
+  submitBtn.disabled = true;
 
   try {
     const response = await fetch("http://localhost:5000/api/enquiries", {
@@ -86,14 +97,18 @@ document.getElementById("enquiryForm").addEventListener("submit", async function
     const result = await response.json();
 
     if (response.ok) {
-      showSuccessPopup();   // <--- show popup
-      e.target.reset();
+      showSuccessPopup();     // ✅ Your existing popup
+      form.reset();
     } else {
-      document.getElementById("formMessage").innerText = "❌ Error: " + result.message;
+      formMessage.innerText = "❌ Error: " + (result.message || "Submission failed");
     }
 
   } catch (error) {
-    document.getElementById("formMessage").innerText = "⚠️ Network error. Try again later.";
+    formMessage.innerText = "⚠️ Network is slow. Please wait or try again.";
+  } finally {
+    // Always hide loader + enable button
+    loading.style.display = "none";
+    submitBtn.disabled = false;
   }
 });
 
@@ -103,5 +118,5 @@ function showSuccessPopup() {
 
   setTimeout(() => {
     popup.style.display = "none";
-  }, 2500); // hide after 2.5 seconds
+  }, 2500);
 }
