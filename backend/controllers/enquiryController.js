@@ -47,4 +47,5 @@ exports.submitEnquiry = async (req, res) => {
       message: "Server error. Please try again later.",
     });
   }
+
 };

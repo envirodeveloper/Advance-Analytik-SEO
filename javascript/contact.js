@@ -60,10 +60,63 @@ countries.forEach(function (country) {
 });
 
 
-
-
-
 // contact form 
+
+// document.getElementById("enquiryForm").addEventListener("submit", async function (e) {
+//   e.preventDefault();
+
+//   const form = e.target;
+//   const submitBtn = form.querySelector("button");
+//   const loading = document.getElementById("loadingOverlay");
+//   const formMessage = document.getElementById("formMessage");
+
+//   const formData = {
+//     name: form.name.value,
+//     email: form.email.value,
+//     number: form.number.value,
+//     enquiry: form.enquiry.value,
+//   };
+
+//   formMessage.innerText = "";
+
+//   loading.style.display = "flex";
+//   submitBtn.disabled = true;
+
+//   try {
+//     const response = await fetch("http://182.70.120.34:90/api/content/contact", {
+//       method: "POST",
+//       headers: { "Content-Type": "application/json" },
+//       body: JSON.stringify(formData),
+//     });
+
+//     const result = await response.json();
+
+//     if (response.ok) {
+//       showSuccessPopup();  
+//       form.reset();
+//     } else {
+//       formMessage.innerText = "❌ Error: " + (result.message || "Submission failed");
+//     }
+
+//   } catch (error) {
+//     formMessage.innerText = "⚠️ Network is slow. Please wait or try again.";
+//   } finally {
+//     loading.style.display = "none";
+//     submitBtn.disabled = false;
+//   }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.getElementById("enquiryForm").addEventListener("submit", async function (e) {
   e.preventDefault();
@@ -80,10 +133,8 @@ document.getElementById("enquiryForm").addEventListener("submit", async function
     enquiry: form.enquiry.value,
   };
 
-  // Reset messages
   formMessage.innerText = "";
 
-  // Show loader + disable button
   loading.style.display = "flex";
   submitBtn.disabled = true;
 
@@ -97,7 +148,7 @@ document.getElementById("enquiryForm").addEventListener("submit", async function
     const result = await response.json();
 
     if (response.ok) {
-      showSuccessPopup();     // ✅ Your existing popup
+      showSuccessPopup();  
       form.reset();
     } else {
       formMessage.innerText = "❌ Error: " + (result.message || "Submission failed");
@@ -106,11 +157,11 @@ document.getElementById("enquiryForm").addEventListener("submit", async function
   } catch (error) {
     formMessage.innerText = "⚠️ Network is slow. Please wait or try again.";
   } finally {
-    // Always hide loader + enable button
     loading.style.display = "none";
     submitBtn.disabled = false;
   }
 });
+
 
 function showSuccessPopup() {
   const popup = document.getElementById("successPopup");
