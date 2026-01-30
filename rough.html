@@ -3,228 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="../../javascript/common.js" defer></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/sidebar.css">
-  <link rel="stylesheet" href="../../css/navbar.css">
-  <script src="./javascript/language.js" defer></script>
-  <title>Responsive Navbar with Preheader</title>
+  <link rel="icon" type="image/svg+xml" href="./images/logo/AdvanceAnalytiklogo.png" />
+  <link rel="stylesheet" href="./css/contact.css">
+  <script src="../javascript/contact.js" defer></script>
+  <script src="../javascript/common.js" defer></script>
+  <script src="../javascript/language.js" defer></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title data-i18n="contact.page_title">
+    Contact Advance Analytik| Leading Analytical Instrumentation Company
+  </title>
+  <meta name="description" content="Get in touch with Advance Analytik, your trusted partner for advanced analytical instrumentation solutions in Hungary. We're here to assist you.">
 </head>
 <body>
 
-  <!-- Preheader -->
-  <div id="preheader" class="preheader">
+  <div id="navbar-placeholder"></div>
 
-    <div class="preheader__content">
-      <!-- Left: Contact Info -->
-      <div class="preheader__contact">
-        <i class="fas fa-phone"></i>+36 703286862 <div>|</div> <i class="fas fa-envelope"></i> sales@advanceanalytik.com
-      </div>
+  <div class="contact">
+    <img src="./images/contact images/contactheroimg.png" alt="contact us" class="contact__header__img">
 
-      <!-- Right: Social Media Icons -->
-      <div class="preheader__social">
-        <a href="https://www.facebook.com/share/dUTVgdFtNVwiZygu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/@Advance-Analytik-KFT" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/company/advance-analytik-kft" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/advance_analytik/profilecard/?igsh=MWc3Ymk0NGx3MWF1YQ==" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
-
+    <!-- Header -->
+    <div class="contact__header">
+      <h1 data-i18n="contact.header_title">Get in touch with us</h1>
+      <p data-i18n="contact.header_desc">Let us know how we can help!</p>
     </div>
-    
-  </div>
 
-<!-- Navbar -->
-<nav id="navbar" class="navbar">
-  <div class="navbar__logo">
-    <!-- Logo Image -->
-    <a href="/index.html">
-      <img src="../../images/logo/advanceanalytik.png" alt="Company Logo">
-    </a>
-  </div>
-
-  <ul class="navbar__links__wrapper" role="navigation" aria-label="Main menu">
-    <li><a href="../../" class="navbar__link home">Home</a></li>
-    <li><a href="../../about.html" class="navbar__link about">About</a></li>
-
-    <li><a href="#" class="navbar__link">Application</a>
-      <div class="markets__submenu">
-        <div class="markets__submenu__links__wrapper">
-          <a href="../../water-quality-analyzer.html" class="markets__submenu__link">Water Quality Analyzer</a>
+    <!-- Cards -->
+    <div class="contact__card__wrapper">
+      <div class="contact__card">
+        <i class="fas fa-comments"></i>
+        <div class="contact__card__content">
+          <h2 data-i18n="contact.sales_title">Chat to sales</h2>
+          <p data-i18n="contact.sales_desc">Speak to our friendly team.</p>
+          <span data-i18n="contact.sales_email">sales@advanceanalytik.com</span>
         </div>
       </div>
-    </li>
 
-   <!-- Products Dropdown Menu -->
-  <li><a href="../../products/analytical-instrumentation.html" class="navbar__link">Products</a>
-  <div class="markets__submenu">
-    <div class="markets__submenu__links__wrapper">
-
-      <!-- Analyzers -->
-      <a href="../../products/analyzers.html" class="markets__submenu__link">Analyzers <i class="fa-solid fa-angle-right"></i> </a>
-      <div class="sub-submenu" id="analyzers-submenu">
-        <a href="../../products/analyzers/optics-1000.html" class="sub-submenu__link">Optics-1000 Multi Parameter</a>
-        <a href="../../products/analyzers/optics-1000-alkalinity.html" class="sub-submenu__link">Optics-1000 Alkalinity</a>
-        <a href="../../products/analyzers/optics-1000-boron-lr.html" class="sub-submenu__link">Optics-1000 Boron (Lr)</a>
-        <a href="../../products/analyzers/optics-1000-boron-hr.html" class="sub-submenu__link">Optics-1000 Boron (Hr)</a>
-        <a href="../../products/analyzers/optics-1000-chloride.html" class="sub-submenu__link">Optics-1000 Chloride (Cl-)</a>
-        <a href="../../products/analyzers/optics-1000-chromium.html" class="sub-submenu__link">Optics-1000 Chromium VI (Cr)</a>
-        <a href="../../products/analyzers/optics-1000-cyanide.html" class="sub-submenu__link">Optics-1000 Cyanide (CN-)</a>
-        <!-- <a href="../../products/analyzers/optics-1000-general.html" class="sub-submenu__link">Optics-1000 General</a> -->
-        <a href="../../products/analyzers/optics-1000-hydrazine.html" class="sub-submenu__link">Optics-1000 Hydrazine (N2H4)</a>
-        <a href="../../products/analyzers/optics-1000-iron-lr.html" class="sub-submenu__link">Optics-1000 Iron (Lr)</a>
-        <a href="../../products/analyzers/optics-1000-nickel.html" class="sub-submenu__link">Optics-1000 Nickel (Ni)</a>
-        <a href="../../products/analyzers/optics-1000-phenol.html" class="sub-submenu__link">Optics-1000 Phenol</a>
-        <a href="../../products/analyzers/optics-1000-phosphate-hr.html" class="sub-submenu__link">Optics-1000 Phosphate (Hr)</a>
-        <a href="../../products/analyzers/optics-1000-phosphate-lr.html" class="sub-submenu__link">Optics-1000 Phosphate (Lr)</a>
-        <a href="../../products/analyzers/optics-1000-silica-hr.html" class="sub-submenu__link">Optics-1000 Silica (Hr)</a>
-        <a href="../../products/analyzers/optics-1000-silica-lr.html" class="sub-submenu__link">Optics-1000 Silica (Lr)</a>
-        <a href="../../products/analyzers.html" class="sub-submenu__link">Check More</a>
-        <!-- <a href="../../products/analyzers/optics-1000-total-hardness.html" class="sub-submenu__link">Optics-1000 Total Hardness (Hd)</a> -->
+      <div class="contact__card">
+        <i class="fas fa-headset"></i>
+        <div class="contact__card__content">
+          <h2 data-i18n="contact.support_title">Chat to support</h2>
+          <p data-i18n="contact.support_desc">We are here to help.</p>
+          <span data-i18n="contact.support_email">info@advanceanalytik.com</span>
+        </div>
       </div>
 
-      <!-- Controllers -->
-      <a href="../../products/controllers.html" class="markets__submenu__link">Controllers <i class="fa-solid fa-angle-right"></i> </a>
-      <div class="sub-submenu" id="controllers-submenu">
-        <a href="../../products/controllers/viz-solo.html" class="sub-submenu__link">Viz Pro Solo</a>
-        <a href="../../products/controllers/viz-duo.html" class="sub-submenu__link">Viz Pro Duo</a>
-        <a href="../../products/controllers/viz-multi.html" class="sub-submenu__link">Viz Pro Multi</a>
-        <a href="../../products/controllers/viz-eco-solo.html" class="sub-submenu__link">Viz Eco Solo</a>
-        <a href="../../products/controllers/viz-eco-duo.html" class="sub-submenu__link">Viz Eco Duo</a>
-        <a href="../../products/controllers/viz-eco-multi.html" class="sub-submenu__link">Viz Eco Multi</a>
-        <!-- <a href="../../products/controllers/viz-classic-conductivity-tds.html" class="sub-submenu__link">Viz Classic Conductivity/TDS</a>
-        <a href="../../products/controllers/viz-classic-ph-orp.html" class="sub-submenu__link">Viz Classic pH/ORP</a> -->
+      <div class="contact__card">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="contact__card__content">
+          <h2 data-i18n="contact.visit_title">Visit us</h2>
+          <span data-i18n="contact.visit_address">
+            Advance Analytik® KFT <br/> 1132, Budapest Váci ut 16 Faz 12. ajto
+          </span>
+        </div>
       </div>
 
-      <!-- Sensors -->
-      <a href="../../products/sensors.html" class="markets__submenu__link">Sensors <i class="fa-solid fa-angle-right"></i> </a>
-      <div class="sub-submenu" id="sensors-submenu">
-        <a href="../../products/sensors/vizsens-ph-analog.html" class="sub-submenu__link">VizSens-PH(Analog)</a>
-        <a href="../../products/sensors/vizsens-orp-analog.html" class="sub-submenu__link">VizSens-ORP(Analog)</a>
-        <a href="../../products/sensors/vizsens-ec-analog.html" class="sub-submenu__link">VizSens-EC(Analog)</a>
-        <a href="../../products/sensors/vizsens-ph-digital.html" class="sub-submenu__link">VizSens-PH(Digital)</a>
-        <a href="../../products/sensors/vizsens-ec-digital.html" class="sub-submenu__link">VizSens-EC(Digital)</a>
-        <a href="../../products/sensors/vizsens-odo.html" class="sub-submenu__link">VizSens-ODO</a>
-        <a href="../../products/sensors/vizsens-rcl.html" class="sub-submenu__link">VizSens-RCL</a>
-        <a href="../../products/sensors/vizsens-uvcod.html" class="sub-submenu__link">VizSens-UV</a>
-        <a href="../../products/sensors/vizsens-ss.html" class="sub-submenu__link">VizSens-TSS</a>
-        <a href="../../products/sensors/vizsens-turb.html" class="sub-submenu__link">VizSens-Turb</a>
-        <a href="../../products/sensors/vizsens-turb-lo.html" class="sub-submenu__link">VizSens-TurbLo</a>
-        <a href="../../products/sensors/vizsens-cphl.html" class="sub-submenu__link">VizSens-CPHL</a>
-        <a href="../../products/sensors/vizsens-bga.html" class="sub-submenu__link">Vizsens-BGA</a>
-        <a href="../../products/sensors/vizsens-oiw.html" class="sub-submenu__link">VizSens-OIW</a>
-        <a href="../../products/sensors/vizsens-nh4n.html" class="sub-submenu__link">VizSens-NH4N</a>
-       <a href="../../products/sensors.html" class="sub-submenu__link">Check More</a>
+      <div class="contact__card">
+        <i class="fas fa-phone"></i>
+        <div class="contact__card__content">
+          <h2 data-i18n="contact.call_title">Call us</h2>
+          <p data-i18n="contact.call_desc">Mon-Fri from 10am to 7pm</p>
+          <span data-i18n="contact.call_number">+36 70328 6862</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="contact__map__wrapper">
+      <h2 data-i18n="contact.map_title">Discover Our Global Presence</h2>
+      <p data-i18n="contact.map_desc">
+        Advance Analytik® is proud to serve clients around the world with cutting-edge analytical solutions.
+      </p>
+      <div id="map"></div>
+    </div>
+
+    <!-- Enquiry Form -->
+    <div class="contact__enquiry__form__container">
+      <img src="./images/contact images/fromImg.jpg" alt="">
+      <div class="contact__enquiry__form__wrapper">
+        <h2 data-i18n="contact.form_title">Enquiry Form</h2>
+        <p data-i18n="contact.form_desc">
+          Have a question or need more information? Fill out the form below, and our team will get in touch with you shortly.
+        </p>
+
+        <form id="enquiryForm" class="contact__enquiry__form">
+          <input type="text" name="name" required placeholder="Your Name" data-i18n-placeholder="contact.form_name">
+          <input type="email" name="email" required placeholder="Your Email" data-i18n-placeholder="contact.form_email">
+          <input type="number" name="number" required placeholder="Contact Number" data-i18n-placeholder="contact.form_number">
+          <textarea name="enquiry" required placeholder="Enquiry" data-i18n-placeholder="contact.form_enquiry"></textarea>
+          <button type="submit" data-i18n="contact.form_submit">Submit</button>
+        </form>
+
+        <p id="formMessage"></p>
       </div>
     </div>
   </div>
-</li>
-
-    <li><a href="#" class="navbar__link">Market</a>
-      <div class="markets__submenu">
-        <div class="markets__submenu__links__wrapper">
-          <a href="../../industry/environmental-solutions/cement.html" class="markets__submenu__link">Cement</a>
-          <a href="../../industry/environmental-solutions/cetp-and-stps.html" class="markets__submenu__link">CETP & STPS</a>
-          <a href="../../industry/environmental-solutions/common-biomedical-waste.html" class="markets__submenu__link">Common Biomedical Waste</a>
-          <a href="../../industry/environmental-solutions/common-hazardous-waste-incinerator.html" class="markets__submenu__link">Common Hazardous Waste Incinerator</a>
-          <a href="../../industry/environmental-solutions/chloral-alkali-plants.html" class="markets__submenu__link">Chloral Alkali Plants</a>
-          <a href="../../industry/environmental-solutions/distillery.html" class="markets__submenu__link">Distillery</a>
-          <a href="../../industry/environmental-solutions/dye-and-dye-intermediate-units.html" class="markets__submenu__link">Dye & Dye Intermediate Units</a>
-          <a href="../../industry/environmental-solutions/food-processing.html" class="markets__submenu__link">Food Processing</a>
-          <a href="../../industry/environmental-solutions/oil-refineries.html" class="markets__submenu__link">Oil Refineries</a>
-          <a href="../../industry/environmental-solutions/power-plants.html" class="markets__submenu__link">Power Plants</a>
-          <a href="../../industry/environmental-solutions/pesticides.html" class="markets__submenu__link">Pesticides</a>
-          <a href="../../industry/environmental-solutions/pharmaceutical-sector.html" class="markets__submenu__link">Pharmaceutical Sector</a>
-          <a href="../../industry/environmental-solutions/pulp-and-paper.html" class="markets__submenu__link">Pulp & Paper</a>
-          <a href="../../industry/environmental-solutions/sugar.html" class="markets__submenu__link">Sugar</a>
-          <a href="../../industry/environmental-solutions/tanneries.html" class="markets__submenu__link">Tanneries</a>
-        </div>
-      </div>
-    </li>
 
 
-    <!-- <li><a href="../../blog.html" class="navbar__link">Blog</a></li> -->
-    <li><a href="../../careers.html" class="navbar__link careers">Careers</a></li>
-    <li><a href="../../contact.html" class="navbar__link contact">Contact</a></li>
-<li class="language-switcher">
-  <a href="javascript:void(0);" onclick="toggleLanguage()">HU / EN</a>
-</li>
-
-  </ul>
-</nav>
-
-
-<div class="sidebar-navbar">
-  <div class="sidebar-logo">
-    <a href="/index.html">
-      <img src="../../images/logo/advance_analytik.png" alt="Company Logo">
-    </a>
-  </div>
-  <div class="toggle-btn" onclick="toggleSidebar()">
-    <span></span>
-    <span></span>
-    <span></span>
+  <!-- Success Popup -->
+<div id="successPopup" class="popup">
+  <div class="popup-content">
+    <p>Enquiry Submitted Successfully!</p>
   </div>
 </div>
 
 
-<div class="sidebar" id="sidebar">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-  <ul class="sidebar-nav">
-    <li><a href="../../">Home</a></li>
-    <li><a href="../../about.html">About</a></li>
+  <div id="footer-placeholder"></div>
 
-    <li class="has-dropdown">
-      <a href="javascript:void(0);" onclick="toggleDropdown('application')">Application
-        <span class="arrow"></span>
-      </a>
-      <ul class="sidebar-dropdown-menu" id="application-dropdown">
-        <li><a href="../../water-quality-analyzer.html"> Water Quality Analyzer</a></li>
-      </ul>
-    </li>
-
-
-    <li class="has-dropdown">
-      <a href="javascript:void(0);" onclick="toggleDropdown('application')">Products
-        <span class="arrow"></span>
-      </a>
-      <ul class="sidebar-dropdown-menu" id="application-dropdown">
-        <li><a href="../../products/analyzers.html">Analyzers</a></li>
-        <li><a href="../../products/controllers.html">Controllers</a></li>
-        <li><a href="../../products/sensors.html">Sensors</a></li>
-      </ul>
-    </li>
-    <li class="has-dropdown">
-      <a href="javascript:void(0);" onclick="toggleDropdown('products')">Market
-        <span class="arrow"></span>
-      </a>
-      <ul class="sidebar-dropdown-menu" id="products-dropdown">
-         <li><a href="../../industry/environmental-solutions/pulp-and-paper.html">Pulp & Paper</a></li>
-         <li><a href="../../industry/environmental-solutions/distillery.html">Distillery</a></li>
-         <li><a href="../../industry/environmental-solutions/sugar.html">Sugar</a></li>
-         <li><a href="../../industry/environmental-solutions/tanneries.html">Tanneries</a></li>
-         <li><a href="../../industry/environmental-solutions/power-plants.html">Power Plants</a></li>
-         <li><a href="../../industry/environmental-solutions/cement.html">Cement</a></li>
-         <li><a href="../../industry/environmental-solutions/chloral-alkali-plants.html">Chloral Alkali Plants</a></li>
-         <li><a href="../../industry/environmental-solutions/oil-refineries.html">Oil Refineries</a></li>
-         <li><a href="../../industry/environmental-solutions/dye-and-dye-intermediate-units.html">Dye & Dye Intermediate Units</a></li>
-         <li><a href="../../industry/environmental-solutions/cetp-and-stps.html">CETP & STPS</a></li>
-         <li><a href="../../industry/environmental-solutions/pesticides.html">Pesticides</a></li>
-         <li><a href="../../industry/environmental-solutions/pharmaceutical-sector.html">Pharmaceutical Sector</a></li>
-         <li><a href="../../industry/environmental-solutions/common-biomedical-waste.html">Common Biomedical Waste</a></li>
-         <li><a href="../../industry/environmental-solutions/common-hazardous-waste-incinerator.html">Common Hazardous Waste Incinerator</a></li>
-         <li><a href="../../industry/environmental-solutions/food-processing.html">Food Processing</a></li>
-      </ul>
-    </li>
-    <!-- <li><a href="../../blog.html" >Careers</a></li> -->
-    <li><a href="../../careers.html" >Careers</a></li>
-    <li><a href="../../contact.html" >Contact</a></li>
-  </ul>
+  <!-- Loading Overlay -->
+<div id="loadingOverlay" class="loading-overlay">
+  <div class="loader"></div>
+  <p>Submitting, please wait...</p>
 </div>
-
-
 
 </body>
 </html>

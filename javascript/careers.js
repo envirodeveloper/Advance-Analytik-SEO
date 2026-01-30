@@ -26,43 +26,67 @@ document.querySelectorAll('.faq__item').forEach(item => {
 
 // career form
 
+
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("Career form JS loaded");
+
   const form = document.querySelector(".career-form form");
   const submitBtn = document.getElementById("career-submit-btn");
   const submitText = document.getElementById("career-submit-text");
   const spinner = document.getElementById("career-spinner");
+  const messageBox = document.getElementById("career-message");
 
-  form.addEventListener("submit", async (e) => {
+  // Safety check
+  if (!form) {
+    console.error("Career form not found!");
+    return;
+  }
+
+  // Check EmailJS
+  if (typeof emailjs === "undefined") {
+    console.error("EmailJS library not loaded!");
+    return;
+  }
+
+  // ✅ INIT EMAILJS (PUBLIC KEY)
+  emailjs.init("DrTQJA86pkMI4TUe5"); // your public key
+
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
+    console.log("Career form submitted");
 
-    // Show loading spinner
+    // UI loading state
     submitText.style.display = "none";
     spinner.style.display = "inline-block";
     submitBtn.disabled = true;
+    messageBox.textContent = "";
 
-    const formData = new FormData(form);
+    // ✅ SEND FORM VIA EMAILJS (supports file upload)
+    emailjs
+      .sendForm(
+        "service_xg5yduu",     // EmailJS Service ID
+        "template_ilnp3ds",    // Career Email Template ID
+        this                  // form element
+      )
+      .then((response) => {
+        console.log("EmailJS success:", response);
 
-    try {
-      const response = await fetch("https://advance-analytik-seo.onrender.com/api/careers", {
-        method: "POST",
-        body: formData, // automatically handles file + text fields
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        alert("✅ Application submitted successfully!");
+        messageBox.style.color = "green";
+        messageBox.textContent = "✅ Application submitted successfully!";
         form.reset();
-      } else {
-        alert("❌ Error: " + result.message);
-      }
-    } catch (error) {
-      alert("⚠️ Network error. Please try again later.");
-    } finally {
-      // Reset button state
-      submitText.style.display = "inline";
-      spinner.style.display = "none";
-      submitBtn.disabled = false;
-    }
+      })
+      .catch((error) => {
+        console.error("EmailJS error:", error);
+
+        messageBox.style.color = "red";
+        messageBox.textContent =
+          "❌ Failed to submit application. Please try again.";
+      })
+      .finally(() => {
+        // Restore button state
+        submitText.style.display = "inline";
+        spinner.style.display = "none";
+        submitBtn.disabled = false;
+      });
   });
 });

@@ -16,7 +16,7 @@ function playVideo(button) {
     
 
   const bubbleContainer = document.querySelector('.bubble-container');
-  const texts = ['pH', 'TDS', 'BOD', 'TSS', 'COD', 'OIW', 'NO3-', 'NO2-', 'NH4+', 'S2-', 'TS', 'Cl2', 'ClO2', 'TC', 'BTEX', 'O3', 'TP', 'Turb', 'DO', 'EC'];
+  const texts = ['SOx','NOx', 'CO', 'CO2','02', 'pH', 'TDS', 'BOD', 'TSS', 'COD', 'OIW', 'NO3-', 'NO2-', 'NH4+', 'S2-', 'TS', 'Cl2', 'ClO2', 'TC', 'BTEX', 'O3', 'TP', 'Turb', 'DO', 'EC'];
   let currentBubbles = 0, maxBubbles = 20;
   const bubbleRadius = 50; // Approximate radius of a bubble in pixels
   const minDistance = 2 * bubbleRadius; // Minimum distance between bubble centers

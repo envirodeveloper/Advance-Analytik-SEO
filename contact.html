@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="./images/logo/AdvanceAnalytiklogo.png" />
   <link rel="stylesheet" href="./css/contact.css">
-  <script src="../javascript/contact.js" defer></script>
   <script src="../javascript/common.js" defer></script>
   <script src="../javascript/language.js" defer></script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
@@ -18,19 +17,19 @@
 </head>
 <body>
 
-  <div id="navbar-placeholder"></div>
+<div id="navbar-placeholder"></div>
 
-  <div class="contact">
-    <img src="./images/contact images/contactheroimg.png" alt="contact us" class="contact__header__img">
+<div class="contact">
+  <img src="./images/contact images/contactheroimg.png" alt="contact us" class="contact__header__img">
 
-    <!-- Header -->
-    <div class="contact__header">
-      <h1 data-i18n="contact.header_title">Get in touch with us</h1>
-      <p data-i18n="contact.header_desc">Let us know how we can help!</p>
-    </div>
+  <!-- Header -->
+  <div class="contact__header">
+    <h1 data-i18n="contact.header_title">Get in touch with us</h1>
+    <p data-i18n="contact.header_desc">Let us know how we can help!</p>
+  </div>
 
-    <!-- Cards -->
-    <div class="contact__card__wrapper">
+  <!-- Cards -->
+ <div class="contact__card__wrapper">
       <div class="contact__card">
         <i class="fas fa-comments"></i>
         <div class="contact__card__content">
@@ -69,51 +68,107 @@
       </div>
     </div>
 
-    <!-- Map Section -->
-    <div class="contact__map__wrapper">
-      <h2 data-i18n="contact.map_title">Discover Our Global Presence</h2>
-      <p data-i18n="contact.map_desc">
-        Advance Analytik® is proud to serve clients around the world with cutting-edge analytical solutions.
-      </p>
-      <div id="map"></div>
-    </div>
-
-    <!-- Enquiry Form -->
-    <div class="contact__enquiry__form__container">
-      <img src="./images/contact images/fromImg.jpg" alt="">
-      <div class="contact__enquiry__form__wrapper">
-        <h2 data-i18n="contact.form_title">Enquiry Form</h2>
-        <p data-i18n="contact.form_desc">
-          Have a question or need more information? Fill out the form below, and our team will get in touch with you shortly.
-        </p>
-
-        <form id="enquiryForm" class="contact__enquiry__form">
-          <input type="text" name="name" required placeholder="Your Name" data-i18n-placeholder="contact.form_name">
-          <input type="email" name="email" required placeholder="Your Email" data-i18n-placeholder="contact.form_email">
-          <input type="number" name="number" required placeholder="Contact Number" data-i18n-placeholder="contact.form_number">
-          <textarea name="enquiry" required placeholder="Enquiry" data-i18n-placeholder="contact.form_enquiry"></textarea>
-          <button type="submit" data-i18n="contact.form_submit">Submit</button>
-        </form>
-
-        <p id="formMessage"></p>
-      </div>
-    </div>
+  <!-- Map Section -->
+  <div class="contact__map__wrapper">
+    <h2 data-i18n="contact.map_title">Discover Our Global Presence</h2>
+    <p data-i18n="contact.map_desc">
+      Advance Analytik® is proud to serve clients around the world with cutting-edge analytical solutions.
+    </p>
+    <div id="map"></div>
   </div>
 
+  <!-- Enquiry Form -->
+  <div class="contact__enquiry__form__container">
+    <img src="./images/contact images/fromImg.jpg" alt="">
+    <div class="contact__enquiry__form__wrapper">
+      <h2 data-i18n="contact.form_title">Enquiry Form</h2>
+      <p data-i18n="contact.form_desc">
+        Have a question or need more information? Fill out the form below, and our team will get in touch with you shortly.
+      </p>
 
-  <!-- Success Popup -->
+      <form id="enquiryForm" class="contact__enquiry__form">
+        <input type="text" name="name" required placeholder="Your Name" data-i18n-placeholder="contact.form_name">
+        <input type="email" name="email" required placeholder="Your Email" data-i18n-placeholder="contact.form_email">
+        <input type="number" name="number" required placeholder="Contact Number" data-i18n-placeholder="contact.form_number">
+        <textarea name="enquiry" required placeholder="Enquiry" data-i18n-placeholder="contact.form_enquiry"></textarea>
+        <button type="submit" data-i18n="contact.form_submit">Submit</button>
+      </form>
+
+      <p id="formMessage"></p>
+    </div>
+  </div>
+</div>
+
 <div id="successPopup" class="popup">
   <div class="popup-content">
     <p>Enquiry Submitted Successfully!</p>
   </div>
 </div>
 
+<div id="footer-placeholder"></div>
 
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-  <div id="footer-placeholder"></div>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-  <!-- Loading Overlay -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM fully loaded");
+
+  // Initialize Leaflet map
+  <!-- const map = L.map("map").setView([47.5186, 19.0594], 13);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
+  L.marker([47.5186, 19.0594]).addTo(map)
+    .bindPopup("Advance Analytik®")
+    .openPopup(); -->
+
+  // Check if EmailJS loaded
+  if (typeof emailjs === 'undefined') {
+    console.error("EmailJS library not loaded!");
+    return;
+  }
+  console.log("EmailJS loaded:", emailjs);
+
+  // Initialize EmailJS (replace with your User ID)
+  emailjs.init("DrTQJA86pkMI4TUe5");
+
+  const enquiryForm = document.getElementById("enquiryForm");
+  const successPopup = document.getElementById("successPopup");
+
+  // Prefill from URL parameters (optional)
+  const urlParams = new URLSearchParams(window.location.search);
+  document.querySelector('input[name="name"]').value = urlParams.get('name') || '';
+  document.querySelector('input[name="email"]').value = urlParams.get('email') || '';
+  document.querySelector('input[name="number"]').value = urlParams.get('number') || '';
+  document.querySelector('textarea[name="enquiry"]').value = urlParams.get('enquiry') || '';
+
+  // Handle form submission
+  enquiryForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    console.log("Enquiry form submitted...");
+
+    emailjs.sendForm("service_xg5yduu", "template_v3pqv9o", this)
+      .then((res) => {
+        console.log("EmailJS success:", res);
+        successPopup.style.display = "flex"; // Show success popup
+        setTimeout(() => successPopup.style.display = "none", 3000);
+        enquiryForm.reset();
+        // Remove query parameters after sending
+        window.history.replaceState({}, document.title, window.location.pathname);
+      })
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        alert("Failed to send message. Check console for details.");
+      });
+  });
+});
+</script>
+
+<!-- Loading Overlay -->
 <div id="loadingOverlay" class="loading-overlay">
   <div class="loader"></div>
   <p>Submitting, please wait...</p>

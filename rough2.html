@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Advance Analytik</title>
+  <meta name="description" content="Get in touch with Advance Analytik, your trusted partner for advanced analytical instrumentation solutions.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
+    .contact { max-width: 900px; margin: 40px auto; padding: 20px; background:white; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.2);}
+    .contact__form input, .contact__form textarea { width:100%; padding:10px; margin-bottom:10px; border-radius:4px; border:1px solid #ccc;}
+    .contact__form button { padding:10px 20px; border:none; border-radius:4px; background:#007BFF; color:white; cursor:pointer;}
+    .contact__map__wrapper { margin-top:30px; }
+    #map { height:300px; border-radius:8px; }
+  </style>
+</head>
+<body>
+
+<div class="contact">
+  <h1>Get in touch with us</h1>
+  <p>Let us know how we can help!</p>
+
+  <!-- Contact Form -->
+  <form id="contactForm" class="contact__form">
+    <input type="hidden" name="site_name" value="Advance Analytik Website">
+    <label>Name</label>
+    <input type="text" name="from_name" required>
+    <label>Email</label>
+    <input type="email" name="from_email" required>
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Map -->
+  <div class="contact__map__wrapper">
+    <h2>Our Location</h2>
+    <div id="map"></div>
+  </div>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<!-- EmailJS -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM fully loaded");
+
+  // Check if EmailJS loaded
+  if (typeof emailjs === 'undefined') {
+    console.error("EmailJS library not loaded!");
+    return;
+  } else {
+    console.log("EmailJS loaded:", emailjs);
+  }
+
+  // Initialize EmailJS (replace with your own User ID)
+  emailjs.init("DrTQJA86pkMI4TUe5"); 
+
+  const form = document.getElementById("contactForm");
+
+  // Prefill form from URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  document.querySelector('input[name="from_name"]').value = urlParams.get('from_name') || '';
+  document.querySelector('input[name="from_email"]').value = urlParams.get('from_email') || '';
+  document.querySelector('textarea[name="message"]').value = urlParams.get('message') || '';
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    console.log("Form submitted. Sending email via EmailJS...");
+
+    // Replace with your Service ID and Template ID
+    emailjs.sendForm("service_xg5yduu", "template_v3pqv9o", this)
+      .then((res) => {
+        console.log("EmailJS success:", res);
+        alert("Message sent successfully!");
+        form.reset();
+        // Remove query parameters after sending
+        window.history.replaceState({}, document.title, window.location.pathname);
+      })
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        alert("Failed to send message. Check console for details.");
+      });
+  });
+
+  // Initialize Leaflet map
+  const map = L.map("map").setView([47.5186, 19.0594], 13);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
+  L.marker([47.5186, 19.0594]).addTo(map)
+    .bindPopup("Advance Analytik®")
+    .openPopup();
+});
+</script>
+
+</body>
+</html>

@@ -120,46 +120,75 @@
     </div>
   </div>
 
-  <section class="career-form">
-    <div class="container">
-      <h2 data-i18n="careers.form_title">Apply Now</h2>
-      <form id="careerForm" enctype="multipart/form-data">
-        <div>
-          <label for="fullname" data-i18n="careers.form_fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" required />
-        </div>
+ <section class="career-form">
+  <div class="container">
+    <h2 data-i18n="careers.form_title">Apply Now</h2>
 
-        <div>
-          <label for="phone" data-i18n="careers.form_phone">Phone Number</label>
-          <input type="tel" name="phone" maxlength="10" pattern="[0-9]{10}" required />
-        </div>
+    <form id="careerForm">
+      <div>
+        <label for="fullname" data-i18n="careers.form_fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+      </div>
 
-        <div>
-          <label for="qualification" data-i18n="careers.form_qualification">Qualification</label>
-          <input type="text" id="qualification" name="qualification" required />
-        </div>
+      <div>
+        <label for="phone" data-i18n="careers.form_phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          maxlength="10"
+          pattern="[0-9]{10}"
+          required
+        />
+      </div>
 
-        <div id="resume-wrapper">
-          <label for="resume" data-i18n="careers.form_resume">Upload Resume</label>
-          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required />
-        </div>
+      <div>
+        <label for="qualification" data-i18n="careers.form_qualification">
+          Qualification
+        </label>
+        <input
+          type="text"
+          id="qualification"
+          name="qualification"
+          required
+        />
+      </div>
 
-        <div id="address-wrapper">
-          <label for="address" data-i18n="careers.form_address">Address</label>
-          <textarea id="address" name="address" rows="3" required></textarea>
-        </div>
+      <!-- ✅ REPLACED RESUME WITH SKILLS -->
+      <div>
+        <label for="skills" data-i18n="careers.form_skills">Skills</label>
+        <textarea
+          id="skills"
+          name="skills"
+          rows="4"
+          placeholder="Eg: electrical engineer, sales engineer, field engineer."
+          required
+        ></textarea>
+      </div>
 
-        <button type="submit" id="career-submit-btn">
-          <span id="career-submit-text" data-i18n="careers.form_submit">Submit</span>
-          <span id="career-spinner" class="spinner" style="display: none;"></span>
-        </button>
+      <div id="address-wrapper">
+        <label for="address" data-i18n="careers.form_address">Address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
 
-        <p id="career-message"></p>
-      </form>
-    </div>
-  </section>
+      <button type="submit" id="career-submit-btn">
+        <span id="career-submit-text" data-i18n="careers.form_submit">
+          Submit
+        </span>
+        <span id="career-spinner" class="spinner" style="display: none;"></span>
+      </button>
+
+      <p id="career-message"></p>
+    </form>
+  </div>
+</section>
+
 
   <div id="footer-placeholder"></div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="../javascript/faqtoggle.js"></script>
 </body>
 </html>
